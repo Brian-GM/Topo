@@ -1,0 +1,14 @@
+TileMapLayer
+CheckButton
+Label
+Button
+VBoxContainer
+CollisionShape2D
+Area2D
+Sprite2D
+StaticBody2D
+CollisionPolygon2D
+Camera2D
+NavigationAgent2D
+NavigationRegion2D
+CharacterBody2D

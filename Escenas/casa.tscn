@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwkyba4uaknlv"]
+
+[ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Escenas/topo.tscn" id="1_6kynj"]
+
+[node name="Casa" type="Node2D"]
+
+[node name="Suelo" type="TileMapLayer" parent="."]
+
+[node name="Topo" parent="." instance=ExtResource("1_6kynj")]
+position = Vector2(-128, 532)

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ce3jalqdqjun2"]
+
+[ext_resource type="Script" uid="uid://bcrh4o57558h3" path="res://Scripts/zarpazo.gd" id="1_6ky8d"]
+
+[node name="Zarpazo" type="Area2D"]
+script = ExtResource("1_6ky8d")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(1, -1, 125, -111, 131, -49, 131, 29, 122, 83)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

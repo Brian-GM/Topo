@@ -1,0 +1,80 @@
+[gd_scene load_steps=5 format=3 uid="uid://w3vxvvp0jj74"]
+
+[ext_resource type="PackedScene" uid="uid://blqruqdn3pmg3" path="res://oro_ex.tscn" id="1_jy1n4"]
+[ext_resource type="PackedScene" uid="uid://cvcvwxox1niwn" path="res://topo_ex.tscn" id="1_lskpe"]
+[ext_resource type="Script" uid="uid://dq7ii2iyganli" path="res://camera_2d_carga.gd" id="2_o7rky"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jy1n4"]
+font_size = 50
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -2.0
+offset_top = 4.0
+offset_right = 1281.0
+offset_bottom = 12534.0
+color = Color(0.267461, 0.153153, 0.037638, 1)
+
+[node name="Oro" type="Node2D" parent="."]
+
+[node name="Oro" parent="Oro" instance=ExtResource("1_jy1n4")]
+position = Vector2(619, 467)
+
+[node name="Oro2" parent="Oro" instance=ExtResource("1_jy1n4")]
+position = Vector2(211, 755)
+
+[node name="Oro3" parent="Oro" instance=ExtResource("1_jy1n4")]
+position = Vector2(944, 934)
+
+[node name="Oro4" parent="Oro" instance=ExtResource("1_jy1n4")]
+position = Vector2(547, 1379)
+
+[node name="Oro5" parent="Oro" instance=ExtResource("1_jy1n4")]
+position = Vector2(831, 1879)
+
+[node name="Oro6" parent="Oro" instance=ExtResource("1_jy1n4")]
+position = Vector2(431, 2029)
+
+[node name="Oro7" parent="Oro" instance=ExtResource("1_jy1n4")]
+position = Vector2(765, 2457)
+
+[node name="Oro8" parent="Oro" instance=ExtResource("1_jy1n4")]
+position = Vector2(198, 2863)
+
+[node name="Oro9" parent="Oro" instance=ExtResource("1_jy1n4")]
+position = Vector2(491, 3710)
+
+[node name="Oro10" parent="Oro" instance=ExtResource("1_jy1n4")]
+position = Vector2(809, 3189)
+
+[node name="Topo" parent="." instance=ExtResource("1_lskpe")]
+unique_name_in_owner = true
+position = Vector2(631, 71)
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
+position = Vector2(639, 362)
+script = ExtResource("2_o7rky")
+target = NodePath("../Topo")
+
+[node name="Control" type="CanvasLayer" parent="."]
+
+[node name="texto_oro" type="Label" parent="Control"]
+offset_left = 49.0
+offset_top = 46.0
+offset_right = 172.0
+offset_bottom = 69.0
+text = "ORO RECOGIDO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cantidad_oro" type="Label" parent="Control"]
+unique_name_in_owner = true
+offset_left = 92.0
+offset_top = 77.0
+offset_right = 132.0
+offset_bottom = 146.0
+text = "0"
+label_settings = SubResource("LabelSettings_jy1n4")
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -59,7 +59,7 @@ zarpazo_scene = ExtResource("3_u4wln")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tho7h")
 animation = &"idle"
-frame_progress = 0.308669
+frame_progress = 0.543126
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -2.5)

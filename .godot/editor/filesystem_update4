@@ -1,4 +1,5 @@
 res://Escenas/casa.tscn
+res://Tileset/TilesetPrincipal.tres
 res://Escenas/topo.tscn
 res://Escenas/enemy_1.tscn
 res://Escenas/Proyectil.tscn
@@ -6,3 +7,4 @@ res://Escenas/zarpazo.tscn
 res://Escenas/cama.tscn
 res://Escenas/tienda.tscn
 res://Escenas/menu.tscn
+res://Escenas/agujero_1.tscn

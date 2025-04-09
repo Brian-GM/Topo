@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtsjd1j67bm2f"]
+
+[ext_resource type="Texture2D" uid="uid://27xqb5cuej8a" path="res://Sprites/boquete1.png" id="1_ttd3x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5jfb8"]
+radius = 66.0681
+
+[node name="Agujero1" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ttd3x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, -6)
+shape = SubResource("CircleShape2D_5jfb8")

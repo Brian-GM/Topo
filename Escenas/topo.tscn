@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://fbgli6hp1xva"]
 
 [ext_resource type="Script" uid="uid://btobh0ay8b5xl" path="res://Scripts/topo.gd" id="1_vmulf"]
-[ext_resource type="Texture2D" uid="uid://cvyktj4clk10o" path="res://icon.svg" id="1_xe36n"]
 [ext_resource type="PackedScene" uid="uid://cfaiiay6clu0i" path="res://Escenas/Proyectil.tscn" id="2_u4wln"]
 [ext_resource type="PackedScene" uid="uid://ce3jalqdqjun2" path="res://Escenas/zarpazo.tscn" id="3_u4wln"]
+[ext_resource type="Texture2D" uid="uid://bdcgsm773puq7" path="res://Sprites/topo_ex.png" id="4_u4wln"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vmulf"]
 size = Vector2(114, 107)
@@ -14,7 +14,8 @@ projectile_scene = ExtResource("2_u4wln")
 zarpazo_scene = ExtResource("3_u4wln")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_xe36n")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_u4wln")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -2.5)

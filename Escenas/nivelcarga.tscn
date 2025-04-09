@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://djnbnmkw7rke5"]
+
+[ext_resource type="PackedScene" uid="uid://cvcvwxox1niwn" path="res://Escenas/topo_ex.tscn" id="1_2m05f"]
+[ext_resource type="PackedScene" uid="uid://k0p8qdr1o2k5" path="res://Escenas/oro.tscn" id="1_eno76"]
+[ext_resource type="Script" path="res://Scripts/camera_2d_carga.gd" id="3_ndoae"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jy1n4"]
+font_size = 50
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -2.0
+offset_top = 4.0
+offset_right = 1281.0
+offset_bottom = 12534.0
+color = Color(0.267461, 0.153153, 0.037638, 1)
+
+[node name="Oro" type="Node2D" parent="."]
+
+[node name="Oro" parent="Oro" instance=ExtResource("1_eno76")]
+position = Vector2(615, 648)
+
+[node name="Oro2" parent="Oro" instance=ExtResource("1_eno76")]
+position = Vector2(609, 860)
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
+position = Vector2(639, 362)
+script = ExtResource("3_ndoae")
+target = NodePath("../Topo")
+
+[node name="Control" type="CanvasLayer" parent="."]
+
+[node name="texto_oro" type="Label" parent="Control"]
+offset_left = 49.0
+offset_top = 46.0
+offset_right = 172.0
+offset_bottom = 69.0
+text = "ORO RECOGIDO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cantidad_oro" type="Label" parent="Control"]
+unique_name_in_owner = true
+offset_left = 92.0
+offset_top = 77.0
+offset_right = 132.0
+offset_bottom = 146.0
+text = "0"
+label_settings = SubResource("LabelSettings_jy1n4")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Topo" parent="." instance=ExtResource("1_2m05f")]
+position = Vector2(632, 106)

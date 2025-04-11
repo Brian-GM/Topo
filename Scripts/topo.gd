@@ -12,9 +12,13 @@ var disparo_cooldown: float = GameManager.cooldown_disparo
 var puede_zarpazo := true
 var puede_disparar := true
 var cama_en_rango: Node = null
+var agujero_en_rango: Node = null
+
+var animacion_forzada: bool = false
 
 
 func _ready() -> void:
+	$AnimatedSprite2D.play("idle")
 	add_to_group("player")
 
 func _process(delta: float) -> void:
@@ -32,22 +36,39 @@ func _process(delta: float) -> void:
 	else:
 		velocity = Vector2.ZERO
 
+	# Animación de movimiento
+	if not animacion_forzada:
+		if velocity != Vector2.ZERO:
+			$AnimatedSprite2D.play("run")
+		else:
+			$AnimatedSprite2D.play("idle")
+
 	# Activar el golpe de garra al presionar "Golpear"
 	if Input.is_action_just_pressed("Golpear") and puede_zarpazo:
+		animacion_forzada = true
+		$AnimatedSprite2D.play("ataque")
 		realizar_zarpazo(posicion_raton)
 		puede_zarpazo = false
 		start_zarpazo_cooldown()
+		await $AnimatedSprite2D.animation_finished
+		animacion_forzada = false
 
 	if Input.is_action_just_pressed("Disparar") and puede_disparar:
+		animacion_forzada = true
+		$AnimatedSprite2D.play("ataque_piedra")
 		shoot_projectile(posicion_raton)
 		puede_disparar = false
 		start_disparo_cooldown()
+		await $AnimatedSprite2D.animation_finished
+		animacion_forzada = false
 
 	move_and_slide()
 	
-	
 	if cama_en_rango and Input.is_action_just_pressed("Interactuar"):
 		curarse()
+	
+	if agujero_en_rango and Input.is_action_just_pressed("Interactuar"):
+		pasar_nivel()
 
 # Función para disparar el proyectil
 func shoot_projectile(direction: Vector2):
@@ -65,8 +86,6 @@ func realizar_zarpazo(direction: Vector2):
 		zarpazo.rotation = direction.angle()
 	get_tree().current_scene.add_child(zarpazo)
 
-
-
 func start_zarpazo_cooldown() -> void:
 	await get_tree().create_timer(zarpazo_cooldown).timeout
 	puede_zarpazo = true
@@ -81,8 +100,17 @@ func entrar_en_rango_de_cama(cama: Node):
 func salir_de_rango_de_cama():
 	cama_en_rango = null
 
+func entrar_en_rango_agujero(agujero: Node):
+	agujero_en_rango = agujero
+
+func salir_de_rango_agujero():
+	agujero_en_rango = null
+
 func curarse():
 	vida += GameManager.recuperacion
+
+func pasar_nivel():
+	get_tree().change_scene_to_file("res://Escenas/nivelcarga.tscn")
 
 func Golpe():
 	print("h")

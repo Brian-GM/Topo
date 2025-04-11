@@ -3,6 +3,7 @@ extends Area2D
 @export var lifetime := 0.2
 
 func _ready():
+	$AnimatedSprite2D.play("default")
 	$CollisionPolygon2D.disabled = false
 	await get_tree().create_timer(lifetime).timeout
 	queue_free()

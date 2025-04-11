@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cfaiiay6clu0i"]
 
 [ext_resource type="Script" uid="uid://dgfwvw68nyafq" path="res://Scripts/Proyectil.gd" id="1_tu2yt"]
-[ext_resource type="Texture2D" uid="uid://cvyktj4clk10o" path="res://icon.svg" id="2_a4h13"]
+[ext_resource type="Texture2D" uid="uid://16y8wwm8d2el" path="res://Sprites/Player/piedralanzar.png" id="2_tu2yt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fy2gw"]
 
@@ -10,7 +10,7 @@ script = ExtResource("1_tu2yt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_a4h13")
+texture = ExtResource("2_tu2yt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_fy2gw")

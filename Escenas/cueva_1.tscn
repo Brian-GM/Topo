@@ -18,7 +18,7 @@ tile_map_data = PackedByteArray("AAACAAEAAQAPAAQAAAACAAIAAQAPAAUAAAADAAEAAQAPAAQ
 tile_set = ExtResource("1_hsl4x")
 
 [node name="Decoraciones" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAAZAAQAAQAAABsAAAAWAAEAAQASAAYAAAAGAAQAAQAEABgAAAA=")
+tile_map_data = PackedByteArray("AAAZAAQAAQAAABsAAAAWAAEAAQASAAYAAAAHAAMAAQAEABgAAAA=")
 tile_set = ExtResource("1_hsl4x")
 
 [node name="Topo" parent="." instance=ExtResource("2_oxtor")]

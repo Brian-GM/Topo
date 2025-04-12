@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dtsjd1j67bm2f"]
 
-[ext_resource type="Script" uid="uid://mrowaupq3gli" path="res://Escenas/agujero_1.gd" id="1_etc50"]
+[ext_resource type="Script" uid="uid://mrowaupq3gli" path="res://Scripts/agujero_1.gd" id="1_etc50"]
 [ext_resource type="Texture2D" uid="uid://dewgqpvlun4bm" path="res://Sprites/boquete1.png" id="1_ttd3x"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5jfb8"]

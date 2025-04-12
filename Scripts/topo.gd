@@ -13,6 +13,7 @@ var puede_zarpazo := true
 var puede_disparar := true
 var cama_en_rango: Node = null
 var agujero_en_rango: Node = null
+var exp_en_rango: Node = null
 
 var animacion_forzada: bool = false
 
@@ -46,7 +47,10 @@ func _process(delta: float) -> void:
 	# Activar el golpe de garra al presionar "Golpear"
 	if Input.is_action_just_pressed("Golpear") and puede_zarpazo:
 		animacion_forzada = true
-		$AnimatedSprite2D.play("ataque")
+		if input_vector != Vector2.ZERO:
+			$AnimatedSprite2D.play("garra_correr")
+		else:
+			$AnimatedSprite2D.play("ataque")
 		realizar_zarpazo(posicion_raton)
 		puede_zarpazo = false
 		start_zarpazo_cooldown()
@@ -55,7 +59,10 @@ func _process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("Disparar") and puede_disparar:
 		animacion_forzada = true
-		$AnimatedSprite2D.play("ataque_piedra")
+		if input_vector != Vector2.ZERO:
+			$AnimatedSprite2D.play("piedra_correr")
+		else:
+			$AnimatedSprite2D.play("ataque_piedra")
 		shoot_projectile(posicion_raton)
 		puede_disparar = false
 		start_disparo_cooldown()
@@ -105,6 +112,12 @@ func entrar_en_rango_agujero(agujero: Node):
 
 func salir_de_rango_agujero():
 	agujero_en_rango = null
+
+func entrar_exp_en_rango(exp: Node):
+	exp_en_rango = exp
+
+func salir_exp_en_rango():
+	exp_en_rango = null
 
 func curarse():
 	vida += GameManager.recuperacion

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cvcvwxox1niwn"]
 
 [ext_resource type="Texture2D" uid="uid://bdcgsm773puq7" path="res://Sprites/topo_ex.png" id="1_61n4o"]
-[ext_resource type="Script" uid="uid://dk28qwsj8tgdi" path="res://Escenas/topo_ex.gd" id="1_au4rf"]
+[ext_resource type="Script" uid="uid://dk28qwsj8tgdi" path="res://Scripts/topo_ex.gd" id="1_au4rf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gtbfk"]
 radius = 22.0

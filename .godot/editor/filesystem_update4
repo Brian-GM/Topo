@@ -1,9 +1,10 @@
-res://Escenas/zarpazo.tscn
-res://Tileset/TilesetPrincipal.tres
-res://Escenas/Proyectil.tscn
-res://Escenas/casa.tscn
 res://Escenas/topo.tscn
+res://Tileset/TilesetPrincipal.tres
+res://Scripts/topo.gd
+res://Escenas/casa.tscn
 res://Escenas/enemy_1.tscn
+res://Escenas/Proyectil.tscn
+res://Escenas/zarpazo.tscn
 res://Escenas/cama.tscn
 res://Escenas/tienda.tscn
 res://Escenas/menu.tscn
@@ -11,6 +12,7 @@ res://Escenas/agujero_1.tscn
 res://Escenas/oro.tscn
 res://Escenas/topo_ex.tscn
 res://Escenas/nivelcarga.tscn
-res://Scripts/topo.gd
-res://Escenas/agujero_1.gd
-res://Scripts/zarpazo.gd
+res://cueva_1.tscn
+res://Escenas/experiencia.tscn
+res://Escenas/experiencia.gd
+res://Escenas/cueva_1.tscn

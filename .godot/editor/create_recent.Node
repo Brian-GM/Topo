@@ -2,6 +2,7 @@ CollisionShape2D
 Area2D
 Sprite2D
 StaticBody2D
+CharacterBody2D
 TileMapLayer
 Label
 TextureButton
@@ -11,4 +12,3 @@ CheckButton
 Button
 VBoxContainer
 CollisionPolygon2D
-NavigationAgent2D

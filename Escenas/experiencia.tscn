@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b2o40o1fn8g65"]
 
-[ext_resource type="Script" uid="uid://chnvl3mgyuilu" path="res://Escenas/experiencia.gd" id="1_lbawy"]
+[ext_resource type="Script" uid="uid://chnvl3mgyuilu" path="res://Scripts/experiencia.gd" id="1_lbawy"]
 [ext_resource type="Texture2D" uid="uid://b0xi8jmmncmw5" path="res://Sprites/SubirXP.png" id="2_nld3e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lbawy"]

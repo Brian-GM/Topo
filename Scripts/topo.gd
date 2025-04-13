@@ -14,6 +14,7 @@ var puede_disparar := true
 var cama_en_rango: Node = null
 var agujero_en_rango: Node = null
 var exp_en_rango: Node = null
+var tienda_en_rango: Node = null
 
 var animacion_forzada: bool = false
 
@@ -76,6 +77,9 @@ func _process(delta: float) -> void:
 	
 	if agujero_en_rango and Input.is_action_just_pressed("Interactuar"):
 		pasar_nivel()
+		
+	if exp_en_rango and Input.is_action_just_pressed("Interactuar"):
+		tienda_exp()
 
 # Función para disparar el proyectil
 func shoot_projectile(direction: Vector2):
@@ -119,11 +123,20 @@ func entrar_exp_en_rango(exp: Node):
 func salir_exp_en_rango():
 	exp_en_rango = null
 
+func entrar_tienda_en_rango(exp: Node):
+	tienda_en_rango = exp
+
+func salir_tienda_en_rango():
+	tienda_en_rango = null
+
 func curarse():
 	vida += GameManager.recuperacion
 
 func pasar_nivel():
 	get_tree().change_scene_to_file("res://Escenas/nivelcarga.tscn")
+
+func tienda_exp():
+	get_tree().change_scene_to_file("res://Escenas/tienda_exp.tscn")
 
 func Golpe():
 	print("h")

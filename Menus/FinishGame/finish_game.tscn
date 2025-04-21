@@ -1,0 +1,171 @@
+[gd_scene load_steps=10 format=3 uid="uid://nox75847t7qv"]
+
+[ext_resource type="Script" uid="uid://tttd50wwvplr" path="res://Menus/FinishGame/finish_game.gd" id="1_j1l4a"]
+[ext_resource type="FontFile" uid="uid://bftmjwmvbmgcm" path="res://Assets/Fonts/Magedov_Military.ttf" id="2_qw4ta"]
+[ext_resource type="Texture2D" uid="uid://djrvp7ir5hym7" path="res://Assets/BrianSprites/Screens/title_screen.png" id="2_vg8i8"]
+[ext_resource type="Texture2D" uid="uid://cwt48ujqk6udm" path="res://Assets/BrianSprites/UI/fondoboton.png" id="3_qw4ta"]
+[ext_resource type="Texture2D" uid="uid://ca8f02maausa" path="res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_return.png" id="4_yq6fg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lhlve"]
+
+[sub_resource type="Animation" id="Animation_mwb5f"]
+resource_name = "car_in"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.5, 2),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ia2lk"]
+resource_name = "fade_out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ue3mh"]
+_data = {
+&"fade_in": SubResource("Animation_mwb5f"),
+&"fade_out": SubResource("Animation_ia2lk")
+}
+
+[node name="FinishGame" type="Node2D"]
+script = ExtResource("1_j1l4a")
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(960, 540)
+texture = ExtResource("2_vg8i8")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.0
+offset_top = -273.0
+offset_right = 114.0
+offset_bottom = 273.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuContainer" type="GridContainer" parent="CanvasLayer/Control/CenterContainer"]
+layout_mode = 2
+theme_override_constants/v_separation = 100
+
+[node name="ResultsContainer" type="GridContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/v_separation = 50
+
+[node name="SubMenuTitle" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/ResultsContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_qw4ta")
+theme_override_font_sizes/font_size = 60
+text = "GAME_FINISH"
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="CanvasLayer/Control/CenterContainer/MenuContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("2_qw4ta")
+theme_override_font_sizes/font_size = 20
+theme_override_icons/icon = ExtResource("3_qw4ta")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lhlve")
+text = "BACK_TO_MAIN_MENU"
+flat = true
+icon_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.875781
+anchor_top = 0.895833
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control/MarginContainer/CenterContainer"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Control/MarginContainer/CenterContainer"]
+custom_minimum_size = Vector2(280, 80)
+layout_mode = 2
+color = Color(0.172549, 0.141176, 0.0784314, 1)
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Control/MarginContainer/CenterContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("4_yq6fg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_qw4ta")
+theme_override_font_sizes/font_size = 20
+text = "CONFIRM_OPTION"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+&"": SubResource("AnimationLibrary_ue3mh")
+}
+
+[connection signal="focus_entered" from="CanvasLayer/Control/CenterContainer/MenuContainer/BackButton" to="." method="_on_back_button_focus_entered"]
+[connection signal="focus_exited" from="CanvasLayer/Control/CenterContainer/MenuContainer/BackButton" to="." method="_on_back_button_focus_exited"]
+[connection signal="pressed" from="CanvasLayer/Control/CenterContainer/MenuContainer/BackButton" to="." method="_on_back_button_pressed"]

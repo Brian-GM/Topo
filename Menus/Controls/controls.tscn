@@ -1,0 +1,388 @@
+[gd_scene load_steps=16 format=3 uid="uid://dy3cdmm7gkqjm"]
+
+[ext_resource type="Script" uid="uid://bn7fchkn5pesq" path="res://Menus/Controls/controls.gd" id="1_h55xh"]
+[ext_resource type="FontFile" uid="uid://bftmjwmvbmgcm" path="res://Assets/Fonts/Magedov_Military.ttf" id="2_aew4j"]
+[ext_resource type="Texture2D" uid="uid://djrvp7ir5hym7" path="res://Assets/BrianSprites/Screens/title_screen.png" id="2_arw5j"]
+[ext_resource type="Texture2D" uid="uid://ca8f02maausa" path="res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_return.png" id="3_tga18"]
+[ext_resource type="Texture2D" uid="uid://b2kelxd6toktp" path="res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png" id="3_ujuck"]
+[ext_resource type="Texture2D" uid="uid://br1kdp0afwws6" path="res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_horizontal.png" id="5_r2nhl"]
+[ext_resource type="Texture2D" uid="uid://b4vqc120mq3mr" path="res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_space_icon.png" id="6_dsb5f"]
+[ext_resource type="Texture2D" uid="uid://b7i7ccfmvgh52" path="res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_down.png" id="7_6r5dr"]
+[ext_resource type="Texture2D" uid="uid://tl28kpp5kosr" path="res://Assets/input-prompts/Keyboard & Mouse/Default/mouse_left.png" id="10_mjr6n"]
+[ext_resource type="Texture2D" uid="uid://cwt48ujqk6udm" path="res://Assets/BrianSprites/UI/fondoboton.png" id="10_x6kde"]
+[ext_resource type="Texture2D" uid="uid://cdsjlsv7mbcxe" path="res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_p.png" id="12_o0hpf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_arw5j"]
+
+[sub_resource type="Animation" id="Animation_mwb5f"]
+resource_name = "car_in"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 2),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_3iitp"]
+resource_name = "car_out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ue3mh"]
+_data = {
+&"fade_in": SubResource("Animation_mwb5f"),
+&"fade_out": SubResource("Animation_3iitp")
+}
+
+[node name="Controls" type="Node2D"]
+script = ExtResource("1_h55xh")
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(960, 540)
+texture = ExtResource("2_arw5j")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.0
+offset_top = -273.0
+offset_right = 114.0
+offset_bottom = 273.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuContainer" type="GridContainer" parent="CanvasLayer/Control/CenterContainer"]
+layout_mode = 2
+theme_override_constants/v_separation = 60
+
+[node name="MenuControlsContainer" type="GridContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/v_separation = 20
+
+[node name="SubMenuTitle" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 50
+text = "MENU_CONTROLS"
+horizontal_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer/CenterContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer/CenterContainer/GridContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("5_r2nhl")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer/CenterContainer/GridContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 25
+text = "CHANGE_VOLUME_CONTROL"
+horizontal_alignment = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer/CenterContainer/GridContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer/CenterContainer/GridContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("3_ujuck")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer/CenterContainer/GridContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 25
+text = "SELECT_OPTION"
+horizontal_alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer/CenterContainer/GridContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer/CenterContainer/GridContainer/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("3_tga18")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/MenuControlsContainer/CenterContainer/GridContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 25
+text = "CONFIRM_OPTION"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="GameControlsContainer" type="GridContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/v_separation = 20
+
+[node name="SubMenuTitle" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 50
+text = "GAME_CONTROLS"
+horizontal_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("10_mjr6n")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 25
+text = "MOVE"
+horizontal_alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("3_ujuck")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 25
+text = "CLIMB_LADDERS"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("6_dsb5f")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer3"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.858824, 0.384314, 0.0705882, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 20
+text = "JUMP"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("7_6r5dr")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer4"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.858824, 0.384314, 0.0705882, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 20
+text = "OPEN_DOOR"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer6"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("3_tga18")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer6"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.858824, 0.384314, 0.0705882, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 20
+text = "NEXT_DIALOG"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("12_o0hpf")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 25
+text = "PAUSE_GAME"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="BackButton" type="Button" parent="CanvasLayer/Control/CenterContainer/MenuContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 20
+theme_override_icons/icon = ExtResource("10_x6kde")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_arw5j")
+text = "BACK"
+flat = true
+icon_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.875781
+anchor_top = 0.895833
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Control/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/MarginContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control/MarginContainer/GridContainer/CenterContainer"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Control/MarginContainer/GridContainer/CenterContainer"]
+custom_minimum_size = Vector2(280, 80)
+layout_mode = 2
+color = Color(0.172549, 0.141176, 0.0784314, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/MarginContainer/GridContainer/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/MarginContainer/GridContainer/CenterContainer/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("3_tga18")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/MarginContainer/GridContainer/CenterContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_aew4j")
+theme_override_font_sizes/font_size = 20
+text = "CONFIRM_OPTION"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+&"": SubResource("AnimationLibrary_ue3mh")
+}
+
+[connection signal="focus_entered" from="CanvasLayer/Control/CenterContainer/MenuContainer/BackButton" to="." method="_on_back_button_focus_entered"]
+[connection signal="focus_exited" from="CanvasLayer/Control/CenterContainer/MenuContainer/BackButton" to="." method="_on_back_button_focus_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/CenterContainer/MenuContainer/BackButton" to="." method="_on_back_button_mouse_entered"]
+[connection signal="pressed" from="CanvasLayer/Control/CenterContainer/MenuContainer/BackButton" to="." method="_on_back_button_pressed"]

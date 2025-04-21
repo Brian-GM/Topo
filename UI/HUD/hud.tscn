@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://dmvo5omjdbrqu"]
+
+[ext_resource type="Script" uid="uid://d4asxam0lsvrr" path="res://UI/HUD/hud.gd" id="1_r707k"]
+[ext_resource type="Texture2D" uid="uid://cwt48ujqk6udm" path="res://Assets/BrianSprites/UI/fondoboton.png" id="2_qdh7y"]
+[ext_resource type="Texture2D" uid="uid://b5d5ayk4y6uti" path="res://Assets/BrianSprites/UI/aVATAR.png" id="2_te8l2"]
+[ext_resource type="Texture2D" uid="uid://7ujhiqbygjpi" path="res://Assets/BrianSprites/UI/Corazon full.png" id="4_qdh7y"]
+
+[node name="HUD" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_r707k")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 55.0
+offset_bottom = 70.0
+scale = Vector2(6.5, 1)
+color = Color(0.858824, 0.384314, 0.0705882, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+visible = false
+offset_left = 18.0
+offset_top = 17.0
+offset_right = 57.0
+offset_bottom = 67.0
+scale = Vector2(6.5, 1)
+
+[node name="GridContainer3" type="GridContainer" parent="."]
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 261.0
+offset_bottom = 50.0
+theme_override_constants/h_separation = 45
+columns = 2
+
+[node name="Background" type="Sprite2D" parent="GridContainer3"]
+position = Vector2(100, 16)
+scale = Vector2(1, 0.75)
+texture = ExtResource("2_qdh7y")
+flip_h = true
+
+[node name="GridContainer" type="GridContainer" parent="GridContainer3"]
+layout_mode = 2
+columns = 2
+
+[node name="Avatar" type="Sprite2D" parent="GridContainer3/GridContainer"]
+position = Vector2(12, 23)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_te8l2")
+
+[node name="GridContainer" type="GridContainer" parent="GridContainer3/GridContainer"]
+layout_mode = 2
+columns = 4
+
+[node name="Heart1" type="Sprite2D" parent="GridContainer3/GridContainer/GridContainer"]
+position = Vector2(60, 22)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_qdh7y")
+
+[node name="Heart2" type="Sprite2D" parent="GridContainer3/GridContainer/GridContainer"]
+position = Vector2(100, 22)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_qdh7y")
+
+[node name="Heart3" type="Sprite2D" parent="GridContainer3/GridContainer/GridContainer"]
+position = Vector2(140, 22)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_qdh7y")

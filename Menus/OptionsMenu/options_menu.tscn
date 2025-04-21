@@ -1,0 +1,516 @@
+[gd_scene load_steps=19 format=3 uid="uid://cfus050c7vdgc"]
+
+[ext_resource type="Script" uid="uid://dp8mif8x47qqb" path="res://Menus/OptionsMenu/options_menu.gd" id="1_7sjy6"]
+[ext_resource type="Texture2D" uid="uid://djrvp7ir5hym7" path="res://Assets/BrianSprites/Screens/title_screen.png" id="2_4nou6"]
+[ext_resource type="Texture2D" uid="uid://b2kelxd6toktp" path="res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png" id="2_bdwic"]
+[ext_resource type="Texture2D" uid="uid://br1kdp0afwws6" path="res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_horizontal.png" id="2_ocqjg"]
+[ext_resource type="FontFile" uid="uid://bftmjwmvbmgcm" path="res://Assets/Fonts/Magedov_Military.ttf" id="3_80ia4"]
+[ext_resource type="Texture2D" uid="uid://ca8f02maausa" path="res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_return.png" id="4_ocggo"]
+[ext_resource type="Texture2D" uid="uid://cwt48ujqk6udm" path="res://Assets/BrianSprites/UI/fondoboton.png" id="6_670mt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uyfv7"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.368627, 0.231373, 0.105882, 1)
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_euk4t"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.172549, 0.137255, 0.0784314, 1)
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2oxxa"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pl83q"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.368627, 0.231373, 0.105882, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i4nq3"]
+
+[sub_resource type="Animation" id="Animation_d3ujx"]
+resource_name = "RESET_BLACK"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control/CenterContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_d80se"]
+resource_name = "RESET_WHITE"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control/CenterContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_i4nq3"]
+resource_name = "car_in"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control/CenterContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 2),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xdhg5"]
+resource_name = "fade_out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control/CenterContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_hqcrq"]
+resource_name = "fade_out_to_menu"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control/CenterContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Control/Background:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Control/Background:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 0.5),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d3ujx"]
+_data = {
+&"RESET_BLACK": SubResource("Animation_d3ujx"),
+&"RESET_WHITE": SubResource("Animation_d80se"),
+&"fade_in": SubResource("Animation_i4nq3"),
+&"fade_out": SubResource("Animation_xdhg5"),
+&"fade_out_to_menu": SubResource("Animation_hqcrq")
+}
+
+[node name="OptionsMenu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_7sjy6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Node2D" parent="CanvasLayer/Control"]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Control/Background"]
+position = Vector2(960, 540)
+texture = ExtResource("2_4nou6")
+
+[node name="GrayBackground" type="ColorRect" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.25098, 0.25098, 0.25098, 0.509804)
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -325.5
+offset_right = 320.0
+offset_bottom = 325.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundMenu" type="ColorRect" parent="CanvasLayer/Control/CenterContainer"]
+custom_minimum_size = Vector2(1200, 900)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.875781
+anchor_top = 0.895833
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer"]
+custom_minimum_size = Vector2(350, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer"]
+custom_minimum_size = Vector2(330, 130)
+layout_mode = 2
+color = Color(0.172549, 0.141176, 0.0784314, 1)
+
+[node name="GridContainer2" type="GridContainer" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer/GridContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer/GridContainer2/HBoxContainer3"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("2_ocqjg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer/GridContainer2/HBoxContainer3"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 20
+text = "CHANGE_VOLUME"
+horizontal_alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer/GridContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer/GridContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("2_bdwic")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer/GridContainer2/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 20
+text = "SELECT_OPTION"
+horizontal_alignment = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer/GridContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer/GridContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("4_ocggo")
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/Control/CenterContainer/BackgroundMenu/MarginContainer/CenterContainer/GridContainer2/HBoxContainer2"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 20
+text = "CONFIRM_OPTION"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Control/CenterContainer"]
+layout_mode = 2
+theme_override_constants/v_separation = 40
+
+[node name="MenuTitle" type="Label" parent="CanvasLayer/Control/CenterContainer/GridContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 60
+text = "OPTIONS"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Control/CenterContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/v_separation = 40
+
+[node name="FlowContainer" type="HFlowContainer" parent="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 20
+alignment = 1
+
+[node name="LanguageGame" type="Label" parent="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 20
+text = "LANGUAGE_GAME"
+
+[node name="OptionButton" type="OptionButton" parent="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../../BackButton")
+focus_neighbor_bottom = NodePath("../../FlowContainer2/GridContainer/VolumeSlider")
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxFlat_uyfv7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_euk4t")
+selected = 0
+item_count = 2
+popup/item_0/text = "English"
+popup/item_0/id = 0
+popup/item_1/text = "Español"
+popup/item_1/id = 1
+
+[node name="FlowContainer2" type="HFlowContainer" parent="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 20
+alignment = 1
+
+[node name="VolumeGame" type="Label" parent="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer2"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 20
+text = "VOLUME_GAME"
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer2"]
+layout_mode = 2
+theme_override_constants/h_separation = 15
+columns = 2
+
+[node name="VolumeSlider" type="HSlider" parent="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer2/GridContainer"]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+focus_neighbor_top = NodePath("../../../FlowContainer/OptionButton")
+focus_neighbor_bottom = NodePath("../../../BackButton")
+mouse_default_cursor_shape = 2
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_2oxxa")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_pl83q")
+max_value = 1.0
+step = 0.05
+
+[node name="Percentage" type="Label" parent="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer2/GridContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 20
+text = "0%"
+
+[node name="BackButton" type="Button" parent="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../FlowContainer2/GridContainer/VolumeSlider")
+focus_neighbor_bottom = NodePath("../FlowContainer/OptionButton")
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 20
+theme_override_icons/icon = ExtResource("6_670mt")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i4nq3")
+text = "BACK"
+flat = true
+icon_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control"]
+visible = false
+modulate = Color(1, 0.980392, 0.996078, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.875781
+anchor_top = 0.895833
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control/MarginContainer/CenterContainer"]
+custom_minimum_size = Vector2(350, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Control/MarginContainer/CenterContainer"]
+custom_minimum_size = Vector2(330, 130)
+layout_mode = 2
+color = Color(0.172549, 0.141176, 0.0784314, 1)
+
+[node name="GridContainer2" type="GridContainer" parent="CanvasLayer/Control/MarginContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer2/HBoxContainer3"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("2_ocqjg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer2/HBoxContainer3"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 20
+text = "CHANGE_VOLUME"
+horizontal_alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("2_bdwic")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer2/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 20
+text = "SELECT_OPTION"
+horizontal_alignment = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = ExtResource("4_ocggo")
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/Control/MarginContainer/CenterContainer/GridContainer2/HBoxContainer2"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_80ia4")
+theme_override_font_sizes/font_size = 20
+text = "CONFIRM_OPTION"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+&"": SubResource("AnimationLibrary_d3ujx")
+}
+
+[connection signal="item_selected" from="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer/OptionButton" to="." method="_on_option_button_mouse_entered"]
+[connection signal="focus_entered" from="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer2/GridContainer/VolumeSlider" to="." method="_on_volume_slider_focus_entered"]
+[connection signal="focus_exited" from="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer2/GridContainer/VolumeSlider" to="." method="_on_volume_slider_focus_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer2/GridContainer/VolumeSlider" to="." method="_on_volume_slider_mouse_entered"]
+[connection signal="value_changed" from="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/FlowContainer2/GridContainer/VolumeSlider" to="." method="_on_volume_slider_value_changed"]
+[connection signal="focus_entered" from="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/BackButton" to="." method="_on_back_button_focus_entered"]
+[connection signal="focus_exited" from="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/BackButton" to="." method="_on_back_button_focus_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/BackButton" to="." method="_on_back_button_mouse_entered"]
+[connection signal="pressed" from="CanvasLayer/Control/CenterContainer/GridContainer/GridContainer/BackButton" to="." method="_on_back_button_pressed"]

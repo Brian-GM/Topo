@@ -1,0 +1,28 @@
+key,en,es
+START_GAME,Start Game,Comenzar Partida
+OPTIONS,Options,Opciones
+CONTROLS,Controls,Controles
+MENU_CONTROLS,Menu Controls,Controles de menú
+GAME_CONTROLS,Game Controls,Controles de juego
+MOVE,Movement (Left click),Movimiento (Clic Izquierdo)
+PAUSE_GAME,Pause game,Pausar juego
+CREDITS,Credits,Créditos
+QUIT,Quit,Salir
+MADE_BY,Made by SergioLoop,Hecho por SergioLoop
+CHANGE_VOLUME_CONTROL,Ajust volume (on options menu),Ajustar el volumen (en el menú de opciones)
+CHANGE_VOLUME,Ajust volume,Ajustar el volumen
+SELECT_OPTION,Select option,Seleccionar opción
+CONFIRM_OPTION,Confirm option,Confirmar opción
+LANGUAGE_GAME,Language:,Idioma:
+ENGLISH,English,Inglés
+SPANISH,Spanish,Español
+VOLUME_GAME,Volume:,Volumen:
+BACK_TO_MAIN_MENU,Main Menu,Menú Principal
+BACK,Back,Atrás
+GAME_PAUSED,Game Paused,Juego Pausado
+RESUME_GAME,Resume Game,Continuar
+CONFIRM,Confirm,Confirmar
+RESET_LEVEL,Reset level,Reiniciar Nivel
+GAME_OVER,Game Over,Has perdido
+GAME_FINISH,Thanks for playing,Gracias por jugar
+MORALEJA,A rich man and his money are soon parted...,La avaricia rompe el saco...

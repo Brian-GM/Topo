@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvcvwxox1niwn"]
+
+[ext_resource type="Texture2D" uid="uid://bdcgsm773puq7" path="res://Sprites/topo_ex.png" id="1_61n4o"]
+[ext_resource type="Script" uid="uid://dk28qwsj8tgdi" path="res://Scripts/topo_ex.gd" id="1_au4rf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gtbfk"]
+radius = 22.0
+height = 84.0
+
+[node name="Topo" type="CharacterBody2D" groups=["Topo"]]
+script = ExtResource("1_au4rf")
+
+[node name="Topo" type="Sprite2D" parent="." groups=["Topo"]]
+rotation = 1.91986
+scale = Vector2(-0.1, 0.1)
+texture = ExtResource("1_61n4o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Topo"]]
+position = Vector2(1, 0)
+shape = SubResource("CapsuleShape2D_gtbfk")

@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2o40o1fn8g65"]
+
+[ext_resource type="Script" uid="uid://chnvl3mgyuilu" path="res://Scripts/experiencia.gd" id="1_lbawy"]
+[ext_resource type="Texture2D" uid="uid://bqkxyl308pilc" path="res://Assets/BrianSprites/SubirXP.png" id="2_lbawy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lbawy"]
+size = Vector2(237, 88)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nld3e"]
+radius = 223.009
+
+[node name="Experiencia" type="StaticBody2D"]
+script = ExtResource("1_lbawy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_lbawy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-17.5, -14)
+shape = SubResource("RectangleShape2D_lbawy")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_nld3e")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

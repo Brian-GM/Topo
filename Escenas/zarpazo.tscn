@@ -1,0 +1,91 @@
+[gd_scene load_steps=13 format=3 uid="uid://ce3jalqdqjun2"]
+
+[ext_resource type="Script" uid="uid://bcrh4o57558h3" path="res://Scripts/zarpazo.gd" id="1_6ky8d"]
+[ext_resource type="Texture2D" uid="uid://cj0rgb8xteiyq" path="res://Sprites/Player/atackarea.png" id="2_mjqcn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2slgq"]
+atlas = ExtResource("2_mjqcn")
+region = Rect2(200, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t35mk"]
+atlas = ExtResource("2_mjqcn")
+region = Rect2(400, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wtxi6"]
+atlas = ExtResource("2_mjqcn")
+region = Rect2(600, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xixr"]
+atlas = ExtResource("2_mjqcn")
+region = Rect2(800, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iaaip"]
+atlas = ExtResource("2_mjqcn")
+region = Rect2(1000, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jjwn"]
+atlas = ExtResource("2_mjqcn")
+region = Rect2(1200, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gh6ep"]
+atlas = ExtResource("2_mjqcn")
+region = Rect2(1400, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_230ia"]
+atlas = ExtResource("2_mjqcn")
+region = Rect2(1600, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_81anv"]
+atlas = ExtResource("2_mjqcn")
+region = Rect2(1800, 0, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2slgq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2slgq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t35mk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtxi6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xixr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iaaip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jjwn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gh6ep")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_230ia")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_81anv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="Zarpazo" type="Area2D"]
+script = ExtResource("1_6ky8d")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(17, -5)
+scale = Vector2(0.698208, 0.673553)
+polygon = PackedVector2Array(5, -93, 160, -93, 160, 73, 5, 74)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(74, -12)
+scale = Vector2(0.599999, 0.68)
+sprite_frames = SubResource("SpriteFrames_2slgq")
+frame_progress = 0.569089
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

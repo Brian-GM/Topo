@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://dtiso3gadx1vq"]
 
-[ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Tileset/TilesetPrincipal.tres" id="1_1ghb7"]
+[ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres" id="1_1ghb7"]
 [ext_resource type="PackedScene" uid="uid://dtsjd1j67bm2f" path="res://Scenes/Characters/Hole/hole.tscn" id="2_oi0sm"]
 [ext_resource type="PackedScene" uid="uid://c38c2kkgcydkx" path="res://Scenes/Characters/Bed/bed.tscn" id="3_117ss"]
 [ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Scenes/Characters/Mole/mole.tscn" id="4_cqoil"]

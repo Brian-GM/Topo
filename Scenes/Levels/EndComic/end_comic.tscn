@@ -1,0 +1,108 @@
+[gd_scene load_steps=5 format=3 uid="uid://ri4cywulw723"]
+
+[ext_resource type="Script" uid="uid://dh6la7vmyhctu" path="res://Scenes/Levels/EndComic/Scripts/end_comic.gd" id="1_pa7hy"]
+[ext_resource type="Texture2D" uid="uid://cfy44mfwv628c" path="res://Assets/BrianSprites/Screens/final.png" id="2_pa7hy"]
+
+[sub_resource type="Animation" id="Animation_qll46"]
+resource_name = "play_comic"
+length = 9.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 8, 9),
+"transitions": PackedFloat32Array(1, 2, 1, 0.5),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Rect2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2, 3),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Rect3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(4, 5),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Rect4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(6, 7),
+"transitions": PackedFloat32Array(1, 0.5),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_adxwx"]
+_data = {
+&"play_comic": SubResource("Animation_qll46")
+}
+
+[node name="EndComic" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pa7hy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(960, 540)
+texture = ExtResource("2_pa7hy")
+
+[node name="Rect2" type="ColorRect" parent="."]
+texture_filter = 2
+layout_mode = 0
+offset_left = 953.0
+offset_top = 49.0
+offset_right = 1706.0
+offset_bottom = 521.0
+color = Color(0, 0, 0, 1)
+
+[node name="Rect3" type="ColorRect" parent="."]
+texture_filter = 2
+layout_mode = 0
+offset_left = 198.0
+offset_top = 561.0
+offset_right = 914.0
+offset_bottom = 1034.0
+color = Color(0, 0, 0, 1)
+
+[node name="Rect4" type="ColorRect" parent="."]
+texture_filter = 2
+layout_mode = 0
+offset_left = 952.0
+offset_top = 561.0
+offset_right = 1707.0
+offset_bottom = 1033.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+&"": SubResource("AnimationLibrary_adxwx")
+}

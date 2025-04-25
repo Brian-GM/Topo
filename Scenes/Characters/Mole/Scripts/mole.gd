@@ -85,7 +85,7 @@ func _process(_delta: float) -> void:
 		heal()
 	
 	if hole_in_range and Input.is_action_just_pressed("interact"):
-		GameManager.next_level()
+		pasar_nivel()
 	
 	if exp_in_range and Input.is_action_just_pressed("interact"):
 		exp_shop()
@@ -155,12 +155,12 @@ func heal():
 	GameManager.player_life += GameManager.MAX_PLAYER_LIFE/3
 
 
-#func pasar_nivel():
-	#get_tree().change_scene_to_file("res://Escenas/nivelcarga.tscn")
+func pasar_nivel():
+	get_tree().change_scene_to_file("res://Scenes/Levels/LoadingScene/loading_scene.tscn")
 
 
 func exp_shop():
-	get_tree().change_scene_to_file("res://Escenas/exp_shop.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Levels/Shop/shop_exp.tscn")
 
 
 func damage():

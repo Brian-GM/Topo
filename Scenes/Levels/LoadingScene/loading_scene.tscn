@@ -1,0 +1,147 @@
+[gd_scene load_steps=8 format=3 uid="uid://bryce3n81d00k"]
+
+[ext_resource type="PackedScene" uid="uid://dc1nr1qy2ph15" path="res://Scenes/Characters/MoleEx/mole_ex.tscn" id="1_2m05f"]
+[ext_resource type="PackedScene" uid="uid://k0p8qdr1o2k5" path="res://Scenes/Characters/Gold/gold.tscn" id="1_eno76"]
+[ext_resource type="Script" uid="uid://bxanfiooe1sno" path="res://Scenes/Levels/LoadingScene/Scripts/loading_scene.gd" id="1_n0tde"]
+[ext_resource type="FontFile" uid="uid://bftmjwmvbmgcm" path="res://Assets/Fonts/Magedov_Military.ttf" id="3_nd2k0"]
+[ext_resource type="Script" uid="uid://5xmxvwy0lsk7" path="res://Scripts/camera_2d_carga.gd" id="3_ndoae"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jy1n4"]
+font_size = 50
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fbhgw"]
+size = Vector2(1e+06, 100)
+
+[node name="LoadingScene" type="Node2D"]
+script = ExtResource("1_n0tde")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -2.0
+offset_top = 4.0
+offset_right = 1281.0
+offset_bottom = 12534.0
+color = Color(0.267461, 0.153153, 0.037638, 1)
+
+[node name="Golds" type="Node2D" parent="."]
+
+[node name="Gold" parent="Golds" instance=ExtResource("1_eno76")]
+position = Vector2(615, 648)
+script = null
+
+[node name="Gold2" parent="Golds" instance=ExtResource("1_eno76")]
+position = Vector2(181, 931)
+script = null
+
+[node name="Gold3" parent="Golds" instance=ExtResource("1_eno76")]
+position = Vector2(900, 1430)
+script = null
+
+[node name="Gold4" parent="Golds" instance=ExtResource("1_eno76")]
+position = Vector2(420, 1918)
+script = null
+
+[node name="Gold5" parent="Golds" instance=ExtResource("1_eno76")]
+position = Vector2(827, 2488)
+script = null
+
+[node name="Gold6" parent="Golds" instance=ExtResource("1_eno76")]
+position = Vector2(448, 3604)
+script = null
+
+[node name="Gold7" parent="Golds" instance=ExtResource("1_eno76")]
+position = Vector2(578, 3907)
+script = null
+
+[node name="Gold8" parent="Golds" instance=ExtResource("1_eno76")]
+position = Vector2(704, 5232)
+script = null
+
+[node name="Gold9" parent="Golds" instance=ExtResource("1_eno76")]
+position = Vector2(417, 5948)
+script = null
+
+[node name="Gold10" parent="Golds" instance=ExtResource("1_eno76")]
+position = Vector2(650, 6888)
+script = null
+
+[node name="Golds2" type="Node2D" parent="."]
+
+[node name="Gold" parent="Golds2" instance=ExtResource("1_eno76")]
+position = Vector2(363, 632)
+script = null
+
+[node name="Gold2" parent="Golds2" instance=ExtResource("1_eno76")]
+position = Vector2(547, 918)
+script = null
+
+[node name="Gold3" parent="Golds2" instance=ExtResource("1_eno76")]
+position = Vector2(395, 1451)
+script = null
+
+[node name="Gold4" parent="Golds2" instance=ExtResource("1_eno76")]
+position = Vector2(725, 2043)
+script = null
+
+[node name="Gold5" parent="Golds2" instance=ExtResource("1_eno76")]
+position = Vector2(280, 2488)
+script = null
+
+[node name="Gold6" parent="Golds2" instance=ExtResource("1_eno76")]
+position = Vector2(845, 3583)
+script = null
+
+[node name="Gold7" parent="Golds2" instance=ExtResource("1_eno76")]
+position = Vector2(365, 4341)
+script = null
+
+[node name="Gold8" parent="Golds2" instance=ExtResource("1_eno76")]
+position = Vector2(897, 5209)
+script = null
+
+[node name="Gold9" parent="Golds2" instance=ExtResource("1_eno76")]
+position = Vector2(233, 5966)
+script = null
+
+[node name="Gold10" parent="Golds2" instance=ExtResource("1_eno76")]
+position = Vector2(696, 6979)
+script = null
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
+position = Vector2(639, 362)
+script = ExtResource("3_ndoae")
+target = NodePath("../Topo")
+
+[node name="Control" type="CanvasLayer" parent="."]
+
+[node name="texto_oro" type="Label" parent="Control"]
+offset_left = 49.0
+offset_top = 46.0
+offset_right = 172.0
+offset_bottom = 69.0
+theme_override_fonts/font = ExtResource("3_nd2k0")
+text = "GOLD_COLLECTED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cantidad_oro" type="Label" parent="Control"]
+unique_name_in_owner = true
+offset_left = 92.0
+offset_top = 77.0
+offset_right = 132.0
+offset_bottom = 146.0
+theme_override_fonts/font = ExtResource("3_nd2k0")
+text = "0"
+label_settings = SubResource("LabelSettings_jy1n4")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Topo" parent="." instance=ExtResource("1_2m05f")]
+position = Vector2(632, 106)
+
+[node name="FinishFalling" type="Area2D" parent="."]
+position = Vector2(562, 7948)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinishFalling"]
+shape = SubResource("RectangleShape2D_fbhgw")
+
+[connection signal="body_entered" from="FinishFalling" to="." method="_on_finish_falling_body_entered"]

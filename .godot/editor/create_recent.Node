@@ -1,4 +1,7 @@
+CollisionShape2D
+Area2D
 Camera2D
+RemoteTransform2D
 Sprite2D
 GridContainer
 TextureButton
@@ -7,8 +10,5 @@ Control
 Node2D
 CheckButton
 CheckBox
-CollisionShape2D
-Area2D
 AnimationPlayer
 AnimatedSprite2D
-NavigationAgent2D

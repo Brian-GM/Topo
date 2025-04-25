@@ -1,14 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://cvcvwxox1niwn"]
+[gd_scene load_steps=4 format=3 uid="uid://dc1nr1qy2ph15"]
 
-[ext_resource type="Texture2D" uid="uid://bdcgsm773puq7" path="res://Sprites/topo_ex.png" id="1_61n4o"]
-[ext_resource type="Script" uid="uid://dk28qwsj8tgdi" path="res://Scripts/topo_ex.gd" id="1_au4rf"]
+[ext_resource type="Texture2D" uid="uid://dnslxp4ntm5m6" path="res://Assets/BrianSprites/topo_ex.png" id="1_61n4o"]
+[ext_resource type="Script" uid="uid://c7pyae1emks2x" path="res://Scenes/Characters/MoleEx/Scripts/mole_ex.gd" id="1_u7121"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gtbfk"]
 radius = 22.0
 height = 84.0
 
 [node name="Topo" type="CharacterBody2D" groups=["Topo"]]
-script = ExtResource("1_au4rf")
+script = ExtResource("1_u7121")
 
 [node name="Topo" type="Sprite2D" parent="." groups=["Topo"]]
 rotation = 1.91986

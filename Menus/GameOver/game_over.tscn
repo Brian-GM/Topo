@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://cx4p3c5ie3rfk"]
 
 [ext_resource type="Script" uid="uid://bykn2lqb5w2iw" path="res://Menus/GameOver/game_over.gd" id="1_j7jpf"]
-[ext_resource type="Texture2D" uid="uid://djrvp7ir5hym7" path="res://Assets/BrianSprites/Screens/title_screen.png" id="2_nu0ew"]
+[ext_resource type="Texture2D" uid="uid://m6hhimxre3fm" path="res://Assets/BrianSprites/Screens/perdistetonto.png" id="2_nu0ew"]
 [ext_resource type="Texture2D" uid="uid://b2kelxd6toktp" path="res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png" id="3_aptbu"]
 [ext_resource type="Texture2D" uid="uid://cwt48ujqk6udm" path="res://Assets/BrianSprites/UI/fondoboton.png" id="4_8gwml"]
 [ext_resource type="FontFile" uid="uid://bftmjwmvbmgcm" path="res://Assets/Fonts/Magedov_Military.ttf" id="8_5ngae"]
@@ -18,22 +18,6 @@ texture_margin_bottom = 50.0
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bux8h"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nhqju"]
-
-[sub_resource type="Animation" id="Animation_mil3y"]
-resource_name = "Fade_in"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Control:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 2),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
 
 [sub_resource type="Animation" id="Animation_5ngae"]
 resource_name = "fade_out"
@@ -63,26 +47,66 @@ tracks/1/keys = {
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_l28s3"]
-resource_name = "fade_out_reset_level"
+[sub_resource type="Animation" id="Animation_nu0ew"]
+resource_name = "fade_in"
+length = 2.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Control:modulate")
+tracks/0/path = NodePath("Control/CenterContainer:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(2, 0.5),
+"times": PackedFloat32Array(2, 2.5),
+"transitions": PackedFloat32Array(0.5, 2),
 "update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/MarginContainer2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2, 2.5),
+"transitions": PackedFloat32Array(0.5, 2),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control/Background/Sprite2D:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 2),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8gwml"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/Background/Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pjxba"]
 _data = {
-&"fade_in": SubResource("Animation_mil3y"),
-&"fade_out": SubResource("Animation_5ngae"),
-&"fade_out_reset_level": SubResource("Animation_l28s3")
+&"RESET": SubResource("Animation_8gwml"),
+&"fade_in": SubResource("Animation_nu0ew"),
+&"fade_out": SubResource("Animation_5ngae")
 }
 
 [node name="GameOver" type="Node2D"]
@@ -98,10 +122,12 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="Control/Background"]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(960, 540)
 texture = ExtResource("2_nu0ew")
 
 [node name="CenterContainer" type="CenterContainer" parent="Control"]
+modulate = Color(1, 1, 1, 0)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -113,6 +139,7 @@ layout_mode = 2
 theme_override_constants/v_separation = 40
 
 [node name="MenuTitle" type="Label" parent="Control/CenterContainer/MenuContainer"]
+visible = false
 layout_mode = 2
 theme_override_fonts/font = ExtResource("8_5ngae")
 theme_override_font_sizes/font_size = 60
@@ -165,6 +192,7 @@ icon_alignment = 1
 
 [node name="MarginContainer2" type="MarginContainer" parent="Control"]
 visible = false
+modulate = Color(1, 1, 1, 0)
 offset_left = 1570.0
 offset_top = 930.0
 offset_right = 1895.0

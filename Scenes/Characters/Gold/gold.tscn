@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://k0p8qdr1o2k5"]
 
-[ext_resource type="Script" uid="uid://dhecfk2kbiy4w" path="res://Scripts/oro.gd" id="1_42srs"]
+[ext_resource type="Script" uid="uid://d2gp5bx1ltah8" path="res://Scenes/Characters/Gold/Scripts/gold.gd" id="1_42srs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6g3ab"]
 size = Vector2(52, 52)

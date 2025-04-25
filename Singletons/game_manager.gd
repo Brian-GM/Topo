@@ -150,10 +150,6 @@ func reset_actual_level() -> void:
 			#AudioManager.stop("main_title_background.mp3", 4.0)
 
 
-func go_home() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Levels/House/house.tscn")
-
-
 # go to next level or finnish the game
 func next_level() -> void:
 	current_level += 1

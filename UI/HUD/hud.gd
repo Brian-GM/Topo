@@ -17,11 +17,6 @@ func _ready() -> void:
 	GameManager.change_player_life.connect(_on_life_change)
 
 
-func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("attack"):
-		GameManager.player_life -= 1
-
-
 func _on_life_change(life: int) -> void:
 	match life:
 		6:
@@ -52,3 +47,6 @@ func _on_life_change(life: int) -> void:
 			heart1.texture = load("res://Assets/BrianSprites/UI/corazonvacio.png")
 			heart2.texture = load("res://Assets/BrianSprites/UI/corazonvacio.png")
 			heart3.texture = load("res://Assets/BrianSprites/UI/corazonvacio.png")
+	
+	if life <= 0:
+		GameManager.game_over()

@@ -13,12 +13,12 @@ var button_pressed: bool = false
 
 func _enter_tree() -> void:
 	animation_player = get_node("AnimationPlayer")
-	#if !GameManager.game_first_load:
-		#animation_player.autoplay = "RESET_BLACK"
-		#animation_player.play("RESET_BLACK")
-	#else:
-		#animation_player.autoplay = "RESET_WHITE"
-		#animation_player.play("RESET_WHITE")
+	if !GameManager.game_first_load:
+		animation_player.autoplay = "RESET_BLACK"
+		animation_player.play("RESET_BLACK")
+	else:
+		animation_player.autoplay = "RESET_WHITE"
+		animation_player.play("RESET_WHITE")
 
 
 func _ready() -> void:
@@ -43,6 +43,7 @@ func _ready() -> void:
 	
 	
 	if !GameManager.game_first_load:
+		animation_player.play("fade_in")
 		GameManager.game_first_load = true
 		
 		#if !AudioManager.audio_stream_players.has("main_title.mp3"):
@@ -68,11 +69,12 @@ func _on_start_game_button_pressed() -> void:
 		
 		#AudioManager.play_music("background_dungeon.mp3", 1.0, true, 0.0, 1.0)
 		
+		animation_player.play("fade_out_all")
+		await animation_player.animation_finished
+		
 		GameManager.is_cinematic_active = false
-		GameManager.is_game_started = true
 		button_pressed = false
-		GameManager.current_level = 1
-		GameManager.go_home()
+		get_tree().change_scene_to_file("res://Scenes/Levels/StartComic/start_comic.tscn")
 
 
 func _on_options_button_pressed() -> void:

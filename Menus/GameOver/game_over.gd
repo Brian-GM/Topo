@@ -27,8 +27,8 @@ func _ready() -> void:
 	quit = get_node("Control/CenterContainer/MenuContainer/ButtonsContainer/QuitButton")
 	
 	GameManager.is_cinematic_active = true
-	#animation_player.play("fade_in")
-	#await animation_player.animation_finished
+	animation_player.play("fade_in")
+	await animation_player.animation_finished
 	GameManager.is_cinematic_active = false
 	
 	#if not AudioManager.audio_stream_players.has("main_title.mp3"):

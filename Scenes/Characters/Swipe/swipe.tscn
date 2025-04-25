@@ -74,7 +74,7 @@ animations = [{
 "speed": 20.0
 }]
 
-[node name="Zarpazo" type="Area2D"]
+[node name="Swipe" type="Area2D" groups=["weapon"]]
 script = ExtResource("1_6ky8d")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]

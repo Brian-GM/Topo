@@ -1,28 +1,28 @@
 key,en,es
-START_GAME,Start Game,Comenzar Partida
+START+AF8-GAME,Start Game,Comenzar Partida
 OPTIONS,Options,Opciones
 CONTROLS,Controls,Controles
-MENU_CONTROLS,Menu Controls,Controles de menú
-GAME_CONTROLS,Game Controls,Controles de juego
+MENU+AF8-CONTROLS,Menu Controls,Controles de men+APo-
+GAME+AF8-CONTROLS,Game Controls,Controles de juego
 MOVE,Movement (Left click),Movimiento (Clic Izquierdo)
-PAUSE_GAME,Pause game,Pausar juego
-CREDITS,Credits,Créditos
+PAUSE+AF8-GAME,Pause game,Pausar juego
+CREDITS,Credits,Cr+AOk-ditos
 QUIT,Quit,Salir
-MADE_BY,Made by SergioLoop,Hecho por SergioLoop
-CHANGE_VOLUME_CONTROL,Ajust volume (on options menu),Ajustar el volumen (en el menú de opciones)
-CHANGE_VOLUME,Ajust volume,Ajustar el volumen
-SELECT_OPTION,Select option,Seleccionar opción
-CONFIRM_OPTION,Confirm option,Confirmar opción
-LANGUAGE_GAME,Language:,Idioma:
-ENGLISH,English,Inglés
-SPANISH,Spanish,Español
-VOLUME_GAME,Volume:,Volumen:
-BACK_TO_MAIN_MENU,Main Menu,Menú Principal
-BACK,Back,Atrás
-GAME_PAUSED,Game Paused,Juego Pausado
-RESUME_GAME,Resume Game,Continuar
+MADE+AF8-BY,Made by SergioLoop,Hecho por SergioLoop
+CHANGE+AF8-VOLUME+AF8-CONTROL,Ajust volume (on options menu),Ajustar el volumen (en el men+APo- de opciones)
+CHANGE+AF8-VOLUME,Ajust volume,Ajustar el volumen
+SELECT+AF8-OPTION,Select option,Seleccionar opci+APM-n
+CONFIRM+AF8-OPTION,Confirm option,Confirmar opci+APM-n
+LANGUAGE+AF8-GAME,Language:,Idioma:
+ENGLISH,English,Ingl+AOk-s
+SPANISH,Spanish,Espa+APE-ol
+VOLUME+AF8-GAME,Volume:,Volumen:
+BACK+AF8-TO+AF8-MAIN+AF8-MENU,Main Menu,Men+APo- Principal
+BACK,Back,Atr+AOE-s
+GAME+AF8-PAUSED,Game Paused,Juego Pausado
+RESUME+AF8-GAME,Resume Game,Continuar
 CONFIRM,Confirm,Confirmar
-RESET_LEVEL,Reset level,Reiniciar Nivel
-GAME_OVER,Game Over,Has perdido
-GAME_FINISH,Thanks for playing,Gracias por jugar
-MORALEJA,A rich man and his money are soon parted...,La avaricia rompe el saco...
+RESET+AF8-LEVEL,Reset level,Reiniciar Nivel
+GAME+AF8-OVER,Game Over,Has perdido
+GAME+AF8-FINISH,Thanks for playing,Gracias por jugar
+Gold Collected,Gold Collected,Oro Recogido

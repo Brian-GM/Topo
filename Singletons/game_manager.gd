@@ -160,6 +160,17 @@ func next_level() -> void:
 		reset_player_stats()
 
 
+func finish_game() -> void:
+	reset_game_stats()
+	#GameManager.is_cinematic_active = true
+	#if get_tree().current_scene.get_node_or_null("AnimationPlayer") != null:
+		#if (get_tree().current_scene.get_node("AnimationPlayer") as AnimationPlayer).has_animation("fade_out"):
+			#(get_tree().current_scene.get_node("AnimationPlayer") as AnimationPlayer).play("fade_out")
+			#await (get_tree().current_scene.get_node("AnimationPlayer") as AnimationPlayer).animation_finished
+	#GameManager.is_cinematic_active = false
+	hud_visibility(false)
+	get_tree().change_scene_to_file("res://Scenes/Levels/EndComic/end_comic.tscn")
+
 # game over
 func game_over() -> void:
 	reset_player_stats()

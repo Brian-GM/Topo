@@ -1,5 +1,8 @@
+Timer
 CollisionShape2D
 Area2D
+CharacterBody2D
+AnimatedSprite2D
 Camera2D
 RemoteTransform2D
 Sprite2D
@@ -10,5 +13,3 @@ Control
 Node2D
 CheckButton
 CheckBox
-AnimationPlayer
-AnimatedSprite2D

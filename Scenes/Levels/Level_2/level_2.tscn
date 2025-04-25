@@ -38,6 +38,3 @@ scale = Vector2(2, 2)
 [node name="Mole" parent="." instance=ExtResource("2_2ikhg")]
 position = Vector2(690, 684)
 scale = Vector2(0.8, 0.8)
-
-[node name="Camera2D" type="Camera2D" parent="Mole"]
-zoom = Vector2(0.7, 0.7)

@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres" id="1_aqb4x"]
 [ext_resource type="PackedScene" uid="uid://dtsjd1j67bm2f" path="res://Scenes/Characters/Hole/hole.tscn" id="2_gsj8f"]
-[ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Scenes/Characters/Mole/mole.tscn" id="3_egspp"]
+[ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Scenes/Characters/Mole/Mole/Mole/mole.tscn" id="3_egspp"]
 [ext_resource type="PackedScene" uid="uid://c38c2kkgcydkx" path="res://Scenes/Characters/Bed/bed.tscn" id="4_rg0hv"]
 [ext_resource type="PackedScene" uid="uid://b2o40o1fn8g65" path="res://Escenas/experiencia.tscn" id="5_2trip"]
 [ext_resource type="PackedScene" uid="uid://cex6lsu7l7wyo" path="res://Escenas/tienda_objetos.tscn" id="6_u3uwa"]

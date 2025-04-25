@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=4 uid="uid://cwkyba4uaknlv"]
 
-[ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Escenas/topo.tscn" id="1_6kynj"]
-[ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Tileset/TilesetPrincipal.tres" id="1_dxxb4"]
-[ext_resource type="PackedScene" uid="uid://dtsjd1j67bm2f" path="res://Escenas/agujero_1.tscn" id="3_a40j7"]
-[ext_resource type="PackedScene" uid="uid://c38c2kkgcydkx" path="res://Escenas/cama.tscn" id="4_rixwx"]
+[ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Scenes/Characters/Mole/Mole/Mole/mole.tscn" id="1_6kynj"]
+[ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres" id="1_dxxb4"]
+[ext_resource type="PackedScene" uid="uid://dtsjd1j67bm2f" path="res://Scenes/Characters/Hole/hole.tscn" id="3_a40j7"]
+[ext_resource type="PackedScene" uid="uid://c38c2kkgcydkx" path="res://Scenes/Characters/Bed/bed.tscn" id="4_rixwx"]
 
 [node name="Casa" type="Node2D"]
 

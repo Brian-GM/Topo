@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=4 uid="uid://dpm11r0glqry"]
 
-[ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Tileset/TilesetPrincipal.tres" id="1_hsl4x"]
-[ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Escenas/topo.tscn" id="2_oxtor"]
+[ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres" id="1_hsl4x"]
+[ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Scenes/Characters/Mole/Mole/Mole/mole.tscn" id="2_oxtor"]
 [ext_resource type="PackedScene" uid="uid://b2o40o1fn8g65" path="res://Escenas/experiencia.tscn" id="3_oxtor"]
 
 [node name="Cueva1" type="Node2D"]

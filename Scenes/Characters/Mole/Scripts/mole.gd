@@ -21,7 +21,7 @@ var animated_sprite: AnimatedSprite2D
 
 
 func _ready() -> void:
-	animated_sprite = get_node("AnimatedSprite2D")
+	animated_sprite = get_node("MoleSprite")
 	animated_sprite.play("idle")
 	
 	projectile_scene = preload("res://Scenes/Characters/Projectile/projectile.tscn")
@@ -89,6 +89,9 @@ func _process(_delta: float) -> void:
 	
 	if exp_in_range and Input.is_action_just_pressed("interact"):
 		exp_shop()
+		
+	if store_in_range and Input.is_action_just_pressed("interact"):
+		store()
 
 
 # Función para disparar el proyectil
@@ -163,13 +166,15 @@ func exp_shop():
 	get_tree().change_scene_to_file("res://Scenes/Levels/Shop/shop_exp.tscn")
 
 
-func damage():
-	print("h")
-	GameManager.player_life -= 1
+func store():
+	get_tree().change_scene_to_file("res://Scenes/Levels/Shop/shop_exp.tscn")
+
+
+func damage(total_damage: int = 1):
+	GameManager.player_life -= total_damage
 	if GameManager.player_life < 0:
 		die()
 
 
 func die():
-	print("muere")
 	GameManager.game_over()

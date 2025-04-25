@@ -1,10 +1,13 @@
+res://Assets/BrianSprites/Enemies/Miner
+res://Assets/BrianSprites/Enemies
+res://Assets/BrianSprites/Enemies/Bat
+res://Assets/BrianSprites/Enemies/Crab
 res://Scenes/Boses/FinalBoss/Script
 res://Assets/BrianSprites/Bosses/Dead
 res://Scenes/Characters/Gold/Scripts
 res://Scenes/Characters/Gold
 res://Scenes/Characters/MoleEx
 res://Assets/BrianSprites
-res://Scenes/Levels/Level_5
 res://Scenes/Levels/Level_3
 res://Assets/BrianSprites/Player
 res://Assets/BrianSprites/UI
@@ -17,6 +20,3 @@ res://Scenes/Characters/Projectile/Scripts
 D:/CursoEspecializacionVideojuegosRealidadVirtual/PRlA/Sesion17/actividad3/DungeonTheftWindows
 D:/CursoEspecializacionVideojuegosRealidadVirtual/PRlA/Sesion17/actividad3/DungeonTheftWeb
 res://Assets/Custom
-res://Assets/Fonts
-res://Assets/MyAssets
-res://Singletons

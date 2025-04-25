@@ -1,7 +1,7 @@
+CharacterBody2D
 Timer
 CollisionShape2D
 Area2D
-CharacterBody2D
 AnimatedSprite2D
 Camera2D
 RemoteTransform2D
@@ -12,4 +12,3 @@ CanvasLayer
 Control
 Node2D
 CheckButton
-CheckBox

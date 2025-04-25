@@ -1,6 +1,6 @@
 [gd_scene load_steps=39 format=3 uid="uid://47qc7763yvds"]
 
-[ext_resource type="Script" uid="uid://ciw06pbiwsr1k" path="res://Scenes/Characters/Barrel/Scripts/barrel.gd" id="1_fu2gq"]
+[ext_resource type="Script" uid="uid://ciw06pbiwsr1k" path="res://Scenes/Enemies/Barrel/Scripts/barrel.gd" id="1_fu2gq"]
 [ext_resource type="Texture2D" uid="uid://db52j3jt73wwb" path="res://Assets/BrianSprites/Enemies/Barrel/explosion.png" id="2_8o03u"]
 [ext_resource type="Texture2D" uid="uid://br1quttnjky1p" path="res://Assets/BrianSprites/Enemies/Barrel/barrel_activate.png" id="2_c8rxt"]
 [ext_resource type="Texture2D" uid="uid://dbesbq3m08w50" path="res://Assets/BrianSprites/Enemies/Barrel/barrel_walk.png" id="4_tvqn3"]
@@ -243,7 +243,7 @@ animations = [{
 radius = 32.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tvqn3"]
-radius = 50.0
+radius = 327.124
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_17ch8"]
 radius = 960.0

@@ -1,11 +1,10 @@
 extends CharacterBody2D
-const Barrel = preload("res://Scenes/Characters/Barrel/barrel.tscn")
+const Barrel = preload("res://Scenes/Enemies/Barrel/barrel.tscn")
+const Cangrejo = preload("res://Scenes/Enemies/Cangrejo/Cangrejo.tscn")
+const Murciegalo = preload("res://Scenes/Enemies/Murciegalo/Murciegalo.tscn")
+const Minero = preload("res://Scenes/Enemies/Miner/miner.tscn")
 
-#const GOBLIN_TORCH = preload("res://Scenes/Characters/GoblinTorch/goblin_torch.tscn")
-#
-#const PIMPOLLO = preload("res://Scenes/Characters/Pimpollo/pimpollo.tscn")
-
-var enemies = [Barrel]
+var enemies = [Barrel,Cangrejo,Murciegalo,Minero]
 
 var animated_sprite: AnimatedSprite2D
 var collision_shape: CollisionShape2D
@@ -42,7 +41,6 @@ func _ready():
 				
 	collision_shape = get_node("DetectPlayer/CollisionShape2D")
 	collision_shape.shape.set("radius", (get_viewport_rect().size.x / 2))	
-	animated_sprite.play("walk")
 	
 
 func _process(_delta):
@@ -75,6 +73,8 @@ func _physics_process(_delta):
 	
 	if is_moving:
 		animated_sprite.flip_h = velocity.x < 0
+		atack_area.scale.x = -1 if animated_sprite.flip_h else 1
+
 	
 	if navigation_agent.is_navigation_finished():
 		velocity = Vector2.ZERO
@@ -100,11 +100,14 @@ func summon():
 	var random_position_spawn_1 = (background_layer.map_to_local(used_cells[0]))
 	var random_position_spawn_2 = (background_layer.map_to_local(used_cells[1]))
 	var random_position_spawn_3 = (background_layer.map_to_local(used_cells[2]))
+	var random_position_spawn_4 = (background_layer.map_to_local(used_cells[3]))
+
 	var random_enemy_1: Node2D
 	var random_enemy_2: Node2D
 	var random_enemy_3: Node2D
-	
-	var random_position_spawn = [random_position_spawn_1, random_position_spawn_2, random_position_spawn_3]
+	var random_enemy_4: Node2D
+
+	var random_position_spawn = [random_position_spawn_1, random_position_spawn_2, random_position_spawn_3,random_position_spawn_4]
 	
 	enemies.shuffle()
 	
@@ -118,11 +121,20 @@ func summon():
 	
 	random_enemy_3 = enemies[0].instantiate()
 	
+	enemies.shuffle()
+	
+	random_enemy_4 = enemies[0].instantiate()
+	
 	random_enemy_1.position = random_position_spawn[0]
 	random_enemy_2.position = random_position_spawn[1]
 	random_enemy_3.position = random_position_spawn[2]
-	
+	random_enemy_3.position = random_position_spawn[3]
+
 	get_parent().add_child(random_enemy_1)
+	get_parent().add_child(random_enemy_2)
+	get_parent().add_child(random_enemy_3)
+	get_parent().add_child(random_enemy_4)
+
 	#random_enemy_1.connect("has_die", _on_enemy_die)
 	#random_enemy_2.connect("has_die", _on_enemy_die)
 	#random_enemy_3.connect("has_die", _on_enemy_die)
@@ -141,13 +153,7 @@ func summon():
 	#enemies_has_summon = 3
 	
 
-#func _on_animated_sprite_finished() -> void:
-	#if animated_sprite.animation == "death":
-		#get_tree().change_scene_to_file("")
-		#if bodies and bodies.size() > 0:
-			#for body in bodies:
-				#if body.is_in_group("player"):
-					#player.call_deferred("damage")
+
 
 
 func atack_melee():
@@ -169,7 +175,7 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 		can_moving = true
 		is_atack = false
 		animated_sprite.play("walk")
-		$Atack2_Cooldown.start(10)
+		$Atack2_Cooldown.start(15)
 	elif animated_sprite.animation == "atack1":
 		print("Ataque 1 terminado")
 		can_moving = true

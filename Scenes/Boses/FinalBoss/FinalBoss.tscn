@@ -244,12 +244,13 @@ radius = 960.0
 radius = 35.2509
 
 [node name="FinalBoss" type="CharacterBody2D" groups=["enemy"]]
-scale = Vector2(4, 4)
+scale = Vector2(5.5, 5.5)
 script = ExtResource("1_exqfj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_atcgy")
-animation = &"atack1"
+animation = &"walk"
+autoplay = "walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 17)
@@ -280,7 +281,5 @@ wait_time = 2.0
 one_shot = true
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="AtackArea" to="." method="_on_atack_area_body_entered"]
-[connection signal="body_exited" from="AtackArea" to="." method="_on_atack_area_body_exited"]
 [connection signal="timeout" from="Atack2_Cooldown" to="." method="_on_atack_2_cooldown_timeout"]
 [connection signal="timeout" from="Atack1_Cooldown" to="." method="_on_atack_1_cooldown_timeout"]

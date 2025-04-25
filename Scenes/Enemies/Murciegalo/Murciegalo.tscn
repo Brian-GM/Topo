@@ -1,0 +1,137 @@
+[gd_scene load_steps=17 format=3 uid="uid://bp2kx3srj2cyh"]
+
+[ext_resource type="Script" uid="uid://c2lf7honsrjtx" path="res://Scenes/Enemies/Murciegalo/Script/muerciegalo.gd" id="1_3kfy1"]
+[ext_resource type="Texture2D" uid="uid://dguepkhvsid6a" path="res://Assets/BrianSprites/Enemies/Bat/bat_atack.png" id="2_3kfy1"]
+[ext_resource type="Texture2D" uid="uid://bnid0syhlfaj2" path="res://Assets/BrianSprites/Enemies/humo_muerte.png" id="2_fh2b1"]
+[ext_resource type="Texture2D" uid="uid://dceciaiq2f58a" path="res://Assets/BrianSprites/Enemies/Bat/bat_fly.png" id="3_fh2b1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a36ar"]
+atlas = ExtResource("2_3kfy1")
+region = Rect2(0, 0, 196, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcucc"]
+atlas = ExtResource("2_3kfy1")
+region = Rect2(196, 0, 196, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3kfy1"]
+atlas = ExtResource("2_fh2b1")
+region = Rect2(84, 0, 165, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhm8h"]
+atlas = ExtResource("2_fh2b1")
+region = Rect2(249, 0, 165, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8lhuj"]
+atlas = ExtResource("2_fh2b1")
+region = Rect2(414, 0, 165, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jniok"]
+atlas = ExtResource("2_fh2b1")
+region = Rect2(579, 0, 165, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tws74"]
+atlas = ExtResource("2_fh2b1")
+region = Rect2(744, 0, 165, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45y4w"]
+atlas = ExtResource("3_fh2b1")
+region = Rect2(0, 0, 190, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wi52s"]
+atlas = ExtResource("3_fh2b1")
+region = Rect2(190, 0, 190, 300)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jhm8h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a36ar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcucc")
+}],
+"loop": false,
+"name": &"atack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3kfy1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhm8h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8lhuj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jniok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tws74")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"death",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_45y4w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wi52s")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8lhuj"]
+radius = 36.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jniok"]
+radius = 479.542
+
+[node name="Murciegalo" type="CharacterBody2D" groups=["enemy"]]
+scale = Vector2(0.7, 0.7)
+script = ExtResource("1_3kfy1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jhm8h")
+animation = &"atack"
+autoplay = "walk"
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("CircleShape2D_8lhuj")
+
+[node name="DetectPlayer" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectPlayer"]
+shape = SubResource("CircleShape2D_jniok")
+debug_color = Color(0, 0.562366, 0.877689, 0.42)
+
+[node name="AtackArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AtackArea"]
+position = Vector2(67.1429, 1.42857)
+scale = Vector2(0.0816223, 0.0592567)
+shape = SubResource("CircleShape2D_jniok")
+debug_color = Color(0, 0.562366, 0.877689, 0.42)
+
+[node name="Atack_Cooldown" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="DetectPlayer" to="." method="_on_detect_player_body_entered"]
+[connection signal="timeout" from="Atack_Cooldown" to="." method="_on_atack_cooldown_timeout"]

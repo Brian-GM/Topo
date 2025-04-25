@@ -65,6 +65,7 @@ func get_damaged() -> void:
 	animated_sprite.play("explote")
 
 
+
 func _on_detect_player_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		player = body
@@ -79,10 +80,10 @@ func _on_detect_explosion_body_entered(body: Node2D) -> void:
 
 
 func _on_animated_sprite_finished() -> void:
-	print(animated_sprite.animation)
 	if animated_sprite.animation == "explote":
 		animated_sprite.play("death")
-	
+		animated_sprite.scale = Vector2(5,5)
+
 	if animated_sprite.animation == "death" and is_exploting:
 		is_exploting = false
 		can_moving = false

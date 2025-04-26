@@ -2,19 +2,23 @@
 
 [ext_resource type="Script" uid="uid://d2gp5bx1ltah8" path="res://Scenes/Characters/Gold/Scripts/gold.gd" id="1_42srs"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6g3ab"]
-size = Vector2(52, 52)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s4xkt"]
+size = Vector2(46, 45)
 
 [node name="Oro" type="Area2D" groups=["Oro"]]
+process_mode = 3
 script = ExtResource("1_42srs")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Oro"]]
-position = Vector2(20, 20)
-shape = SubResource("RectangleShape2D_6g3ab")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_s4xkt")
+debug_color = Color(2.74345e-06, 0.63429, 0.430745, 0.42)
 
-[node name="bloque_oro" type="ColorRect" parent="." groups=["Oro"]]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="bloque_oro" type="ColorRect" parent="."]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
 color = Color(0.818575, 0.654331, 0, 1)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

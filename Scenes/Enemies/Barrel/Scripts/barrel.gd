@@ -82,9 +82,10 @@ func _on_detect_explosion_body_entered(body: Node2D) -> void:
 func _on_animated_sprite_finished() -> void:
 	if animated_sprite.animation == "explote":
 		animated_sprite.play("death")
-		animated_sprite.scale = Vector2(5,5)
+		#animated_sprite.scale = Vector2(5,5)
 
 	if animated_sprite.animation == "death" and is_exploting:
+		animated_sprite.scale = Vector2(5,5)
 		is_exploting = false
 		can_moving = false
 		var bodies = detect_explosion.get_overlapping_bodies()

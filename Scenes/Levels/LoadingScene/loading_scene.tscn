@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://bryce3n81d00k"]
+[gd_scene load_steps=7 format=3 uid="uid://bryce3n81d00k"]
 
 [ext_resource type="PackedScene" uid="uid://dc1nr1qy2ph15" path="res://Scenes/Characters/MoleEx/mole_ex.tscn" id="1_2m05f"]
 [ext_resource type="PackedScene" uid="uid://k0p8qdr1o2k5" path="res://Scenes/Characters/Gold/gold.tscn" id="1_eno76"]
 [ext_resource type="Script" uid="uid://bxanfiooe1sno" path="res://Scenes/Levels/LoadingScene/Scripts/loading_scene.gd" id="1_n0tde"]
 [ext_resource type="FontFile" uid="uid://bftmjwmvbmgcm" path="res://Assets/Fonts/Magedov_Military.ttf" id="3_nd2k0"]
-[ext_resource type="Script" uid="uid://5xmxvwy0lsk7" path="res://Scripts/camera_2d_carga.gd" id="3_ndoae"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jy1n4"]
 font_size = 50
@@ -24,99 +23,74 @@ color = Color(0.267461, 0.153153, 0.037638, 1)
 
 [node name="Golds" type="Node2D" parent="."]
 
-[node name="Gold" parent="Golds" instance=ExtResource("1_eno76")]
+[node name="Gold" parent="Golds" groups=["coin"] instance=ExtResource("1_eno76")]
 position = Vector2(615, 648)
-script = null
 
-[node name="Gold2" parent="Golds" instance=ExtResource("1_eno76")]
-position = Vector2(181, 931)
-script = null
+[node name="Gold2" parent="Golds" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(182, 929)
 
-[node name="Gold3" parent="Golds" instance=ExtResource("1_eno76")]
-position = Vector2(900, 1430)
-script = null
+[node name="Gold3" parent="Golds" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(900, 1426)
 
-[node name="Gold4" parent="Golds" instance=ExtResource("1_eno76")]
-position = Vector2(420, 1918)
-script = null
+[node name="Gold4" parent="Golds" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(418, 1916)
 
-[node name="Gold5" parent="Golds" instance=ExtResource("1_eno76")]
-position = Vector2(827, 2488)
-script = null
+[node name="Gold5" parent="Golds" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(828, 2489)
 
-[node name="Gold6" parent="Golds" instance=ExtResource("1_eno76")]
-position = Vector2(448, 3604)
-script = null
+[node name="Gold6" parent="Golds" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(444, 3609)
 
-[node name="Gold7" parent="Golds" instance=ExtResource("1_eno76")]
-position = Vector2(578, 3907)
-script = null
+[node name="Gold7" parent="Golds" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(581, 3901)
 
-[node name="Gold8" parent="Golds" instance=ExtResource("1_eno76")]
-position = Vector2(704, 5232)
-script = null
+[node name="Gold8" parent="Golds" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(703, 5230)
 
-[node name="Gold9" parent="Golds" instance=ExtResource("1_eno76")]
-position = Vector2(417, 5948)
-script = null
+[node name="Gold9" parent="Golds" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(414, 5948)
 
-[node name="Gold10" parent="Golds" instance=ExtResource("1_eno76")]
-position = Vector2(650, 6888)
-script = null
+[node name="Gold10" parent="Golds" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(649, 6890)
 
 [node name="Golds2" type="Node2D" parent="."]
 
-[node name="Gold" parent="Golds2" instance=ExtResource("1_eno76")]
-position = Vector2(363, 632)
-script = null
+[node name="Gold11" parent="Golds2" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(361, 638)
 
-[node name="Gold2" parent="Golds2" instance=ExtResource("1_eno76")]
-position = Vector2(547, 918)
-script = null
+[node name="Gold12" parent="Golds2" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(548, 921)
 
-[node name="Gold3" parent="Golds2" instance=ExtResource("1_eno76")]
-position = Vector2(395, 1451)
-script = null
+[node name="Gold13" parent="Golds2" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(392, 1450)
 
-[node name="Gold4" parent="Golds2" instance=ExtResource("1_eno76")]
-position = Vector2(725, 2043)
-script = null
+[node name="Gold14" parent="Golds2" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(724, 2047)
 
-[node name="Gold5" parent="Golds2" instance=ExtResource("1_eno76")]
-position = Vector2(280, 2488)
-script = null
+[node name="Gold15" parent="Golds2" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(278, 2483)
 
-[node name="Gold6" parent="Golds2" instance=ExtResource("1_eno76")]
-position = Vector2(845, 3583)
-script = null
+[node name="Gold16" parent="Golds2" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(841, 3578)
 
-[node name="Gold7" parent="Golds2" instance=ExtResource("1_eno76")]
-position = Vector2(365, 4341)
-script = null
+[node name="Gold17" parent="Golds2" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(361, 4338)
 
-[node name="Gold8" parent="Golds2" instance=ExtResource("1_eno76")]
-position = Vector2(897, 5209)
-script = null
+[node name="Gold18" parent="Golds2" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(904, 5204)
 
-[node name="Gold9" parent="Golds2" instance=ExtResource("1_eno76")]
-position = Vector2(233, 5966)
-script = null
+[node name="Gold19" parent="Golds2" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(236, 5960)
 
-[node name="Gold10" parent="Golds2" instance=ExtResource("1_eno76")]
-position = Vector2(696, 6979)
-script = null
-
-[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
-position = Vector2(639, 362)
-script = ExtResource("3_ndoae")
-target = NodePath("../Topo")
+[node name="Gold20" parent="Golds2" groups=["coin"] instance=ExtResource("1_eno76")]
+position = Vector2(692, 6955)
 
 [node name="Control" type="CanvasLayer" parent="."]
 
 [node name="texto_oro" type="Label" parent="Control"]
 offset_left = 49.0
 offset_top = 46.0
-offset_right = 172.0
+offset_right = 183.0
 offset_bottom = 69.0
 theme_override_fonts/font = ExtResource("3_nd2k0")
 text = "GOLD_COLLECTED"
@@ -125,6 +99,19 @@ vertical_alignment = 1
 
 [node name="cantidad_oro" type="Label" parent="Control"]
 unique_name_in_owner = true
+offset_left = 92.0
+offset_top = 77.0
+offset_right = 132.0
+offset_bottom = 146.0
+theme_override_fonts/font = ExtResource("3_nd2k0")
+text = "0"
+label_settings = SubResource("LabelSettings_jy1n4")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="gold_collected" type="Label" parent="Control"]
+unique_name_in_owner = true
+visible = false
 offset_left = 92.0
 offset_top = 77.0
 offset_right = 132.0

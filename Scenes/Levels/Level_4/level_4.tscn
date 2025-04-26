@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://ffe0qyyss0ry"]
+[gd_scene load_steps=10 format=4 uid="uid://c0h86ked5r7c1"]
 
 [ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres" id="1_aqb4x"]
 [ext_resource type="PackedScene" uid="uid://dtsjd1j67bm2f" path="res://Scenes/Characters/Hole/hole.tscn" id="2_gsj8f"]
@@ -41,62 +41,64 @@ scale = Vector2(2, 2)
 position = Vector2(584, 307)
 scale = Vector2(2, 2)
 
-[node name="Cangrejo" parent="." instance=ExtResource("6_lmpef")]
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Cangrejo" parent="Enemies" instance=ExtResource("6_lmpef")]
 position = Vector2(2115, 73)
 
-[node name="Cangrejo2" parent="." instance=ExtResource("6_lmpef")]
+[node name="Cangrejo2" parent="Enemies" instance=ExtResource("6_lmpef")]
 position = Vector2(-801, 666)
 
-[node name="Cangrejo3" parent="." instance=ExtResource("6_lmpef")]
+[node name="Cangrejo3" parent="Enemies" instance=ExtResource("6_lmpef")]
 position = Vector2(-606, -1501)
 
-[node name="Cangrejo4" parent="." instance=ExtResource("6_lmpef")]
+[node name="Cangrejo4" parent="Enemies" instance=ExtResource("6_lmpef")]
 position = Vector2(2504, -1371)
 
-[node name="Cangrejo5" parent="." instance=ExtResource("6_lmpef")]
+[node name="Cangrejo5" parent="Enemies" instance=ExtResource("6_lmpef")]
 position = Vector2(5148, 1522)
 
-[node name="Cangrejo7" parent="." instance=ExtResource("6_lmpef")]
+[node name="Cangrejo7" parent="Enemies" instance=ExtResource("6_lmpef")]
 position = Vector2(1984, 2259)
 
-[node name="Cangrejo8" parent="." instance=ExtResource("6_lmpef")]
+[node name="Cangrejo8" parent="Enemies" instance=ExtResource("6_lmpef")]
 position = Vector2(1984, 2259)
 
-[node name="Barrel" parent="." instance=ExtResource("7_cxtmm")]
+[node name="Barrel" parent="Enemies" instance=ExtResource("7_cxtmm")]
 position = Vector2(5125, -953)
 
-[node name="Barrel2" parent="." instance=ExtResource("7_cxtmm")]
+[node name="Barrel2" parent="Enemies" instance=ExtResource("7_cxtmm")]
 position = Vector2(3630, 802)
 
-[node name="Murciegalo" parent="." instance=ExtResource("8_v4enp")]
+[node name="Murciegalo" parent="Enemies" instance=ExtResource("8_v4enp")]
 position = Vector2(3728, 3151)
 
-[node name="Murciegalo2" parent="." instance=ExtResource("8_v4enp")]
+[node name="Murciegalo2" parent="Enemies" instance=ExtResource("8_v4enp")]
 position = Vector2(-1259, 1456)
 
-[node name="Murciegalo3" parent="." instance=ExtResource("8_v4enp")]
+[node name="Murciegalo3" parent="Enemies" instance=ExtResource("8_v4enp")]
 position = Vector2(847, -2404)
 
-[node name="Murciegalo4" parent="." instance=ExtResource("8_v4enp")]
+[node name="Murciegalo4" parent="Enemies" instance=ExtResource("8_v4enp")]
 position = Vector2(910, -982)
 
-[node name="Barrel3" parent="." instance=ExtResource("7_cxtmm")]
+[node name="Barrel3" parent="Enemies" instance=ExtResource("7_cxtmm")]
 position = Vector2(-173, 1989)
 
-[node name="Mole" parent="." instance=ExtResource("3_egspp")]
-position = Vector2(1121, 703)
-
-[node name="Miner" parent="." instance=ExtResource("9_cxtmm")]
+[node name="Miner" parent="Enemies" instance=ExtResource("9_cxtmm")]
 position = Vector2(3273, 1962)
 
-[node name="Miner2" parent="." instance=ExtResource("9_cxtmm")]
+[node name="Miner2" parent="Enemies" instance=ExtResource("9_cxtmm")]
 position = Vector2(-723, -537)
 
-[node name="Miner3" parent="." instance=ExtResource("9_cxtmm")]
+[node name="Miner3" parent="Enemies" instance=ExtResource("9_cxtmm")]
 position = Vector2(4760, 2940)
 
-[node name="Miner4" parent="." instance=ExtResource("9_cxtmm")]
+[node name="Miner4" parent="Enemies" instance=ExtResource("9_cxtmm")]
 position = Vector2(5690, 332)
 
-[node name="Miner5" parent="." instance=ExtResource("9_cxtmm")]
+[node name="Miner5" parent="Enemies" instance=ExtResource("9_cxtmm")]
 position = Vector2(-223, -2480)
+
+[node name="Mole" parent="." instance=ExtResource("3_egspp")]
+position = Vector2(1063, 718)

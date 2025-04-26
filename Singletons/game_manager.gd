@@ -34,7 +34,13 @@ var player_cooldown_claw: float = 0.5
 
 var recovery: float = 1
 
-var coins: int = 0
+signal change_coins(coin: int)
+
+var coins: int = 0:
+	set(new_value):
+		coins = new_value
+		change_coins.emit(new_value)
+
 var xp: int = 0
 # ====== player ======
 
@@ -115,10 +121,11 @@ func reset_player_stats() -> void:
 
 # function to pause the game
 func pause_game(mode: bool) -> void:
+	print(mode)
 	GameManager.is_game_started = not mode
 	pause_game_menu_visibility(mode)
 	# get focus on the button
-	(paused_menu_node.get_node("CanvasLayer/Control/CenterContainer/MenuContainer/ButtonsContainer/ResumeGame") as Button).grab_focus()
+	#(paused_menu_node.get_node("CanvasLayer/Control/CenterContainer/MenuContainer/ButtonsContainer/ResumeGame") as Button).grab_focus()
 	get_tree().paused = mode
 
 
@@ -156,8 +163,8 @@ func next_level() -> void:
 	if get_tree().change_scene_to_file("res://Scenes/Levels/Level_" + str(current_level) + "/level_" + str(current_level) + ".tscn") != OK:
 		reset_game_stats()
 		get_tree().change_scene_to_file("res://Menus/FinishGame/finish_game.tscn")
-	else:
-		reset_player_stats()
+	#else:dd
+		#reset_player_stats()
 
 
 func finish_game() -> void:

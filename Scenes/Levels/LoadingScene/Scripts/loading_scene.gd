@@ -5,6 +5,7 @@ var golds_2: Node2D
 
 
 func _ready() -> void:
+	GameManager.hud_visibility(false)
 	golds_1 = get_node("Golds")
 	golds_2 = get_node("Golds2")
 	
@@ -15,4 +16,5 @@ func _ready() -> void:
 
 
 func _on_finish_falling_body_entered(body: Node2D) -> void:
+	GameManager.hud_visibility(true)
 	GameManager.next_level()

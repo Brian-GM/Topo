@@ -1,7 +1,57 @@
-[gd_scene load_steps=4 format=3 uid="uid://dc1nr1qy2ph15"]
+[gd_scene load_steps=11 format=3 uid="uid://dc1nr1qy2ph15"]
 
-[ext_resource type="Texture2D" uid="uid://dnslxp4ntm5m6" path="res://Assets/BrianSprites/topo_ex.png" id="1_61n4o"]
 [ext_resource type="Script" uid="uid://c7pyae1emks2x" path="res://Scenes/Characters/MoleEx/Scripts/mole_ex.gd" id="1_u7121"]
+[ext_resource type="Texture2D" uid="uid://3vse8mioj7sw" path="res://Assets/BrianSprites/Player/Topominijuego.png" id="2_u7121"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4esy"]
+atlas = ExtResource("2_u7121")
+region = Rect2(0, 0, 300, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6cwt"]
+atlas = ExtResource("2_u7121")
+region = Rect2(300, 0, 300, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wae50"]
+atlas = ExtResource("2_u7121")
+region = Rect2(600, 0, 300, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8mrf"]
+atlas = ExtResource("2_u7121")
+region = Rect2(900, 0, 300, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04yys"]
+atlas = ExtResource("2_u7121")
+region = Rect2(1200, 0, 300, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1mxt"]
+atlas = ExtResource("2_u7121")
+region = Rect2(1500, 0, 300, 250)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wn6le"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4esy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6cwt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wae50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8mrf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_04yys")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r1mxt")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gtbfk"]
 radius = 22.0
@@ -10,11 +60,21 @@ height = 84.0
 [node name="Topo" type="CharacterBody2D" groups=["Topo"]]
 script = ExtResource("1_u7121")
 
-[node name="Topo" type="Sprite2D" parent="." groups=["Topo"]]
-rotation = 1.91986
-scale = Vector2(-0.1, 0.1)
-texture = ExtResource("1_61n4o")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["Topo"]]
+rotation = 3.14159
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_wn6le")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.488863
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Topo"]]
-position = Vector2(1, 0)
 shape = SubResource("CapsuleShape2D_gtbfk")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+remote_path = NodePath("../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)
+
+[connection signal="child_entered_tree" from="CollisionShape2D" to="." method="_on_collision_shape_2d_child_entered_tree"]

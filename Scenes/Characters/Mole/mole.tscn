@@ -619,6 +619,7 @@ animations = [{
 size = Vector2(71, 150)
 
 [node name="Mole" type="CharacterBody2D" groups=["mole", "player"]]
+scale = Vector2(0.8, 0.8)
 script = ExtResource("1_vmulf")
 
 [node name="MoleSprite" type="AnimatedSprite2D" parent="."]
@@ -635,5 +636,5 @@ shape = SubResource("RectangleShape2D_vmulf")
 remote_path = NodePath("../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.25, 1.25)
+scale = Vector2(1, 1)
 position_smoothing_enabled = true

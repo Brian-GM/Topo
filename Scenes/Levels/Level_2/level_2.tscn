@@ -35,34 +35,35 @@ scale = Vector2(2, 2)
 
 [node name="Mole" parent="." instance=ExtResource("2_2ikhg")]
 position = Vector2(690, 684)
-scale = Vector2(0.8, 0.8)
 
-[node name="Murciegalo" parent="." instance=ExtResource("6_lglyl")]
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Murciegalo" parent="Enemies" instance=ExtResource("6_lglyl")]
 position = Vector2(-2193, 2232)
 
-[node name="Barrel2" parent="." instance=ExtResource("6_am72n")]
+[node name="Barrel2" parent="Enemies" instance=ExtResource("6_am72n")]
 position = Vector2(-2601, 2877)
 
-[node name="Barrel3" parent="." instance=ExtResource("6_am72n")]
+[node name="Barrel3" parent="Enemies" instance=ExtResource("6_am72n")]
 position = Vector2(1371, 3528)
 
-[node name="Barrel4" parent="." instance=ExtResource("6_am72n")]
+[node name="Barrel4" parent="Enemies" instance=ExtResource("6_am72n")]
 position = Vector2(-2111, 1530)
 
-[node name="Barrel6" parent="." instance=ExtResource("6_am72n")]
+[node name="Barrel6" parent="Enemies" instance=ExtResource("6_am72n")]
 position = Vector2(-53, 3080)
 
-[node name="Murciegalo2" parent="." instance=ExtResource("6_lglyl")]
+[node name="Murciegalo2" parent="Enemies" instance=ExtResource("6_lglyl")]
 position = Vector2(-1233, 1993)
 
-[node name="Murciegalo4" parent="." instance=ExtResource("6_lglyl")]
+[node name="Murciegalo4" parent="Enemies" instance=ExtResource("6_lglyl")]
 position = Vector2(-353, 1196)
 
-[node name="Murciegalo5" parent="." instance=ExtResource("6_lglyl")]
+[node name="Murciegalo5" parent="Enemies" instance=ExtResource("6_lglyl")]
 position = Vector2(-1345, 3044)
 
-[node name="Murciegalo3" parent="." instance=ExtResource("6_lglyl")]
+[node name="Murciegalo3" parent="Enemies" instance=ExtResource("6_lglyl")]
 position = Vector2(652, 3179)
 
-[node name="Barrel7" parent="." instance=ExtResource("6_am72n")]
+[node name="Barrel7" parent="Enemies" instance=ExtResource("6_am72n")]
 position = Vector2(2267, 3171)

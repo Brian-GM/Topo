@@ -1,3 +1,4 @@
+Node2D
 CharacterBody2D
 Timer
 CollisionShape2D
@@ -10,5 +11,4 @@ GridContainer
 TextureButton
 CanvasLayer
 Control
-Node2D
 CheckButton

@@ -74,6 +74,8 @@ func _on_start_game_button_pressed() -> void:
 		
 		GameManager.is_cinematic_active = false
 		button_pressed = false
+		GameManager.is_game_started = true
+		GameManager.hud_visibility(false)
 		get_tree().change_scene_to_file("res://Scenes/Levels/StartComic/start_comic.tscn")
 
 

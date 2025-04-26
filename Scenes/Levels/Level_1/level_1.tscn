@@ -32,5 +32,4 @@ position = Vector2(1445, 743)
 position = Vector2(1763, 342)
 
 [node name="Mole" parent="." instance=ExtResource("5_s4dvm")]
-position = Vector2(657, 728)
-scale = Vector2(0.8, 0.8)
+position = Vector2(657, 726)

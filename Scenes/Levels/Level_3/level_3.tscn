@@ -34,84 +34,86 @@ scale = Vector2(0.8, 0.8)
 [node name="Agujero1" parent="." instance=ExtResource("3_mfsf3")]
 position = Vector2(8497, -3704)
 
-[node name="Murciegalo2" parent="." instance=ExtResource("4_0k8vw")]
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Murciegalo2" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(1403, 330)
 scale = Vector2(0.49, 0.49)
 
-[node name="Murciegalo3" parent="." instance=ExtResource("4_0k8vw")]
+[node name="Murciegalo3" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(2738, -2299)
 scale = Vector2(0.49, 0.49)
 
-[node name="Murciegalo7" parent="." instance=ExtResource("4_0k8vw")]
+[node name="Murciegalo7" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(3407, -2162)
 scale = Vector2(0.49, 0.49)
 
-[node name="Murciegalo8" parent="." instance=ExtResource("4_0k8vw")]
+[node name="Murciegalo8" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(3509, -1438)
 scale = Vector2(0.49, 0.49)
 
-[node name="Murciegalo9" parent="." instance=ExtResource("4_0k8vw")]
+[node name="Murciegalo9" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(2601, -1332)
 scale = Vector2(0.49, 0.49)
 
-[node name="Murciegalo10" parent="." instance=ExtResource("4_0k8vw")]
+[node name="Murciegalo10" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(5289, -3289)
 scale = Vector2(0.49, 0.49)
 
-[node name="Murciegalo11" parent="." instance=ExtResource("4_0k8vw")]
+[node name="Murciegalo11" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(3296, 41.0007)
 scale = Vector2(0.49, 0.49)
 
-[node name="Murciegalo4" parent="." instance=ExtResource("4_0k8vw")]
+[node name="Murciegalo4" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(6348, -1719)
 scale = Vector2(0.49, 0.49)
 
-[node name="Murciegalo5" parent="." instance=ExtResource("4_0k8vw")]
+[node name="Murciegalo5" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(8350, -2827)
 scale = Vector2(0.49, 0.49)
 
-[node name="Murciegalo6" parent="." instance=ExtResource("4_0k8vw")]
+[node name="Murciegalo6" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(4810, -3792)
 scale = Vector2(0.49, 0.49)
 
-[node name="Barrel" parent="." instance=ExtResource("5_n46md")]
+[node name="Barrel" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(2115, 175)
 scale = Vector2(0.7, 0.7)
 
-[node name="Barrel2" parent="." instance=ExtResource("5_n46md")]
+[node name="Barrel2" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(3854, -3111)
 scale = Vector2(0.7, 0.7)
 
-[node name="Barrel3" parent="." instance=ExtResource("5_n46md")]
+[node name="Barrel3" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(5815, -2512)
 scale = Vector2(0.7, 0.7)
 
-[node name="Barrel6" parent="." instance=ExtResource("5_n46md")]
+[node name="Barrel6" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(6652, -2434)
 scale = Vector2(0.7, 0.7)
 
-[node name="Barrel7" parent="." instance=ExtResource("5_n46md")]
+[node name="Barrel7" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(4918, -3528)
 scale = Vector2(0.7, 0.7)
+
+[node name="Barrel8" parent="Enemies" instance=ExtResource("5_n46md")]
+position = Vector2(3022, -1849)
+scale = Vector2(0.7, 0.7)
+
+[node name="Barrel4" parent="Enemies" instance=ExtResource("5_n46md")]
+position = Vector2(6450, -713)
+scale = Vector2(0.7, 0.7)
+
+[node name="Barrel5" parent="Enemies" instance=ExtResource("5_n46md")]
+position = Vector2(7451, -2357)
+scale = Vector2(0.7, 0.7)
+
+[node name="Murciegalo" parent="Enemies" instance=ExtResource("4_0k8vw")]
+position = Vector2(3688, -792)
 
 [node name="Tienda_objetos" parent="." instance=ExtResource("6_n46md")]
 position = Vector2(413, 0)
 scale = Vector2(2, 2)
-
-[node name="Barrel8" parent="." instance=ExtResource("5_n46md")]
-position = Vector2(3022, -1849)
-scale = Vector2(0.7, 0.7)
-
-[node name="Barrel4" parent="." instance=ExtResource("5_n46md")]
-position = Vector2(6450, -713)
-scale = Vector2(0.7, 0.7)
-
-[node name="Barrel5" parent="." instance=ExtResource("5_n46md")]
-position = Vector2(7451, -2357)
-scale = Vector2(0.7, 0.7)
-
-[node name="Murciegalo" parent="." instance=ExtResource("4_0k8vw")]
-position = Vector2(3688, -792)
 
 [node name="Cama" parent="." instance=ExtResource("7_bxe2n")]
 position = Vector2(157, 625)

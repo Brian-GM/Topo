@@ -42,7 +42,10 @@ func _process(_delta):
 	if bodies_2 and bodies_2.size() > 0:
 		for body in bodies_2:
 			if body.is_in_group("player") and !is_atack:
-				atack_melee()
+				atack_melee()	
+				AudioManager.play_sound("murciegalo.mp3",0.0,false,0.0,0.3)
+
+
 				
 func atack_melee():
 	animated_sprite.play("atack")
@@ -89,6 +92,8 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 		$Atack_Cooldown.start(2)
 	if animated_sprite.animation == "death":
 		queue_free()
+		AudioManager.stop("murciegalo.mp3",0.0)
+
 
 
 func _on_atack_cooldown_timeout() -> void:

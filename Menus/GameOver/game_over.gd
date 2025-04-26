@@ -52,6 +52,7 @@ func _on_reset_level_pressed() -> void:
 		#await animation_player.animation_finished
 		
 		button_pressed = false
+		AudioManager.play_sound("hover_click.mp3",0.0,false,0.0,0.3)
 		GameManager.reset_actual_level()
 
 
@@ -65,6 +66,7 @@ func _on_back_to_main_menu_pressed() -> void:
 		#await animation_player.animation_finished
 		
 		button_pressed = false
+		AudioManager.play_sound("hover_click.mp3",0.0,false,0.0,0.3)
 		get_tree().change_scene_to_file("res://Menus/MainTitle/main_title.tscn")
 
 

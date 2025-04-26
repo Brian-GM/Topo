@@ -1,14 +1,17 @@
-[gd_scene load_steps=8 format=4 uid="uid://c0h86ked5r7c1"]
+[gd_scene load_steps=10 format=4 uid="uid://c0h86ked5r7c1"]
 
+[ext_resource type="Script" uid="uid://dp0rbdhlrn2dj" path="res://Scenes/Levels/Level_3/Scripts/level_3.gd" id="1_4ogfy"]
 [ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres" id="1_cvj7l"]
 [ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Scenes/Characters/Mole/mole.tscn" id="2_mfsf3"]
 [ext_resource type="PackedScene" uid="uid://dtsjd1j67bm2f" path="res://Scenes/Characters/Hole/hole.tscn" id="3_mfsf3"]
 [ext_resource type="PackedScene" uid="uid://bp2kx3srj2cyh" path="res://Scenes/Enemies/Murciegalo/Murciegalo.tscn" id="4_0k8vw"]
 [ext_resource type="PackedScene" uid="uid://47qc7763yvds" path="res://Scenes/Enemies/Barrel/barrel.tscn" id="5_n46md"]
 [ext_resource type="PackedScene" uid="uid://cex6lsu7l7wyo" path="res://Escenas/tienda_objetos.tscn" id="6_n46md"]
+[ext_resource type="PackedScene" uid="uid://25lkrqwxsg3" path="res://Scenes/Enemies/Miner/miner.tscn" id="6_s8l5x"]
 [ext_resource type="PackedScene" uid="uid://c38c2kkgcydkx" path="res://Scenes/Characters/Bed/bed.tscn" id="7_bxe2n"]
 
 [node name="level_3" type="Node2D"]
+script = ExtResource("1_4ogfy")
 
 [node name="Map" type="Node2D" parent="."]
 
@@ -28,8 +31,7 @@ tile_map_data = PackedByteArray("AAABABAAAQADAAgAAAAAAA4AAQADAAgAAAABAA4AAQANAAc
 tile_set = ExtResource("1_cvj7l")
 
 [node name="Mole" parent="." instance=ExtResource("2_mfsf3")]
-position = Vector2(699, 530)
-scale = Vector2(0.8, 0.8)
+position = Vector2(479.001, 611)
 
 [node name="Agujero1" parent="." instance=ExtResource("3_mfsf3")]
 position = Vector2(8497, -3704)
@@ -88,14 +90,6 @@ scale = Vector2(0.7, 0.7)
 position = Vector2(5815, -2512)
 scale = Vector2(0.7, 0.7)
 
-[node name="Barrel6" parent="Enemies" instance=ExtResource("5_n46md")]
-position = Vector2(6652, -2434)
-scale = Vector2(0.7, 0.7)
-
-[node name="Barrel7" parent="Enemies" instance=ExtResource("5_n46md")]
-position = Vector2(4918, -3528)
-scale = Vector2(0.7, 0.7)
-
 [node name="Barrel8" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(3022, -1849)
 scale = Vector2(0.7, 0.7)
@@ -108,8 +102,14 @@ scale = Vector2(0.7, 0.7)
 position = Vector2(7451, -2357)
 scale = Vector2(0.7, 0.7)
 
-[node name="Murciegalo" parent="Enemies" instance=ExtResource("4_0k8vw")]
-position = Vector2(3688, -792)
+[node name="Miner" parent="Enemies" instance=ExtResource("6_s8l5x")]
+position = Vector2(8453, -3536)
+
+[node name="Miner2" parent="Enemies" instance=ExtResource("6_s8l5x")]
+position = Vector2(6404, -1087)
+
+[node name="Miner3" parent="Enemies" instance=ExtResource("6_s8l5x")]
+position = Vector2(3024, -347)
 
 [node name="Tienda_objetos" parent="." instance=ExtResource("6_n46md")]
 position = Vector2(413, 0)

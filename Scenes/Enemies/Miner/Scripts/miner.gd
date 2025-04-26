@@ -99,6 +99,8 @@ func _on_detect_attack_body_exited(body: Node2D) -> void:
 
 
 func shoot_projectile(direction: Vector2):
+	AudioManager.play_sound("minero.mp3",0.0,false,0.0,0.3)
+
 	animated_sprite.play("attack")
 	
 	var miner_projectile = miner_projectile_scene.instantiate()

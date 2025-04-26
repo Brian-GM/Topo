@@ -85,6 +85,7 @@ func _on_animated_sprite_finished() -> void:
 		#animated_sprite.scale = Vector2(5,5)
 
 	if animated_sprite.animation == "death" and is_exploting:
+		AudioManager.play_sound("Small Bomb Explosion Sound Effect.mp3",0.0,false,0.0,0.3)
 		animated_sprite.scale = Vector2(5,5)
 		is_exploting = false
 		can_moving = false

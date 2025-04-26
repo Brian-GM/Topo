@@ -46,10 +46,9 @@ func _process(_delta):
 				
 func atack_melee():
 	animated_sprite.play("atack")
+	AudioManager.play_sound("cangrejoputaso.mp3",0.0,false,0.0,0.3)
 	player.call_deferred("damage",damage)
 	is_atack = true					
-
-	print("Putaso")
 			
 func _physics_process(_delta):
 	if GameManager.is_cinematic_active or !can_moving:

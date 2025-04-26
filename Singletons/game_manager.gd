@@ -160,6 +160,8 @@ func reset_actual_level() -> void:
 # go to next level or finnish the game
 func next_level() -> void:
 	current_level += 1
+	AudioManager.play_sound("efecto de sonido PALA CAVANDO [shovel digging  sound effect] (mp3cut.net).mp3",0.0,false,0.0,0.3)
+
 	if get_tree().change_scene_to_file("res://Scenes/Levels/Level_" + str(current_level) + "/level_" + str(current_level) + ".tscn") != OK:
 		reset_game_stats()
 		get_tree().change_scene_to_file("res://Menus/FinishGame/finish_game.tscn")

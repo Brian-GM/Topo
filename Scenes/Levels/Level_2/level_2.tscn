@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=4 uid="uid://ysyc587vhj58"]
+[gd_scene load_steps=8 format=4 uid="uid://ysyc587vhj58"]
 
+[ext_resource type="Script" uid="uid://bek3fcvlw0lkd" path="res://Scenes/Levels/Level_2/Scripts/level_2.gd" id="1_am72n"]
 [ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres" id="1_pjlpc"]
 [ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Scenes/Characters/Mole/mole.tscn" id="2_2ikhg"]
 [ext_resource type="PackedScene" uid="uid://dtsjd1j67bm2f" path="res://Scenes/Characters/Hole/hole.tscn" id="3_2ikhg"]
@@ -8,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bp2kx3srj2cyh" path="res://Scenes/Enemies/Murciegalo/Murciegalo.tscn" id="6_lglyl"]
 
 [node name="Level2" type="Node2D"]
+script = ExtResource("1_am72n")
 
 [node name="Map" type="Node2D" parent="."]
 

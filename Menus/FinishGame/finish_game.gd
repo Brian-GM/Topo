@@ -31,6 +31,7 @@ func _on_back_button_pressed() -> void:
 		#animation_player.play("fade_out")
 		#await animation_player.animation_finished
 		button_pressed = false
+		AudioManager.play_sound("hover_click.mp3",0.0,false,0.0,0.3)
 		get_tree().change_scene_to_file("res://Menus/MainTitle/main_title.tscn")
 
 

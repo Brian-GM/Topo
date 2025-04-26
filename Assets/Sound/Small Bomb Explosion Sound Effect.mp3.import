@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cbaaldalk2ip6"
+path="res://.godot/imported/Small Bomb Explosion Sound Effect.mp3-6e8302076b77b0c9b6b7c2f6af86ab56.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sound/Small Bomb Explosion Sound Effect.mp3"
+dest_files=["res://.godot/imported/Small Bomb Explosion Sound Effect.mp3-6e8302076b77b0c9b6b7c2f6af86ab56.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

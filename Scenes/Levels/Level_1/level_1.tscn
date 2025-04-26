@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=4 uid="uid://bwid7f6walbas"]
+[gd_scene load_steps=6 format=4 uid="uid://bwid7f6walbas"]
 
+[ext_resource type="Script" uid="uid://bb4c1bstdcmcy" path="res://Scenes/Levels/Level_1/Scripts/level_1.gd" id="1_453mr"]
 [ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres" id="2_ah3ns"]
 [ext_resource type="PackedScene" uid="uid://dtsjd1j67bm2f" path="res://Scenes/Characters/Hole/hole.tscn" id="3_453mr"]
 [ext_resource type="PackedScene" uid="uid://c38c2kkgcydkx" path="res://Scenes/Characters/Bed/bed.tscn" id="4_4l51e"]
 [ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Scenes/Characters/Mole/mole.tscn" id="5_s4dvm"]
 
 [node name="Level1" type="Node2D"]
+script = ExtResource("1_453mr")
 
 [node name="Map" type="Node2D" parent="."]
 
@@ -33,3 +35,10 @@ position = Vector2(1763, 342)
 
 [node name="Mole" parent="." instance=ExtResource("5_s4dvm")]
 position = Vector2(657, 726)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1421.0
+offset_top = 641.0
+offset_right = 1476.0
+offset_bottom = 664.0
+text = "Press F"

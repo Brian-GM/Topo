@@ -23,7 +23,8 @@ func _enter_tree() -> void:
 
 func _ready() -> void:
 	game_ready_finished = false
-	
+	AudioManager.play_music("menu.wav",0.0,true,0.0,0.3)
+
 	#if AudioManager.audio_stream_players.has("background_dungeon.mp3"):
 		#AudioManager.stop("background_dungeon.mp3", 2.0)
 	
@@ -59,6 +60,8 @@ func _ready() -> void:
 # start the game
 func _on_start_game_button_pressed() -> void:
 	if not button_pressed and game_ready_finished:
+		AudioManager.play_sound("hover_click.mp3",0.0,false,0.0,0.3)
+
 		button_pressed = true
 		GameManager.is_cinematic_active = true
 		
@@ -85,6 +88,7 @@ func _on_options_button_pressed() -> void:
 		#AudioManager.play_sound("confirmation.ogg", 0.0, false, 0.0, 0.5)
 		
 		button_pressed = false
+		AudioManager.play_sound("hover_click.mp3",0.0,false,0.0,0.3)
 		get_tree().change_scene_to_file("res://Menus/OptionsMenu/options_menu.tscn")
 
 
@@ -94,6 +98,7 @@ func _on_controls_button_pressed() -> void:
 		#AudioManager.play_sound("confirmation.ogg", 0.0, false, 0.0, 0.5)
 		
 		button_pressed = false
+		AudioManager.play_sound("hover_click.mp3",0.0,false,0.0,0.3)
 		get_tree().change_scene_to_file("res://Menus/Controls/controls.tscn")
 
 

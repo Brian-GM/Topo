@@ -160,11 +160,14 @@ func atack_melee():
 	animated_sprite.play("atack1")
 	is_atack = true					
 	player.call_deferred("damage",damage)
+	AudioManager.play_sound("ataque1boss.mp3",0.0,false,0.0,0.3)
+
 
 
 func get_damaged() -> void:
 	health -= GameManager.player_attack
 	if health <= 0:
+		AudioManager.play_sound("muerteboss.mp3",0.0,false,0.0,0.3)
 		GameManager.finish_game()
 		
 	
@@ -189,6 +192,8 @@ func _on_atack_1_cooldown_timeout() -> void:
 func _on_atack_2_cooldown_timeout() -> void:
 	if !is_atack:
 		animated_sprite.play("atack2")
+		AudioManager.play_sound("ataque2boss.mp3",0.0,false,0.0,0.3)
+
 		is_atack = true
 		can_moving = false
 		summon()

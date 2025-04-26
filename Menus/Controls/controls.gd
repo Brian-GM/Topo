@@ -18,7 +18,7 @@ func _enter_tree() -> void:
 
 func _ready() -> void:
 	#animation_player.play("fade_in")
-	
+	AudioManager.play_sound("GabMetal_Def.mp3",0.0,false,0.0,0.3)
 	back_button = get_node("CanvasLayer/Control/CenterContainer/MenuContainer/BackButton")
 	back_button.grab_focus()
 	
@@ -35,6 +35,7 @@ func _on_back_button_pressed() -> void:
 		#animation_player.play("fade_out")
 		#await animation_player.animation_finished
 		button_pressed = false
+		AudioManager.play_sound("hover_click.mp3",0.0,false,0.0,0.3)
 		get_tree().change_scene_to_file("res://Menus/MainTitle/main_title.tscn")
 
 

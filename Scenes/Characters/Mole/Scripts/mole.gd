@@ -64,6 +64,7 @@ func _process(_delta: float) -> void:
 		make_swipe(mouse_position)
 		can_swipe = false
 		start_cooldown_claw()
+		AudioManager.play_sound("Sonido de Zarpazo al aire 1 - Efecto de Sonido.mp3",0.0,false,0.0,0.3)
 		await animated_sprite.animation_finished
 		forced_animation = false
 	
@@ -76,9 +77,9 @@ func _process(_delta: float) -> void:
 		shoot_projectile(mouse_position)
 		can_shoot = false
 		start_cooldown_shot()
+		AudioManager.play_sound("Efecto de Sonido de TIRAR.mp3",0.0,false,0.0,0.3)
 		await animated_sprite.animation_finished
 		forced_animation = false
-	
 	move_and_slide()
 	
 	if bed_in_range and Input.is_action_just_pressed("interact"):
@@ -156,6 +157,8 @@ func exited_store_range():
 
 func heal():
 	GameManager.player_life += GameManager.MAX_PLAYER_LIFE/3
+	AudioManager.play_sound("Health.mp3",0.0,false,0.0,1)
+
 
 
 func pasar_nivel():
@@ -172,9 +175,9 @@ func store():
 
 func damage(total_damage: int = 1):
 	GameManager.player_life -= total_damage
+	AudioManager.play_sound("takedamage.mp3",0.0,false,0.0,1)
 	if GameManager.player_life < 0:
 		die()
-
 
 func die():
 	GameManager.game_over()

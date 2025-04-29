@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://c0c5uh68ryjks"]
 
-[ext_resource type="Script" uid="uid://ce5mmjuaduiyc" path="res://Scenes/Levels/Level_4/Scripts/level_4.gd" id="1_5uosw"]
+[ext_resource type="Script" uid="uid://ce5mmjuaduiyc" path="res://Scenes/Levels/Level_6/Scripts/level_6.gd" id="1_5uosw"]
 [ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres" id="1_aqb4x"]
 [ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Scenes/Characters/Mole/mole.tscn" id="3_egspp"]
 [ext_resource type="PackedScene" uid="uid://b2ig8357o3g0j" path="res://Scenes/Boses/Golem/Golem.tscn" id="4_5uosw"]

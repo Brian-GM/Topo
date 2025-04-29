@@ -26,8 +26,11 @@ var atack_area:Area2D
 var is_atack: bool = false
 var damage_zone: Area2D
 
-var health:int = 50
-var damage:int = 1
+var health: int = 50
+var damage: int = 1
+
+var is_dying: bool = false
+
 
 func _ready():
 	animated_sprite = get_node("AnimatedSprite2D")
@@ -43,6 +46,9 @@ func _ready():
 	
 
 func _process(_delta):
+	if is_dying:
+		return
+	
 	if player:
 		navigation_agent.target_position = player.global_position
 	else:
@@ -62,7 +68,7 @@ func _process(_delta):
 
 
 func _physics_process(_delta):
-	if GameManager.is_cinematic_active or !can_moving:
+	if GameManager.is_cinematic_active or !can_moving or is_dying:
 		return
 	
 	is_moving = velocity.length() != 0
@@ -82,6 +88,9 @@ func _physics_process(_delta):
 
 
 func summon():
+	if is_dying:
+		return
+	
 	var background_layer: TileMapLayer = get_tree().current_scene.get_node("Map/Spawn")
 	
 	var used_cells = background_layer.get_used_cells()
@@ -130,6 +139,9 @@ func summon():
 
 
 func atack_melee():
+	if is_dying:
+		return
+	
 	animated_sprite.play("atack1")
 	is_atack = true
 	player.call_deferred("damage",damage)
@@ -137,8 +149,12 @@ func atack_melee():
 
 
 func get_damaged() -> void:
+	if is_dying:
+		return
+	
 	health -= GameManager.player_attack
 	if health <= 0:
+		is_dying = true
 		AudioManager.stop("GabMetal_Def.mp3", 1.0)
 		AudioManager.play_sound("muerteboss.mp3", 0.0, false, 0.0, 0.3)
 		if AudioManager.audio_stream_players.has("muerteboss.mp3"):
@@ -146,27 +162,33 @@ func get_damaged() -> void:
 			animated_sprite.play("death")
 
 
-func _on_animated_sprite_2d_animation_finished() -> void:
-	if animated_sprite.animation == "atack2":
+func _on_animated_sprite_2d_animation_finished() -> void:	
+	if not is_dying and animated_sprite.animation == "atack2":
 		can_moving = true
 		is_atack = false
 		animated_sprite.play("walk")
 		$Atack2_Cooldown.start(7)
-	elif animated_sprite.animation == "atack1":
+	elif not is_dying and animated_sprite.animation == "atack1":
 		can_moving = true
 		animated_sprite.play("walk")
 		$Atack1_Cooldown.start(2)
-	elif animated_sprite.animation == "death":
+	elif is_dying and animated_sprite.animation == "death":
 		await get_tree().create_timer(0.5).timeout
 		GameManager.finish_game()
 
 
 
 func _on_atack_1_cooldown_timeout() -> void:
+	if is_dying:
+		return
+	
 	is_atack = false
 
 
 func _on_atack_2_cooldown_timeout() -> void:
+	if is_dying:
+		return
+	
 	if !is_atack:
 		animated_sprite.play("atack2")
 		AudioManager.play_sound("ataque2boss.mp3",0.0,false,0.0,0.3)

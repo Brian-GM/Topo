@@ -13,7 +13,7 @@ var current_point_index: int = 0
 var navigation_agent: NavigationAgent2D
 
 var player: Node2D = null
-var health:int = 5
+var health:int = 12
 var damage:int = 1
 var atack_area 
 var is_atack:bool = false

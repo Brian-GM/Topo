@@ -31,7 +31,7 @@ tile_set = ExtResource("2_ah3ns")
 position = Vector2(1445, 743)
 
 [node name="Bed" parent="." instance=ExtResource("4_4l51e")]
-position = Vector2(967, 888)
+position = Vector2(613, 383)
 
 [node name="Mole" parent="." instance=ExtResource("5_s4dvm")]
 position = Vector2(657, 726)
@@ -44,9 +44,9 @@ offset_bottom = 664.0
 text = "PRESS_F"
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 911.0
-offset_top = 764.0
-offset_right = 1021.0
-offset_bottom = 787.0
+offset_left = 657.0
+offset_top = 273.0
+offset_right = 767.0
+offset_bottom = 296.0
 text = "PRESS_F_HEAL"
 horizontal_alignment = 1

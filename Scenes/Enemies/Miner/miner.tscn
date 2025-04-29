@@ -163,7 +163,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_trg2c"]
-radius = 20.0
+radius = 28.0
 height = 110.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jf5aw"]
@@ -195,6 +195,7 @@ debug_color = Color(0.996078, 0, 0, 0.419608)
 [node name="DetectPlayer" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectPlayer"]
+scale = Vector2(1.26532, 1)
 shape = SubResource("CircleShape2D_trg2c")
 debug_color = Color(0, 0.562366, 0.877689, 0.42)
 

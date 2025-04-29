@@ -143,7 +143,7 @@ func get_damaged() -> void:
 		AudioManager.play_sound("muerteboss.mp3", 0.0, false, 0.0, 0.3)
 		if AudioManager.audio_stream_players.has("muerteboss.mp3"):
 			await (AudioManager.audio_stream_players["muerteboss.mp3"] as AudioStreamPlayer).finished
-		GameManager.finish_game()
+			animated_sprite.play("death")
 
 
 func _on_animated_sprite_2d_animation_finished() -> void:
@@ -151,11 +151,15 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 		can_moving = true
 		is_atack = false
 		animated_sprite.play("walk")
-		$Atack2_Cooldown.start(15)
+		$Atack2_Cooldown.start(7)
 	elif animated_sprite.animation == "atack1":
 		can_moving = true
 		animated_sprite.play("walk")
 		$Atack1_Cooldown.start(2)
+	elif animated_sprite.animation == "death":
+		await get_tree().create_timer(0.5).timeout
+		GameManager.finish_game()
+
 
 
 func _on_atack_1_cooldown_timeout() -> void:

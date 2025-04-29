@@ -1,8 +1,9 @@
-[gd_scene load_steps=39 format=3 uid="uid://04ej5go7qpu5"]
+[gd_scene load_steps=45 format=3 uid="uid://04ej5go7qpu5"]
 
 [ext_resource type="Script" uid="uid://c6h7lvc4v25qu" path="res://Scenes/Boses/FinalBoss/Script/final_boss.gd" id="1_exqfj"]
 [ext_resource type="Texture2D" uid="uid://8q67whaxk62v" path="res://Assets/BrianSprites/Bosses/Dead/atack1.png" id="2_2gwul"]
 [ext_resource type="Texture2D" uid="uid://ckq0f043b5gir" path="res://Assets/BrianSprites/Bosses/Dead/atack2_summon.png" id="3_ojl4d"]
+[ext_resource type="Texture2D" uid="uid://bnid0syhlfaj2" path="res://Assets/BrianSprites/Enemies/humo_muerte.png" id="4_2gwul"]
 [ext_resource type="Texture2D" uid="uid://dapqp4dbbqcl2" path="res://Assets/BrianSprites/Bosses/Dead/idlewalk.png" id="4_21fcc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u5228"]
@@ -108,6 +109,26 @@ region = Rect2(1800, 0, 100, 200)
 [sub_resource type="AtlasTexture" id="AtlasTexture_678n5"]
 atlas = ExtResource("3_ojl4d")
 region = Rect2(1900, 0, 100, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojl4d"]
+atlas = ExtResource("4_2gwul")
+region = Rect2(84, 0, 165, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_21fcc"]
+atlas = ExtResource("4_2gwul")
+region = Rect2(249, 0, 165, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_atcgy"]
+atlas = ExtResource("4_2gwul")
+region = Rect2(414, 0, 165, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5rid"]
+atlas = ExtResource("4_2gwul")
+region = Rect2(579, 0, 165, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jgx8"]
+atlas = ExtResource("4_2gwul")
+region = Rect2(744, 0, 165, 250)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mqvaq"]
 atlas = ExtResource("4_21fcc")
@@ -217,6 +238,26 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_ojl4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_21fcc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_atcgy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5rid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jgx8")
+}],
+"loop": false,
+"name": &"death",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_mqvaq")
 }, {
 "duration": 1.0,
@@ -249,8 +290,10 @@ script = ExtResource("1_exqfj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_atcgy")
-animation = &"walk"
+animation = &"death"
 autoplay = "walk"
+frame = 2
+frame_progress = 0.662674
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 17)

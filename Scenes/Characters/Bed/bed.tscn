@@ -10,6 +10,7 @@ size = Vector2(55, 111)
 radius = 91.0
 
 [node name="Cama" type="StaticBody2D"]
+scale = Vector2(1.5, 1.5)
 script = ExtResource("1_dil66")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

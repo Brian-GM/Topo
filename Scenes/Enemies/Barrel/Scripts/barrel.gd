@@ -7,7 +7,7 @@ var detect_explosion: Area2D
 
 var is_exploting: bool = false
 
-var movement_speed: float = 150.0
+var movement_speed: float = 225.0
 
 var can_moving: bool = true
 var is_moving: bool = false
@@ -84,11 +84,10 @@ func _on_detect_explosion_body_entered(body: Node2D) -> void:
 func _on_animated_sprite_finished() -> void:
 	if animated_sprite.animation == "explote":
 		animated_sprite.play("death")
-		#animated_sprite.scale = Vector2(5,5)
 	
 	if animated_sprite.animation == "death" and is_exploting:
 		AudioManager.play_sound("Small Bomb Explosion Sound Effect.mp3",0.0,false,0.0,0.3)
-		animated_sprite.scale = Vector2(5,5)
+		animated_sprite.scale = Vector2(6,6)
 		is_exploting = false
 		can_moving = false
 		var bodies = detect_explosion.get_overlapping_bodies()

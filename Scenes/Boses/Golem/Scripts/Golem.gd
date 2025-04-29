@@ -32,8 +32,8 @@ var damage_zone_2: Area2D
 
 @onready var atack_2_animation: AnimatedSprite2D = $Atack2
 
-#var health: int = 25
-var health: int = 2
+var health: int = 30
+#var health: int = 2
 var damage: int = 1
 
 var atack_1_bodies

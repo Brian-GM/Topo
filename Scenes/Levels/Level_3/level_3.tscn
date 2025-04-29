@@ -70,39 +70,30 @@ position = Vector2(4810, -3792)
 
 [node name="Barrel" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(2115, 175)
-scale = Vector2(0.7, 0.7)
 
 [node name="Barrel2" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(3854, -3111)
-scale = Vector2(0.7, 0.7)
 
 [node name="Barrel3" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(5815, -2512)
-scale = Vector2(0.7, 0.7)
 
 [node name="Barrel8" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(3022, -1849)
-scale = Vector2(0.7, 0.7)
 
 [node name="Barrel4" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(6450, -713)
-scale = Vector2(0.7, 0.7)
 
 [node name="Barrel5" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(7451, -2357)
-scale = Vector2(0.7, 0.7)
 
 [node name="Miner" parent="Enemies" instance=ExtResource("6_s8l5x")]
 position = Vector2(8453, -3536)
-scale = Vector2(0.7, 0.7)
 
 [node name="Miner2" parent="Enemies" instance=ExtResource("6_s8l5x")]
 position = Vector2(6404, -1087)
-scale = Vector2(0.7, 0.7)
 
 [node name="Miner3" parent="Enemies" instance=ExtResource("6_s8l5x")]
 position = Vector2(3024, -347)
-scale = Vector2(0.7, 0.7)
 
 [node name="Cama" parent="." instance=ExtResource("7_bxe2n")]
 position = Vector2(157, 625)

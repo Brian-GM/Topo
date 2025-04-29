@@ -160,9 +160,8 @@ script = ExtResource("1_pqxq0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_8m611")
-animation = &"death"
+animation = &"walk"
 autoplay = "walk"
-frame_progress = 1.0
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 debug_enabled = true

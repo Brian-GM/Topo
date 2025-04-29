@@ -20,6 +20,8 @@ var is_atack:bool = false
 
 var coins: PackedScene = preload("res://Scenes/Characters/Coin/coin.tscn")
 
+var is_dying: bool = false
+
 
 func _ready():
 	animated_sprite = get_node("AnimatedSprite2D")
@@ -38,6 +40,8 @@ func _ready():
 
 
 func _process(_delta):
+	if is_dying:
+		return
 	if is_chasing and player:
 		navigation_agent.target_position = player.global_position
 	
@@ -50,13 +54,15 @@ func _process(_delta):
 
 
 func atack_melee():
+	if is_dying:
+		return
 	animated_sprite.play("atack")
 	player.call_deferred("damage", damage)
 	is_atack = true
 
 
 func _physics_process(_delta):
-	if GameManager.is_cinematic_active or !can_moving:
+	if GameManager.is_cinematic_active or !can_moving or is_dying:
 		return
 	
 	is_moving = velocity.length() != 0
@@ -79,19 +85,22 @@ func _physics_process(_delta):
 func get_damaged() -> void:
 	health -= GameManager.player_attack
 	if health <= 0:
+		is_dying = true
 		animated_sprite.play("death")
 		AudioManager.stop("murciegalo.mp3", 0.0)
 		AudioManager.play_sound("murciegalo_death.mp3", 0.0, false, 0.0, 0.3)
 
 
 func _on_detect_player_body_entered(body: Node2D) -> void:
+	if is_dying:
+		return
 	if body.is_in_group("player"):
 		player = body
 		is_chasing = true
 
 
 func _on_animated_sprite_2d_animation_finished() -> void:
-	if animated_sprite.animation == "atack":
+	if not is_dying and animated_sprite.animation == "atack":
 		animated_sprite.play("walk")
 		$Atack_Cooldown.start(2)
 	if animated_sprite.animation == "death":
@@ -103,5 +112,6 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 
 
 func _on_atack_cooldown_timeout() -> void:
-	print("Vuelvea atacar")
+	if is_dying:
+		return
 	is_atack = false

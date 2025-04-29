@@ -73,6 +73,7 @@ func get_damaged() -> void:
 	health -= 1
 	if (health <= 0):
 		animated_sprite.play("death")
+		AudioManager.play_sound("miner_death.mp3", 0.0, false, 0.0, 0.3)
 
 
 func _on_detect_player_body_entered(body: Node2D) -> void:
@@ -132,4 +133,5 @@ func _on_animated_sprite_finished() -> void:
 		var coin: Area2D = coins.instantiate()
 		coin.position = global_position
 		get_tree().current_scene.add_child(coin)
+		AudioManager.stop("miner_death.mp3", 0.0)
 		queue_free()

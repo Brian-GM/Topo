@@ -1,3 +1,4 @@
+res://Assets/BrianSprites/UI
 res://Assets/BrianSprites/Enemies
 res://Scenes/Levels/Level_1/Scripts
 res://Scenes/Levels/Level_4/Scripts
@@ -14,7 +15,6 @@ res://Scenes/Characters/MoleEx
 res://Assets/BrianSprites
 res://Scenes/Levels/Level_3
 res://Assets/BrianSprites/Player
-res://Assets/BrianSprites/UI
 res://Scenes/Characters/Bed/Scripts
 res://Scenes/Characters/Hole/Scripts
 res://Scenes/Characters/Projectile

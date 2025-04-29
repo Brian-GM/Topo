@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1745630846
+::res://::1745937045
 export_presets.cfg::TextFile/TextFile::-1::1745258987::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6673454677242824784::1744210143::1745258987::1::::<><><>0<>0<>3a167e93de4bf6d5a2a05afeb1fa2438<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assets/::1745258987
@@ -26,13 +26,13 @@ atack1.png::CompressedTexture2D/CompressedTexture2D::2351202422659241767::174525
 atack2_summon.png::CompressedTexture2D/CompressedTexture2D::5509288060777964665::1745258987::1745567745::1::::<><><>0<>0<>db7427d3ce65f6e9fb07fb1dd45a5d84<>res://.godot/imported/atack2_summon.png-44d4c301105242b4ca2113c9b000cde1.ctex::
 idlewalk.png::CompressedTexture2D/CompressedTexture2D::7191227504042007433::1745258987::1745567745::1::::<><><>0<>0<>447986a2afcfb09dc17a39ad595814a6<>res://.godot/imported/idlewalk.png-22d0a70f3cc31bd7443417000f27b06e.ctex::
 sumon_zone.png::CompressedTexture2D/CompressedTexture2D::3106493864337367097::1745258987::1745567745::1::::<><><>0<>0<>cbe52f0c1dd40bf4f03689b9a310d701<>res://.godot/imported/sumon_zone.png-eba29469e9d9da0ef6478e1522b17e2b.ctex::
-::res://Assets/BrianSprites/Bosses/Golem/::1745567745
+::res://Assets/BrianSprites/Bosses/Golem/::1745938123
 atack.png::CompressedTexture2D/CompressedTexture2D::4575601982679552425::1745258987::1745567745::1::::<><><>0<>0<>7fca9bdeb232807bd224257abbfe6ab8<>res://.godot/imported/atack.png-5f1d8eb8915fe623b9537eda47bf59ca.ctex::
 atack_area_1.png::CompressedTexture2D/CompressedTexture2D::3312353208001531340::1745258987::1745567744::1::::<><><>0<>0<>8b28db3dcfdc0321008543e0f543ef86<>res://.godot/imported/atack_area_1.png-f6e313281463b9bafd6a509cf2077956.ctex::
 atack_area_2.png::CompressedTexture2D/CompressedTexture2D::5066664402412502675::1745258987::1745567745::1::::<><><>0<>0<>69d4540e8853d9e1040ea970f78b0812<>res://.godot/imported/atack_area_2.png-8b06677e3f4d15c5d30e30c37fbe7183.ctex::
 danger_atack_area_1.png::CompressedTexture2D/CompressedTexture2D::4845455770144057430::1745258987::1745567744::1::::<><><>0<>0<>455433c3eaec54c9edf9c24a74acb627<>res://.godot/imported/danger_atack_area_1.png-425b13d1eb35af069abb443c8a8fae04.ctex::
 danger_atack_area_2.png::CompressedTexture2D/CompressedTexture2D::3290573235694379568::1745258987::1745567744::1::::<><><>0<>0<>c25c68c1ecd89d1a109133039d183e9a<>res://.godot/imported/danger_atack_area_2.png-96d6282e9770e7af9b03c194085f5544.ctex::
-walk.png::CompressedTexture2D/CompressedTexture2D::3275340439146657354::1745258987::1745567745::1::::<><><>0<>0<>62b29537581dfd5bf8cd5a26e0c90e64<>res://.godot/imported/walk.png-ebf9467c86c1c493d0aa21edf345c740.ctex::
+walk.png::CompressedTexture2D/CompressedTexture2D::3275340439146657354::1745938123::1745938127::1::::<><><>0<>0<>62b29537581dfd5bf8cd5a26e0c90e64<>res://.godot/imported/walk.png-ebf9467c86c1c493d0aa21edf345c740.ctex::
 ::res://Assets/BrianSprites/Bosses/Slime/::1745567745
 atack.png::CompressedTexture2D/CompressedTexture2D::7844576896802633138::1745258987::1745567745::1::::<><><>0<>0<>61c0f64e198282d2dedcc2f83e09cc82<>res://.godot/imported/atack.png-b02966267c42148178040b8d9d9d035f.ctex::
 proyectil.png::CompressedTexture2D/CompressedTexture2D::7667806315562044705::1745258987::1745567744::1::::<><><>0<>0<>55caf8054a6d7cd130cf110a71668d5c<>res://.godot/imported/proyectil.png-96fac48882a03aeb271bd10ff65593f8.ctex::
@@ -46,7 +46,7 @@ humo_muerte.png::CompressedTexture2D/CompressedTexture2D::3315618451674475141::1
 barrel_activate.png::CompressedTexture2D/CompressedTexture2D::3634313062805612963::1745258987::1745567744::1::::<><><>0<>0<>c40b31b2f570ad82d7f5e6c1adbfbe56<>res://.godot/imported/barrel_activate.png-ed698bcae42a1b3c94bb36da83c0bb65.ctex::
 barrel_walk.png::CompressedTexture2D/CompressedTexture2D::7238803981605358853::1745258987::1745567744::1::::<><><>0<>0<>fe1ab76b0d2eac85caea2d2aca721af8<>res://.godot/imported/barrel_walk.png-2294b78bc696680c07b919ee9c4cca62.ctex::
 explosion.png::CompressedTexture2D/CompressedTexture2D::7293039143753173701::1745258987::1745567744::1::::<><><>0<>0<>571e9909e274c2dfd7096babc8e043ea<>res://.godot/imported/explosion.png-3b7f7e39ed4672fa4ae1948552bfdbab.ctex::
-::res://Assets/BrianSprites/Enemies/Bat/::1745618213
+::res://Assets/BrianSprites/Enemies/Bat/::1745636470
 bat_atack.png::CompressedTexture2D/CompressedTexture2D::7621952859893981546::1745618192::1745618213::1::::<><><>0<>0<>7cd7138ec1be8cf00dcbe6c502640d08<>res://.godot/imported/bat_atack.png-9e18c6258542c4901b0449781b4ca864.ctex::
 bat_fly.png::CompressedTexture2D/CompressedTexture2D::7308032982830094642::1745618212::1745618213::1::::<><><>0<>0<>2ee39046b50ea2849acb18c0ae8b763d<>res://.godot/imported/bat_fly.png-7e1db8744e033031c319518db2b678d1.ctex::
 ::res://Assets/BrianSprites/Enemies/Crab/::1745567744
@@ -81,8 +81,8 @@ intro.png::CompressedTexture2D/CompressedTexture2D::1865831028118752364::1745258
 perdistetonto.png::CompressedTexture2D/CompressedTexture2D::906699793331317558::1745258987::1745567745::1::::<><><>0<>0<>769961287e9a7cef7c8690d3173a2a74<>res://.godot/imported/perdistetonto.png-fa951c17c46e435bf0e8f6a9f6ec28b8.ctex::
 splahs_screen.png::CompressedTexture2D/CompressedTexture2D::4954608423621858975::1745598282::1745598613::1::::<><><>0<>0<>713ca38e94742d7213daf5899f0cdc48<>res://.godot/imported/splahs_screen.png-6bb66f475ba69c1ee20dd3bbb0acdcd5.ctex::
 title_screen.png::CompressedTexture2D/CompressedTexture2D::7827359603315715536::1745258987::1745567745::1::::<><><>0<>0<>1d2fcf4bf7f34322eda42c90c2a5cba6<>res://.godot/imported/title_screen.png-92f4403e44623bcdbd6446cd49fcfd23.ctex::
-::res://Assets/BrianSprites/Tileset/::1745630168
-TilesetPrincipal.tres::TileSet/TileSet::1926866383804082957::1745630168::0::1::::<><><>0<>0<><>::uid://coysjq3vt8yd2::::res://Assets/BrianSprites/tileset.png
+::res://Assets/BrianSprites/Tileset/::1745936496
+TilesetPrincipal.tres::TileSet/TileSet::1926866383804082957::1745936496::0::1::::<><><>0<>0<><>::uid://coysjq3vt8yd2::::res://Assets/BrianSprites/tileset.png
 ::res://Assets/BrianSprites/UI/::1745567745
 a.png::CompressedTexture2D/CompressedTexture2D::4334679434258039569::1745258987::1745567745::1::::<><><>0<>0<>56b58ae1a579b95dda51ed8663a8857d<>res://.godot/imported/a.png-59d66b0954d2e646ba0f3e0884f3425c.ctex::
 aVATAR.png::CompressedTexture2D/CompressedTexture2D::4500101913238634998::1745258987::1745567745::1::::<><><>0<>0<>deaf9ca0958b4e3cc1f9159b3301517b<>res://.godot/imported/aVATAR.png-8b7f6037a47da42215076a1588c47d3b.ctex::
@@ -129,10 +129,10 @@ translations.csv::Translation/Translation::3597480038602564257::1745627573::1745
 translations.en.translation::OptimizedTranslation/OptimizedTranslation::6959807386068911701::1745627585::0::1::::<><><>0<>0<><>::
 translations.es.translation::OptimizedTranslation/OptimizedTranslation::5612167518401386649::1745627585::0::1::::<><><>0<>0<><>::
 ::res://Assets/Music/::1745634277
-cancion1topo.wav::AudioStreamWAV::1372335359867706230::1745631344::1745631344::1::::<><><>0<>0<>7f93d42ee4ce952c237a5edca6add8c0<>res://.godot/imported/cancion1topo.wav-c38dac3ff345d6065b80e88fcd3d15d7.sample::
-GabMetal_Def.mp3::AudioStreamMP3::1668473802521476079::1745634276::1745634277::1::::<><><>0<>0<>f2c50594c6497734f311d355183ff588<>res://.godot/imported/GabMetal_Def.mp3-ce9c3fefded5ed1b77170a5eba18679d.mp3str::
-menu.wav::AudioStreamWAV::8042294172076539391::1745631749::1745631750::1::::<><><>0<>0<>0ac78ee9fea625c2a8b423a286130978<>res://.godot/imported/menu.wav-7db7e7f28b60ebf25c31cfa88e3a5bec.sample::
-TemaPrincipal.mp3::AudioStreamMP3::7045799831158176819::1745630995::1745630995::1::::<><><>0<>0<>5b87e6a91671a4270c067bd0f46e84bf<>res://.godot/imported/TemaPrincipal.mp3-81fbe4334da05cca23f1d5b4d4e96d98.mp3str::
+cancion1topo.wav::AudioStreamWAV/AudioStreamWAV::1372335359867706230::1745631344::1745631344::1::::<><><>0<>0<>7f93d42ee4ce952c237a5edca6add8c0<>res://.godot/imported/cancion1topo.wav-c38dac3ff345d6065b80e88fcd3d15d7.sample::
+GabMetal_Def.mp3::AudioStreamMP3/AudioStreamMP3::1668473802521476079::1745634276::1745634277::1::::<><><>0<>0<>f2c50594c6497734f311d355183ff588<>res://.godot/imported/GabMetal_Def.mp3-ce9c3fefded5ed1b77170a5eba18679d.mp3str::
+menu.wav::AudioStreamWAV/AudioStreamWAV::8042294172076539391::1745631749::1745631750::1::::<><><>0<>0<>0ac78ee9fea625c2a8b423a286130978<>res://.godot/imported/menu.wav-7db7e7f28b60ebf25c31cfa88e3a5bec.sample::
+TemaPrincipal.mp3::AudioStreamMP3/AudioStreamMP3::7045799831158176819::1745630995::1745630995::1::::<><><>0<>0<>5b87e6a91671a4270c067bd0f46e84bf<>res://.godot/imported/TemaPrincipal.mp3-81fbe4334da05cca23f1d5b4d4e96d98.mp3str::
 ::res://Assets/MyAssets/::1745567745
 Boot_Image_Godot.png::CompressedTexture2D/CompressedTexture2D::4235048216517478056::1745258987::1745567745::1::::<><><>0<>0<>ad059833c85c0dcc796f0275eec3cc5e<>res://.godot/imported/Boot_Image_Godot.png-1d2c498452819686c633b10c5fc0517e.ctex::
 Loading_Image_Godot.png::CompressedTexture2D/CompressedTexture2D::5503282799971635302::1745258987::1745567745::1::::<><><>0<>0<>28432193f524ecf213a31664f435ea7f<>res://.godot/imported/Loading_Image_Godot.png-c62a49845417fa8f9b0b4c490bfae1a9.ctex::
@@ -143,14 +143,14 @@ cangrejoputaso.mp3::AudioStreamMP3/AudioStreamMP3::5724015350694999574::17456279
 Efecto de Sonido de TIRAR.mp3::AudioStreamMP3/AudioStreamMP3::8091808196681122797::1745627918::1745627918::1::::<><><>0<>0<>4d8a78f5d33d123a32dd2aa8299aac3e<>res://.godot/imported/Efecto de Sonido de TIRAR.mp3-14b4dccc327b761ec7795195a50c26be.mp3str::
 efecto de sonido PALA CAVANDO [shovel digging  sound effect] (mp3cut.net).mp3::AudioStreamMP3/AudioStreamMP3::3398032493191262653::1745629499::1745629500::1::::<><><>0<>0<>b452c93effda3b72a987bca07b023d76<>res://.godot/imported/efecto de sonido PALA CAVANDO [shovel digging  sound effect] (mp3cut.net).mp3-f60d3d0836a5d79ae3c4523b69b59d2c.mp3str::
 gold.mp3::AudioStreamMP3/AudioStreamMP3::2533916287191221565::1745629242::1745629792::1::::<><><>0<>0<>ad257894a8cca6b77a103e22ecc4e583<>res://.godot/imported/gold.mp3-cbaca3a2c76c90754dd587180b07aa13.mp3str::
-Health.mp3::AudioStreamMP3::1956750988928915542::1745635417::1745635417::1::::<><><>0<>0<>72a86b08bd3da92e9b06f1a69a4634a7<>res://.godot/imported/Health.mp3-420b12cf3b4ee149d1178ed51b7c2c31.mp3str::
+Health.mp3::AudioStreamMP3/AudioStreamMP3::1956750988928915542::1745635417::1745635417::1::::<><><>0<>0<>72a86b08bd3da92e9b06f1a69a4634a7<>res://.godot/imported/Health.mp3-420b12cf3b4ee149d1178ed51b7c2c31.mp3str::
 hover_click.mp3::AudioStreamMP3/AudioStreamMP3::448210993684557164::1745627918::1745627918::1::::<><><>0<>0<>5e956c131e80b70db10c33d68b2b1d3a<>res://.godot/imported/hover_click.mp3-c05ccb70f7a26de809f2b99700ec78a8.mp3str::
 minero.mp3::AudioStreamMP3/AudioStreamMP3::4080643193401058903::1745627918::1745627918::1::::<><><>0<>0<>d2d4dd5486bb1f98091114e6b2dc09be<>res://.godot/imported/minero.mp3-a2abb78b0ee68a22ea9135992af77ca0.mp3str::
 muerteboss.mp3::AudioStreamMP3/AudioStreamMP3::4219775730628654944::1745627918::1745627918::1::::<><><>0<>0<>c161232cf8648cb67ab9324f8d9ef5b8<>res://.godot/imported/muerteboss.mp3-16b291cd134f06e8b7b51c7b0ba51af7.mp3str::
 murciegalo.mp3::AudioStreamMP3/AudioStreamMP3::3473371582168923916::1745627918::1745627918::1::::<><><>0<>0<>c1a51681d82ed744faf65e9ee585b51a<>res://.godot/imported/murciegalo.mp3-55e8e0d93e3d5bbe282de6281fa03ae3.mp3str::
 Small Bomb Explosion Sound Effect.mp3::AudioStreamMP3/AudioStreamMP3::4843050012841462805::1745627918::1745627918::1::::<><><>0<>0<>8535af18ec3ee1d6afad313c22d61dec<>res://.godot/imported/Small Bomb Explosion Sound Effect.mp3-6e8302076b77b0c9b6b7c2f6af86ab56.mp3str::
 Sonido de Zarpazo al aire 1 - Efecto de Sonido.mp3::AudioStreamMP3/AudioStreamMP3::1645419384529034282::1745627918::1745627918::1::::<><><>0<>0<>8b0c5c70dd2d8eba4b0278ec881db6a8<>res://.godot/imported/Sonido de Zarpazo al aire 1 - Efecto de Sonido.mp3-94d02d3a9297bd7405a49380bacb19b9.mp3str::
-takedamage.mp3::AudioStreamMP3::7949619937146232995::1745633285::1745633286::1::::<><><>0<>0<>01d17225d3225e72a26d173028302efd<>res://.godot/imported/takedamage.mp3-b3457c9ff5644e77ad1a79f0edc99cdc.mp3str::
+takedamage.mp3::AudioStreamMP3/AudioStreamMP3::7949619937146232995::1745633285::1745633286::1::::<><><>0<>0<>01d17225d3225e72a26d173028302efd<>res://.godot/imported/takedamage.mp3-b3457c9ff5644e77ad1a79f0edc99cdc.mp3str::
 ::res://Escenas/::1745605283
 agujero_1.tscn::PackedScene/PackedScene::8530562071053265779::1745567654::0::1::::<><><>0<>0<><>::uid://mrowaupq3gli::::res://Scripts/agujero_1.gd<>uid://dewgqpvlun4bm::::res://Sprites/boquete1.png
 cama.tscn::PackedScene/PackedScene::6806423646513824535::1745567654::0::1::::<><><>0<>0<><>::uid://dp17ed6qmglui::::res://Scripts/cama.gd<>uid://hujik80qf78a::::res://Sprites/cama.png
@@ -166,18 +166,18 @@ tienda_objetos.tscn::PackedScene/PackedScene::5102980278576728902::1745567654::0
 topo.tscn::PackedScene/PackedScene::353393010048654598::1745567654::0::1::::<><><>0<>0<><>::uid://btobh0ay8b5xl::::res://Scripts/topo.gd<>uid://cfaiiay6clu0i::::res://Escenas/Proyectil.tscn<>uid://ce3jalqdqjun2::::res://Escenas/zarpazo.tscn<>uid://b0ee0p7qu6ude::::res://Sprites/Player/Topoidle.png<>uid://b381d8cftqm1i::::res://Sprites/Player/topopegarmele.png<>uid://cxjlxdwgy1gta::::res://Sprites/Player/topoatackdistancia.png<>uid://cmmj0jnuckky0::::res://Sprites/Player/runmelee.png<>uid://bv8mj5qqrwfrv::::res://Sprites/Player/TopoRUN.png<>uid://dhv3cf2q0doh7::::res://Sprites/Player/rundistancia.png
 zarpazo.tscn::PackedScene/PackedScene::5111946374618690765::1745567654::0::1::::<><><>0<>0<><>::uid://bcrh4o57558h3::::res://Scripts/zarpazo.gd<>uid://cj0rgb8xteiyq::::res://Sprites/Player/atackarea.png
 ::res://Menus/::1745258987
-::res://Menus/Controls/::1745635090
-controls.gd::GDScript::3365243279411917564::1745634313::0::1::::<>Node2D<><>0<>0<><>::
-controls.tscn::PackedScene::8901724317153219886::1745635090::0::1::::<><><>0<>0<><>::uid://bn7fchkn5pesq::::res://Menus/Controls/controls.gd<>uid://bftmjwmvbmgcm::::res://Assets/Fonts/Magedov_Military.ttf<>uid://djrvp7ir5hym7::::res://Assets/BrianSprites/Screens/title_screen.png<>uid://ca8f02maausa::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_return.png<>uid://b2kelxd6toktp::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png<>uid://br1kdp0afwws6::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_horizontal.png<>uid://b4vqc120mq3mr::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_space_icon.png<>uid://c5m273q7ncjt5::::res://Assets/BrianSprites/UI/reightclick.png<>uid://b7i7ccfmvgh52::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_down.png<>uid://b5l7m1ro0vv1n::::res://Assets/BrianSprites/UI/leftclick.png<>uid://cwt48ujqk6udm::::res://Assets/BrianSprites/UI/fondoboton.png<>uid://b200si0msxv6h::::res://Assets/BrianSprites/UI/a.png<>uid://bynauen20t6xl::::res://Assets/BrianSprites/UI/d.png<>uid://cqxrrc470qrml::::res://Assets/BrianSprites/UI/s.png<>uid://thegk3bb10q4::::res://Assets/BrianSprites/UI/w.png
+::res://Menus/Controls/::1745636331
+controls.gd::GDScript/GDScript::3365243279411917564::1745634313::0::1::::<>Node2D<><>0<>0<><>::
+controls.tscn::PackedScene/PackedScene::8901724317153219886::1745636331::0::1::::<><><>0<>0<><>::uid://bn7fchkn5pesq::::res://Menus/Controls/controls.gd<>uid://bftmjwmvbmgcm::::res://Assets/Fonts/Magedov_Military.ttf<>uid://djrvp7ir5hym7::::res://Assets/BrianSprites/Screens/title_screen.png<>uid://ca8f02maausa::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_return.png<>uid://b2kelxd6toktp::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png<>uid://br1kdp0afwws6::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_horizontal.png<>uid://b4vqc120mq3mr::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_space_icon.png<>uid://c5m273q7ncjt5::::res://Assets/BrianSprites/UI/reightclick.png<>uid://b7i7ccfmvgh52::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_down.png<>uid://b5l7m1ro0vv1n::::res://Assets/BrianSprites/UI/leftclick.png<>uid://cwt48ujqk6udm::::res://Assets/BrianSprites/UI/fondoboton.png<>uid://b200si0msxv6h::::res://Assets/BrianSprites/UI/a.png<>uid://bynauen20t6xl::::res://Assets/BrianSprites/UI/d.png<>uid://cqxrrc470qrml::::res://Assets/BrianSprites/UI/s.png<>uid://thegk3bb10q4::::res://Assets/BrianSprites/UI/w.png
 ::res://Menus/FinishGame/::1745628290
 finish_game.gd::GDScript/GDScript::1373971802044465099::1745628290::0::1::::<>Node2D<><>0<>0<><>::
 finish_game.tscn::PackedScene/PackedScene::942811520130067629::1745258987::0::1::::<><><>0<>0<><>::uid://tttd50wwvplr::::res://Menus/FinishGame/finish_game.gd<>uid://bftmjwmvbmgcm::::res://Assets/Fonts/Magedov_Military.ttf<>uid://djrvp7ir5hym7::::res://Assets/BrianSprites/Screens/title_screen.png<>uid://cwt48ujqk6udm::::res://Assets/BrianSprites/UI/fondoboton.png<>uid://ca8f02maausa::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_return.png
 ::res://Menus/GameOver/::1745628237
 game_over.gd::GDScript/GDScript::4092434848448016194::1745628237::0::1::::<>Node2D<><>0<>0<><>::
 game_over.tscn::PackedScene/PackedScene::6448012634810296344::1745602395::0::1::::<><><>0<>0<><>::uid://bykn2lqb5w2iw::::res://Menus/GameOver/game_over.gd<>uid://m6hhimxre3fm::::res://Assets/BrianSprites/Screens/perdistetonto.png<>uid://b2kelxd6toktp::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png<>uid://cwt48ujqk6udm::::res://Assets/BrianSprites/UI/fondoboton.png<>uid://bftmjwmvbmgcm::::res://Assets/Fonts/Magedov_Military.ttf<>uid://ca8f02maausa::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_return.png
-::res://Menus/MainTitle/::1745635089
-main_title.gd::GDScript::4462344500406138758::1745631801::0::1::::<>Control<><>0<>0<><>::
-main_title.tscn::PackedScene::4237963689900019613::1745635089::0::1::::<><><>0<>0<><>::uid://b4tufrh4wmxw5::::res://Menus/MainTitle/main_title.gd<>uid://djrvp7ir5hym7::::res://Assets/BrianSprites/Screens/title_screen.png<>uid://bftmjwmvbmgcm::::res://Assets/Fonts/Magedov_Military.ttf<>uid://b2kelxd6toktp::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png<>uid://cwt48ujqk6udm::::res://Assets/BrianSprites/UI/fondoboton.png<>uid://ca8f02maausa::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_return.png
+::res://Menus/MainTitle/::1745636330
+main_title.gd::GDScript/GDScript::4462344500406138758::1745631801::0::1::::<>Control<><>0<>0<><>::
+main_title.tscn::PackedScene/PackedScene::4237963689900019613::1745636330::0::1::::<><><>0<>0<><>::uid://b4tufrh4wmxw5::::res://Menus/MainTitle/main_title.gd<>uid://djrvp7ir5hym7::::res://Assets/BrianSprites/Screens/title_screen.png<>uid://bftmjwmvbmgcm::::res://Assets/Fonts/Magedov_Military.ttf<>uid://b2kelxd6toktp::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png<>uid://cwt48ujqk6udm::::res://Assets/BrianSprites/UI/fondoboton.png<>uid://ca8f02maausa::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_return.png
 ::res://Menus/OptionsMenu/::1745628204
 options_menu.gd::GDScript/GDScript::8280962376478539985::1745628204::0::1::::<>CanvasLayer<><>0<>0<><>::
 options_menu.tscn::PackedScene/PackedScene::5166212305830055682::1745258987::0::1::::<><><>0<>0<><>::uid://dp8mif8x47qqb::::res://Menus/OptionsMenu/options_menu.gd<>uid://djrvp7ir5hym7::::res://Assets/BrianSprites/Screens/title_screen.png<>uid://b2kelxd6toktp::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png<>uid://br1kdp0afwws6::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_horizontal.png<>uid://bftmjwmvbmgcm::::res://Assets/Fonts/Magedov_Military.ttf<>uid://ca8f02maausa::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_return.png<>uid://cwt48ujqk6udm::::res://Assets/BrianSprites/UI/fondoboton.png
@@ -185,11 +185,15 @@ options_menu.tscn::PackedScene/PackedScene::5166212305830055682::1745258987::0::
 paused_menu.gd::GDScript/GDScript::5272541537491612813::1745258987::0::1::::<>Control<><>0<>0<><>::
 paused_menu.tscn::PackedScene/PackedScene::216982366128180226::1745258987::0::1::::<><><>0<>0<><>::uid://cheb8vbtyuyor::::res://Menus/PausedMenu/paused_menu.gd<>uid://b2kelxd6toktp::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_arrows_vertical.png<>uid://bftmjwmvbmgcm::::res://Assets/Fonts/Magedov_Military.ttf<>uid://ca8f02maausa::::res://Assets/input-prompts/Keyboard & Mouse/Default/keyboard_return.png<>uid://cwt48ujqk6udm::::res://Assets/BrianSprites/UI/fondoboton.png
 ::res://Scenes/::1745623217
-::res://Scenes/Boses/::1745602660
-::res://Scenes/Boses/FinalBoss/::1745635090
-FinalBoss.tscn::PackedScene::1814848571583589442::1745635090::0::1::::<><><>0<>0<><>::uid://c6h7lvc4v25qu::::res://Scenes/Boses/FinalBoss/Script/final_boss.gd<>uid://8q67whaxk62v::::res://Assets/BrianSprites/Bosses/Dead/atack1.png<>uid://ckq0f043b5gir::::res://Assets/BrianSprites/Bosses/Dead/atack2_summon.png<>uid://dapqp4dbbqcl2::::res://Assets/BrianSprites/Bosses/Dead/idlewalk.png
+::res://Scenes/Boses/::1745936957
+::res://Scenes/Boses/FinalBoss/::1745636330
+FinalBoss.tscn::PackedScene/PackedScene::1814848571583589442::1745636330::0::1::::<><><>0<>0<><>::uid://c6h7lvc4v25qu::::res://Scenes/Boses/FinalBoss/Script/final_boss.gd<>uid://8q67whaxk62v::::res://Assets/BrianSprites/Bosses/Dead/atack1.png<>uid://ckq0f043b5gir::::res://Assets/BrianSprites/Bosses/Dead/atack2_summon.png<>uid://dapqp4dbbqcl2::::res://Assets/BrianSprites/Bosses/Dead/idlewalk.png
 ::res://Scenes/Boses/FinalBoss/Script/::1745629149
 final_boss.gd::GDScript/GDScript::6965109859371853812::1745629149::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scenes/Boses/Golem/::1745937045
+Golem.tscn::PackedScene/PackedScene::4298459235579601075::1745936987::0::1::::<><><>0<>0<><>::
+::res://Scenes/Boses/Golem/Scripts/::1745937045
+Golem.gd::GDScript::6783947523448286695::1745937000::0::1::::<>Node<><>0<>0<><>::
 ::res://Scenes/Characters/::1745624167
 ::res://Scenes/Characters/Bed/::1745258987
 bed.tscn::PackedScene/PackedScene::6806423646513824535::1745258987::0::1::::<><><>0<>0<><>::uid://bmr4m03ryfg4l::::res://Scenes/Characters/Bed/Scripts/bed.gd<>uid://beq4uctaqkjvg::::res://Assets/BrianSprites/cama.png
@@ -207,10 +211,10 @@ gold.gd::GDScript/GDScript::9067711513789799511::1745629798::0::1::::<>Area2D<><
 hole.tscn::PackedScene/PackedScene::8530562071053265779::1745258987::0::1::::<><><>0<>0<><>::uid://cm4bgetnn04qk::::res://Scenes/Characters/Hole/Scripts/hole.gd<>uid://cngldcfhduhsc::::res://Assets/BrianSprites/boquete1.png
 ::res://Scenes/Characters/Hole/Scripts/::1745258987
 hole.gd::GDScript/GDScript::5675046117720254102::1745258987::0::1::::<>Area2D<><>0<>0<><>::
-::res://Scenes/Characters/Mole/::1745635089
-mole.tscn::PackedScene::353393010048654598::1745635089::0::1::::<><><>0<>0<><>::uid://c6361emopt4f8::::res://Scenes/Characters/Mole/Scripts/mole.gd<>uid://du73e11lp0qio::::res://Assets/BrianSprites/Player/Topoidle.png<>uid://dn60m7ebmrwia::::res://Assets/BrianSprites/Player/topopegarmele.png<>uid://cnebbefpwn1ex::::res://Assets/BrianSprites/Player/topoatackdistancia.png<>uid://bdrpv4o48n6ro::::res://Assets/BrianSprites/Player/runmelee.png<>uid://dirb5nkk3jlgx::::res://Assets/BrianSprites/Player/TopoRUN.png<>uid://c2vfuiub8886s::::res://Assets/BrianSprites/Player/rundistancia.png
-::res://Scenes/Characters/Mole/Scripts/::1745633468
-mole.gd::GDScript::7008426983984142471::1745633468::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scenes/Characters/Mole/::1745636330
+mole.tscn::PackedScene/PackedScene::353393010048654598::1745636330::0::1::::<><><>0<>0<><>::uid://c6361emopt4f8::::res://Scenes/Characters/Mole/Scripts/mole.gd<>uid://du73e11lp0qio::::res://Assets/BrianSprites/Player/Topoidle.png<>uid://dn60m7ebmrwia::::res://Assets/BrianSprites/Player/topopegarmele.png<>uid://cnebbefpwn1ex::::res://Assets/BrianSprites/Player/topoatackdistancia.png<>uid://bdrpv4o48n6ro::::res://Assets/BrianSprites/Player/runmelee.png<>uid://dirb5nkk3jlgx::::res://Assets/BrianSprites/Player/TopoRUN.png<>uid://c2vfuiub8886s::::res://Assets/BrianSprites/Player/rundistancia.png
+::res://Scenes/Characters/Mole/Scripts/::1745635481
+mole.gd::GDScript/GDScript::7008426983984142471::1745635481::0::1::::<>CharacterBody2D<><>0<>0<><>::
 ::res://Scenes/Characters/MoleEx/::1745627573
 mole_ex.tscn::PackedScene/PackedScene::7354134630814373590::1745627573::0::1::::<><><>0<>0<><>::uid://dnslxp4ntm5m6::::res://Assets/BrianSprites/topo_ex.png<>uid://c7pyae1emks2x::::res://Scenes/Characters/MoleEx/Scripts/mole_ex.gd
 ::res://Scenes/Characters/MoleEx/Scripts/::1745627573
@@ -224,53 +228,59 @@ swipe.tscn::PackedScene/PackedScene::5111946374618690765::1745602395::0::1::::<>
 ::res://Scenes/Characters/Swipe/Scripts/::1745602395
 swipe.gd::GDScript/GDScript::5901675119129959054::1745602395::0::1::::<>Area2D<><>0<>0<><>::
 ::res://Scenes/Enemies/::1745623289
-::res://Scenes/Enemies/Barrel/::1745635089
-barrel.tscn::PackedScene::2102513328732754348::1745635089::0::1::::<><><>0<>0<><>::uid://ciw06pbiwsr1k::::res://Scenes/Enemies/Barrel/Scripts/barrel.gd<>uid://db52j3jt73wwb::::res://Assets/BrianSprites/Enemies/Barrel/explosion.png<>uid://br1quttnjky1p::::res://Assets/BrianSprites/Enemies/Barrel/barrel_activate.png<>uid://dbesbq3m08w50::::res://Assets/BrianSprites/Enemies/Barrel/barrel_walk.png
+::res://Scenes/Enemies/Barrel/::1745636330
+barrel.tscn::PackedScene/PackedScene::2102513328732754348::1745636330::0::1::::<><><>0<>0<><>::uid://ciw06pbiwsr1k::::res://Scenes/Enemies/Barrel/Scripts/barrel.gd<>uid://db52j3jt73wwb::::res://Assets/BrianSprites/Enemies/Barrel/explosion.png<>uid://br1quttnjky1p::::res://Assets/BrianSprites/Enemies/Barrel/barrel_activate.png<>uid://dbesbq3m08w50::::res://Assets/BrianSprites/Enemies/Barrel/barrel_walk.png
 ::res://Scenes/Enemies/Barrel/Scripts/::1745628494
 barrel.gd::GDScript/GDScript::5381342501298657010::1745628494::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Scenes/Enemies/Cangrejo/::1745635090
-Cangrejo.tscn::PackedScene::7825228718610848602::1745635090::0::1::::<><><>0<>0<><>::uid://lol2c735gu0y::::res://Assets/BrianSprites/Enemies/Crab/crab_atack.png<>uid://bqjgylyn5re48::::res://Scenes/Enemies/Cangrejo/Scripts/cangrejo.gd<>uid://bnid0syhlfaj2::::res://Assets/BrianSprites/Enemies/humo_muerte.png<>uid://datjm3irig6vg::::res://Assets/BrianSprites/Enemies/Crab/crab_walk.png
+::res://Scenes/Enemies/Cangrejo/::1745636330
+Cangrejo.tscn::PackedScene/PackedScene::7825228718610848602::1745636330::0::1::::<><><>0<>0<><>::uid://lol2c735gu0y::::res://Assets/BrianSprites/Enemies/Crab/crab_atack.png<>uid://bqjgylyn5re48::::res://Scenes/Enemies/Cangrejo/Scripts/cangrejo.gd<>uid://bnid0syhlfaj2::::res://Assets/BrianSprites/Enemies/humo_muerte.png<>uid://datjm3irig6vg::::res://Assets/BrianSprites/Enemies/Crab/crab_walk.png
 ::res://Scenes/Enemies/Cangrejo/Scripts/::1745628800
 cangrejo.gd::GDScript/GDScript::3528429358162055443::1745628800::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Scenes/Enemies/Miner/::1745635090
-miner.tscn::PackedScene::57579905128029448::1745635090::0::1::::<><><>0<>0<><>::uid://b6wg0px432y4y::::res://Scenes/Enemies/Miner/Scripts/miner.gd<>uid://c4b7o6a5ir74p::::res://Assets/BrianSprites/Enemies/Miner/atack.png<>uid://cqfgvy73va0gh::::res://Assets/BrianSprites/Enemies/Miner/walk.png<>uid://bnid0syhlfaj2::::res://Assets/BrianSprites/Enemies/humo_muerte.png
+::res://Scenes/Enemies/Miner/::1745636330
+miner.tscn::PackedScene/PackedScene::57579905128029448::1745636330::0::1::::<><><>0<>0<><>::uid://b6wg0px432y4y::::res://Scenes/Enemies/Miner/Scripts/miner.gd<>uid://c4b7o6a5ir74p::::res://Assets/BrianSprites/Enemies/Miner/atack.png<>uid://cqfgvy73va0gh::::res://Assets/BrianSprites/Enemies/Miner/walk.png<>uid://bnid0syhlfaj2::::res://Assets/BrianSprites/Enemies/humo_muerte.png
 ::res://Scenes/Enemies/Miner/Scripts/::1745628604
 miner.gd::GDScript/GDScript::4608100918602529610::1745628604::0::1::::<>CharacterBody2D<><>0<>0<><>::
 ::res://Scenes/Enemies/MinerProjectile/::1745623289
 miner_projectile.tscn::PackedScene/PackedScene::8039823060457270010::1745623289::0::1::::<><><>0<>0<><>::uid://bi16o6iduwkym::::res://Scenes/Enemies/MinerProjectile/SCripts/miner_projectile.gd<>uid://ovax1vj1gqow::::res://Assets/BrianSprites/Enemies/Miner/proyectil.png
 ::res://Scenes/Enemies/MinerProjectile/Scripts/::1745623289
 miner_projectile.gd::GDScript/GDScript::3003514123039543092::1745623289::0::1::::<>Area2D<><>0<>0<><>::
-::res://Scenes/Enemies/Murciegalo/::1745635090
-Murciegalo.tscn::PackedScene::3495641280056455111::1745635090::0::1::::<><><>0<>0<><>::uid://c2lf7honsrjtx::::res://Scenes/Enemies/Murciegalo/Script/muerciegalo.gd<>uid://dguepkhvsid6a::::res://Assets/BrianSprites/Enemies/Bat/bat_atack.png<>uid://bnid0syhlfaj2::::res://Assets/BrianSprites/Enemies/humo_muerte.png<>uid://dceciaiq2f58a::::res://Assets/BrianSprites/Enemies/Bat/bat_fly.png
+::res://Scenes/Enemies/Murciegalo/::1745636330
+Murciegalo.tscn::PackedScene/PackedScene::3495641280056455111::1745636330::0::1::::<><><>0<>0<><>::uid://c2lf7honsrjtx::::res://Scenes/Enemies/Murciegalo/Script/muerciegalo.gd<>uid://dguepkhvsid6a::::res://Assets/BrianSprites/Enemies/Bat/bat_atack.png<>uid://bnid0syhlfaj2::::res://Assets/BrianSprites/Enemies/humo_muerte.png<>uid://dceciaiq2f58a::::res://Assets/BrianSprites/Enemies/Bat/bat_fly.png
 ::res://Scenes/Enemies/Murciegalo/Script/::1745630263
 muerciegalo.gd::GDScript/GDScript::6691009421182629641::1745630263::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Scenes/Levels/::1745627573
+::res://Scenes/Levels/::1745936615
 ::res://Scenes/Levels/EndComic/::1745602395
 end_comic.tscn::PackedScene/PackedScene::1211491023727477394::1745602395::0::1::::<><><>0<>0<><>::uid://dh6la7vmyhctu::::res://Scenes/Levels/EndComic/Scripts/end_comic.gd<>uid://cfy44mfwv628c::::res://Assets/BrianSprites/Screens/final.png
 ::res://Scenes/Levels/EndComic/Scripts/::1745627573
 end_comic.gd::GDScript/GDScript::7715249267607486618::1745627573::0::1::::<>Control<><>0<>0<><>::
-::res://Scenes/Levels/Level_1/::1745635090
-level_1.tscn::PackedScene::3947329873651248238::1745635090::0::1::::<><><>0<>0<><>::uid://bb4c1bstdcmcy::::res://Scenes/Levels/Level_1/Scripts/level_1.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn
+::res://Scenes/Levels/Level_1/::1745636330
+level_1.tscn::PackedScene/PackedScene::3947329873651248238::1745636330::0::1::::<><><>0<>0<><>::uid://bb4c1bstdcmcy::::res://Scenes/Levels/Level_1/Scripts/level_1.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn
 ::res://Scenes/Levels/Level_1/Scripts/::1745632882
-level_1.gd::GDScript::2516644428023131436::1745632882::0::1::::<>Node2D<><>0<>0<><>::
-::res://Scenes/Levels/Level_2/::1745635090
-level_2.tscn::PackedScene::1723153454461391369::1745635090::0::1::::<><><>0<>0<><>::uid://bek3fcvlw0lkd::::res://Scenes/Levels/Level_2/Scripts/level_2.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://cex6lsu7l7wyo::::res://Escenas/tienda_objetos.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn
+level_1.gd::GDScript/GDScript::2516644428023131436::1745632882::0::1::::<>Node2D<><>0<>0<><>::
+::res://Scenes/Levels/Level_2/::1745636330
+level_2.tscn::PackedScene/PackedScene::1723153454461391369::1745636330::0::1::::<><><>0<>0<><>::uid://bek3fcvlw0lkd::::res://Scenes/Levels/Level_2/Scripts/level_2.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://cex6lsu7l7wyo::::res://Escenas/tienda_objetos.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn
 ::res://Scenes/Levels/Level_2/Scripts/::1745632630
-level_2.gd::GDScript::2689528978570591563::1745632630::0::1::::<>Node2D<><>0<>0<><>::
-::res://Scenes/Levels/Level_3/::1745635090
-level_3.tscn::PackedScene::6544072654577595942::1745635090::0::1::::<><><>0<>0<><>::uid://dp0rbdhlrn2dj::::res://Scenes/Levels/Level_3/Scripts/level_3.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://cex6lsu7l7wyo::::res://Escenas/tienda_objetos.tscn<>uid://25lkrqwxsg3::::res://Scenes/Enemies/Miner/miner.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn
+level_2.gd::GDScript/GDScript::2689528978570591563::1745632630::0::1::::<>Node2D<><>0<>0<><>::
+::res://Scenes/Levels/Level_3/::1745636330
+level_3.tscn::PackedScene/PackedScene::6544072654577595942::1745636330::0::1::::<><><>0<>0<><>::uid://dp0rbdhlrn2dj::::res://Scenes/Levels/Level_3/Scripts/level_3.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://cex6lsu7l7wyo::::res://Escenas/tienda_objetos.tscn<>uid://25lkrqwxsg3::::res://Scenes/Enemies/Miner/miner.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn
 ::res://Scenes/Levels/Level_3/Scripts/::1745632519
-level_3.gd::GDScript::8264738293078949107::1745632519::0::1::::<>Node2D<><>0<>0<><>::
-::res://Scenes/Levels/Level_4/::1745635090
-level_4.tscn::PackedScene::6544072654577595942::1745635090::0::1::::<><><>0<>0<><>::uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://bybq8dclu7nen::::res://Scenes/Levels/Level_4/Scripts/level_4.gd<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn<>uid://djqumyarg7yle::::res://Scenes/Enemies/Cangrejo/Cangrejo.tscn<>uid://cex6lsu7l7wyo::::res://Escenas/tienda_objetos.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn<>uid://25lkrqwxsg3::::res://Scenes/Enemies/Miner/miner.tscn
-::res://Scenes/Levels/Level_4/Scripts/::1745632519
-level_4.gd::GDScript::4074047873030511593::1745632519::0::1::::<>Node2D<><>0<>0<><>::
-::res://Scenes/Levels/Level_5/::1745635090
-level_5.tscn::PackedScene::6533548856581651770::1745635090::0::1::::<><><>0<>0<><>::uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://04ej5go7qpu5::::res://Scenes/Boses/FinalBoss/FinalBoss.tscn
-::res://Scenes/Levels/LoadingScene/::1745635089
-loading_scene.tscn::PackedScene::3629306161068761560::1745635089::0::1::::<><><>0<>0<><>::uid://dc1nr1qy2ph15::::res://Scenes/Characters/MoleEx/mole_ex.tscn<>uid://k0p8qdr1o2k5::::res://Scenes/Characters/Gold/gold.tscn<>uid://bxanfiooe1sno::::res://Scenes/Levels/LoadingScene/Scripts/loading_scene.gd<>uid://bftmjwmvbmgcm::::res://Assets/Fonts/Magedov_Military.ttf
+level_3.gd::GDScript/GDScript::8264738293078949107::1745632519::0::1::::<>Node2D<><>0<>0<><>::
+::res://Scenes/Levels/Level_4/::1745937060
+level_4.tscn::PackedScene::6533548856581651770::1745937060::0::1::::<><><>0<>0<><>::uid://ce5mmjuaduiyc::::res://Scenes/Levels/Level_4/Scripts/level_4.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn
+::res://Scenes/Levels/Level_4/Scripts/::1745936873
+level_4.gd::GDScript/GDScript::5116278611611226018::1745636041::0::1::::<>Node2D<><>0<>0<><>::
+::res://Scenes/Levels/Level_5/::1745936544
+level_5.tscn::PackedScene/PackedScene::6544072654577595942::1745936544::0::1::::<><><>0<>0<><>::uid://bybq8dclu7nen::::res://Scenes/Levels/Level_5/Scripts/level_5.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn<>uid://cex6lsu7l7wyo::::res://Escenas/tienda_objetos.tscn<>uid://djqumyarg7yle::::res://Scenes/Enemies/Cangrejo/Cangrejo.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn<>uid://25lkrqwxsg3::::res://Scenes/Enemies/Miner/miner.tscn<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn
+::res://Scenes/Levels/Level_5/Scripts/::1745936526
+level_5.gd::GDScript/GDScript::4074047873030511593::1745632519::0::1::::<>Node2D<><>0<>0<><>::
+::res://Scenes/Levels/Level_6/::1745936873
+level_6.tscn::PackedScene/PackedScene::9018557317713234594::1745936873::0::1::::<><><>0<>0<><>::uid://ce5mmjuaduiyc::::res://Scenes/Levels/Level_4/Scripts/level_4.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://04ej5go7qpu5::::res://Scenes/Boses/FinalBoss/FinalBoss.tscn
+::res://Scenes/Levels/Level_6/Scripts/::1745936849
+level_6.gd::GDScript/GDScript::2249590346784976096::1745936849::0::1::::<>Node2D<><>0<>0<><>::
+::res://Scenes/Levels/LoadingScene/::1745636330
+loading_scene.tscn::PackedScene/PackedScene::3629306161068761560::1745636330::0::1::::<><><>0<>0<><>::uid://dc1nr1qy2ph15::::res://Scenes/Characters/MoleEx/mole_ex.tscn<>uid://k0p8qdr1o2k5::::res://Scenes/Characters/Gold/gold.tscn<>uid://bxanfiooe1sno::::res://Scenes/Levels/LoadingScene/Scripts/loading_scene.gd<>uid://bftmjwmvbmgcm::::res://Assets/Fonts/Magedov_Military.ttf
 ::res://Scenes/Levels/LoadingScene/Scripts/::1745632882
-loading_scene.gd::GDScript::4001562779699881824::1745632882::0::1::::<>Node2D<><>0<>0<><>::
+loading_scene.gd::GDScript/GDScript::4001562779699881824::1745632882::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Scenes/Levels/Shop/::1745602395
 shop_exp.tscn::PackedScene/PackedScene::1553185339784700879::1745602395::0::1::::<><><>0<>0<><>::
 ::res://Scenes/Levels/StartComic/::1745602395
@@ -292,7 +302,7 @@ topo.gd::GDScript/GDScript::3748984533141031593::1745567654::0::1::::<>Character
 zarpazo.gd::GDScript/GDScript::2562370382927064926::1745567654::0::1::::<>Area2D<><>0<>0<><>::
 ::res://Singletons/::1745635010
 audio_manager.gd::GDScript/GDScript::4063288383907305152::1745258987::0::1::::<>Node<><>0<>0<><>::
-game_manager.gd::GDScript::874977800378959687::1745635010::0::1::::<>Node<><>0<>0<><>::
+game_manager.gd::GDScript/GDScript::874977800378959687::1745635010::0::1::::<>Node<><>0<>0<><>::
 ::res://UI/::1745627573
 ::res://UI/HUD/::1745627573
 hud.gd::GDScript/GDScript::9195872515400821895::1745627573::0::1::::<>CanvasLayer<><>0<>0<><>::

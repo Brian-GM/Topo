@@ -318,6 +318,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer/MenuContainer/GameControlsContainer/CenterContainer/GridContainer/HBoxContainer5/Label"]
+layout_mode = 0
 offset_left = -23.5
 offset_top = 38.5
 offset_right = 125.5

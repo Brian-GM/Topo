@@ -26,7 +26,7 @@ var atack_area:Area2D
 var is_atack: bool = false
 var damage_zone: Area2D
 
-var health:int = 25
+var health:int = 50
 var damage:int = 1
 
 func _ready():

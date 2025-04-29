@@ -26,3 +26,10 @@ RESET_LEVEL,Reset level,Reiniciar Nivel
 GAME_OVER,Game Over,Has perdido
 GAME_FINISH,Thanks for playing,Gracias por jugar
 GOLD_COLLECTED,Gold Collected,Oro Recogido
+MELEE_ATTACK,Melee Attack,Ataque Cuerpo a Cuerpo
+RANGE_ATTACK,Range Attack,Ataque a Distancia
+MOVE_MOLE,Move Mole,Mover al Topo
+PRESS_F,Press F to continue,Presiona F para continuar
+PRESS_F_HEAL,Press F at the bedside to heal yourself when needed,Presiona F al lado de la cama para curarte cuando lo necesites
+CLOSE,Close,Cerrar
+INTERACT,Interact,Interactuar

@@ -18,6 +18,8 @@ var navigation_agent: NavigationAgent2D
 
 var player: Node2D = null
 
+var coins: PackedScene = preload("res://Scenes/Characters/Coin/coin.tscn")
+
 
 func _ready():
 	animated_sprite = get_node("AnimatedSprite2D")
@@ -83,7 +85,7 @@ func _on_animated_sprite_finished() -> void:
 	if animated_sprite.animation == "explote":
 		animated_sprite.play("death")
 		#animated_sprite.scale = Vector2(5,5)
-
+	
 	if animated_sprite.animation == "death" and is_exploting:
 		AudioManager.play_sound("Small Bomb Explosion Sound Effect.mp3",0.0,false,0.0,0.3)
 		animated_sprite.scale = Vector2(5,5)
@@ -95,4 +97,7 @@ func _on_animated_sprite_finished() -> void:
 				if body.is_in_group("player"):
 					player.call_deferred("damage")
 	elif animated_sprite.animation == "death":
+		var coin: Area2D = coins.instantiate()
+		coin.position = global_position
+		get_tree().current_scene.add_child(coin)
 		queue_free()

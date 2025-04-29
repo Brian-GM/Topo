@@ -156,12 +156,22 @@ func exited_store_range():
 
 
 func heal():
-	GameManager.player_life += GameManager.MAX_PLAYER_LIFE/3
-	AudioManager.play_sound("Health.mp3",0.0,false,0.0,1)
+	if bed_in_range is StaticBody2D and ((bed_in_range as StaticBody2D).find_child("Area2D")) is Area2D:
+		var area: Area2D = bed_in_range.get_node("Area2D")
+		area.monitoring = false
+		area.monitorable = false
+	
+	GameManager.player_life += int((GameManager.MAX_PLAYER_LIFE * 25) / 100)
+	AudioManager.play_sound("Health.mp3", 0.0, false, 0.0, 0.3)
 
 
 
 func pasar_nivel():
+	if AudioManager.audio_stream_players.has("TemaPrincipal.mp3"):
+		AudioManager.stop("TemaPrincipal.mp3", 1.0)
+	
+	AudioManager.play_sound("efecto de sonido PALA CAVANDO [shovel digging  sound effect] (mp3cut.net).mp3", 0.0, false, 0.0, 0.5)
+	
 	get_tree().change_scene_to_file("res://Scenes/Levels/LoadingScene/loading_scene.tscn")
 
 
@@ -170,14 +180,16 @@ func exp_shop():
 
 
 func store():
-	get_tree().change_scene_to_file("res://Scenes/Levels/Shop/shop_exp.tscn")
+	AudioManager.play_sound("mole_store_talk.mp3", 0.0, false, 0.0, 0.4)
+	GameManager.store_visibility(true)
 
 
 func damage(total_damage: int = 1):
 	GameManager.player_life -= total_damage
-	AudioManager.play_sound("takedamage.mp3",0.0,false,0.0,1)
+	AudioManager.play_sound("takedamage.mp3", 0.0, false, 0.0, 0.5)
 	if GameManager.player_life < 0:
 		die()
+
 
 func die():
 	GameManager.game_over()

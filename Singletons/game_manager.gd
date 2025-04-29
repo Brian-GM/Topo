@@ -13,14 +13,14 @@ var is_reset_button_pressed: bool = false
 # ====== player ======
 signal change_player_life(life: int)
 
-const MAX_PLAYER_LIFE: int = 6
+var MAX_PLAYER_LIFE: int = 4
 var player_life: int = MAX_PLAYER_LIFE:
 	set(new_value):
 		if new_value > MAX_PLAYER_LIFE:
 			player_life = MAX_PLAYER_LIFE
 		else:
 			player_life = max(new_value, 0)
-		change_player_life.emit(new_value)
+		change_player_life.emit(player_life)
 
 var player_attack: float = 1.0
 
@@ -65,6 +65,11 @@ var paused_menu_node: Control
 
 var is_cinematic_active: bool = false
 
+signal change_reset_store()
+
+var store: PackedScene
+var store_node: CanvasLayer
+
 
 func _ready() -> void:
 	self.process_mode = Node.PROCESS_MODE_ALWAYS
@@ -73,18 +78,24 @@ func _ready() -> void:
 	# set language
 	TranslationServer.set_locale(game_language)
 	
+	store = load("res://Scenes/Levels/Shop/shop.tscn")
+	store_node = store.instantiate() as CanvasLayer
+	store_visibility(false)
+	add_child(store_node)
+	move_child(store_node, 0)
+	
 	# add the pause menu to use always in the game
 	paused_menu_scene = load("res://Menus/PausedMenu/paused_menu.tscn")
 	paused_menu_node = paused_menu_scene.instantiate() as Control
 	pause_game_menu_visibility(false)
 	add_child(paused_menu_node)
-	move_child(paused_menu_node, 0)
+	move_child(paused_menu_node, 1)
 	
 	game_hud = load("res://UI/HUD/hud.tscn")
 	game_hud_node = game_hud.instantiate() as CanvasLayer
 	hud_visibility(false)
 	add_child(game_hud_node)
-	move_child(game_hud_node, 1)
+	move_child(game_hud_node, 2)
 	
 	reset_game_stats()
 
@@ -109,19 +120,22 @@ func reset_game_stats() -> void:
 
 # reset player variables
 func reset_player_stats() -> void:
+	if current_level == 0:
+		MAX_PLAYER_LIFE = 4
+		player_attack = 1.0
+		player_velocity = 300.0
+		player_defense = 1.0
+		player_cooldown_shot = 1.0
+		player_cooldown_claw = 0.5
+		coins = 0
+		xp = 0
+	
 	player_life = MAX_PLAYER_LIFE
-	player_attack = 1.0
-	player_velocity = 300.0
-	player_defense = 1.0
-	player_cooldown_shot = 1.0
-	player_cooldown_claw = 0.5
-	coins = 0
-	xp = 0
+	coins -= int((coins * 25) / 100)
 
 
 # function to pause the game
 func pause_game(mode: bool) -> void:
-	print(mode)
 	GameManager.is_game_started = not mode
 	pause_game_menu_visibility(mode)
 	# get focus on the button
@@ -142,7 +156,21 @@ func pause_game_menu_visibility(mode: bool) -> void:
 
 # change hud visivility
 func hud_visibility(mode: bool) -> void:
-	game_hud_node.visible = mode
+	if game_hud_node:
+		if get_tree().current_scene.name == "LoadingScene":
+			game_hud_node.visible = false
+			return
+		
+		game_hud_node.visible = mode
+
+
+func store_visibility(mode: bool) -> void:
+	store_node.visible = mode
+	get_tree().paused = mode
+
+
+func reset_store() -> void:
+	change_reset_store.emit()
 
 
 # reset level
@@ -160,12 +188,10 @@ func reset_actual_level() -> void:
 # go to next level or finnish the game
 func next_level() -> void:
 	current_level += 1
-	AudioManager.play_sound("efecto de sonido PALA CAVANDO [shovel digging  sound effect] (mp3cut.net).mp3",0.0,false,0.0,0.3)
-
 	if get_tree().change_scene_to_file("res://Scenes/Levels/Level_" + str(current_level) + "/level_" + str(current_level) + ".tscn") != OK:
 		reset_game_stats()
 		get_tree().change_scene_to_file("res://Menus/FinishGame/finish_game.tscn")
-	#else:dd
+	#else:
 		#reset_player_stats()
 
 
@@ -179,6 +205,7 @@ func finish_game() -> void:
 	#GameManager.is_cinematic_active = false
 	hud_visibility(false)
 	get_tree().change_scene_to_file("res://Scenes/Levels/EndComic/end_comic.tscn")
+
 
 # game over
 func game_over() -> void:

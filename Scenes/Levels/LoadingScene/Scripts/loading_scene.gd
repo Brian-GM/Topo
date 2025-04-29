@@ -5,11 +5,10 @@ var golds_2: Node2D
 
 
 func _ready() -> void:
+	if not AudioManager.audio_stream_players.has("cancion1topo.wav"):
+		AudioManager.play_music("cancion1topo.wav", 1.0, true, 0.0, 0.2)
+		
 	GameManager.hud_visibility(false)
-	AudioManager.stop("cancion1topo.wav",0.0)
-
-	AudioManager.play_music("cancion1topo.wav",0.0,true,0.0,0.2)
-
 	golds_1 = get_node("Golds")
 	golds_2 = get_node("Golds2")
 	
@@ -20,6 +19,7 @@ func _ready() -> void:
 
 
 func _on_finish_falling_body_entered(body: Node2D) -> void:
-	AudioManager.stop("cancion1topo.wav",0.0)
-	GameManager.hud_visibility(true)
-	GameManager.next_level()
+	if body.is_in_group("Topo"):
+		GameManager.hud_visibility(true)
+		GameManager.reset_store()
+		GameManager.next_level()

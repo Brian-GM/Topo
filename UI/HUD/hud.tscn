@@ -40,14 +40,13 @@ columns = 2
 position = Vector2(156.25, 16)
 scale = Vector2(1.44821, 0.75)
 texture = ExtResource("2_qdh7y")
-flip_h = true
 
 [node name="GridContainer" type="GridContainer" parent="GridContainer3"]
 layout_mode = 2
 columns = 2
 
 [node name="Avatar" type="Sprite2D" parent="GridContainer3/GridContainer"]
-position = Vector2(12, 23)
+position = Vector2(13, 35)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("2_te8l2")
 
@@ -70,15 +69,25 @@ position = Vector2(140, 22)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("4_qdh7y")
 
+[node name="Heart4" type="Sprite2D" parent="GridContainer3/GridContainer/GridContainer"]
+position = Vector2(180, 22)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_qdh7y")
+
+[node name="Heart5" type="Sprite2D" parent="GridContainer3/GridContainer/GridContainer"]
+position = Vector2(220, 22)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_qdh7y")
+
 [node name="Coin" type="Sprite2D" parent="GridContainer3/GridContainer/GridContainer"]
-position = Vector2(192, 17)
+position = Vector2(262.5, 17)
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("5_radol")
 
 [node name="Coins" type="Label" parent="."]
-offset_left = 235.0
+offset_left = 305.5
 offset_top = 32.0
-offset_right = 267.0
+offset_right = 337.5
 offset_bottom = 52.0
 theme_override_fonts/font = ExtResource("6_dhie7")
 text = "000"

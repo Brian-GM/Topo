@@ -1,0 +1,120 @@
+[gd_scene load_steps=10 format=3 uid="uid://dr52pbpsexb6m"]
+
+[ext_resource type="Script" uid="uid://p36nu2ipuain" path="res://Scenes/Levels/Shop/Scripts/shop.gd" id="1_0hnpw"]
+[ext_resource type="Texture2D" uid="uid://ck4p24aium5tl" path="res://Assets/BrianSprites/Screens/fondo_tienda.png" id="2_bd5oq"]
+[ext_resource type="FontFile" uid="uid://bftmjwmvbmgcm" path="res://Assets/Fonts/Magedov_Military.ttf" id="3_vma1o"]
+[ext_resource type="Texture2D" uid="uid://c020kjg1d8wec" path="res://Assets/BrianSprites/moneda.png" id="4_0hnpw"]
+[ext_resource type="Texture2D" uid="uid://cwt48ujqk6udm" path="res://Assets/BrianSprites/UI/fondoboton.png" id="5_vfw75"]
+[ext_resource type="Texture2D" uid="uid://dn2rquneo6dt6" path="res://Assets/BrianSprites/Improvements/ataquemelee.png" id="6_bd5oq"]
+[ext_resource type="Texture2D" uid="uid://3wjfv6fcm6qh" path="res://Assets/BrianSprites/Improvements/vidamax.png" id="7_vjh1n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bd5oq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vjh1n"]
+
+[node name="Shop" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_0hnpw")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background2" type="Sprite2D" parent="Control"]
+position = Vector2(960, 540)
+texture = ExtResource("2_bd5oq")
+
+[node name="MaxLife" type="Node2D" parent="Control"]
+position = Vector2(37, 0)
+
+[node name="ItemMaxLife" type="Button" parent="Control/MaxLife"]
+offset_left = 342.0
+offset_top = 26.0
+offset_right = 550.0
+offset_bottom = 314.0
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bd5oq")
+icon = ExtResource("7_vjh1n")
+flat = true
+icon_alignment = 1
+
+[node name="Price" type="Node2D" parent="Control/MaxLife"]
+
+[node name="Coin" type="Sprite2D" parent="Control/MaxLife/Price"]
+position = Vector2(490, 342)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_0hnpw")
+
+[node name="TextPrice" type="Label" parent="Control/MaxLife/Price"]
+offset_left = 381.0
+offset_top = 309.0
+offset_right = 421.0
+offset_bottom = 382.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_vma1o")
+theme_override_font_sizes/font_size = 60
+text = "7"
+
+[node name="Attack" type="Node2D" parent="Control"]
+position = Vector2(277, 0)
+
+[node name="ItemAttack" type="Button" parent="Control/Attack"]
+offset_left = 326.0
+offset_top = 26.0
+offset_right = 534.0
+offset_bottom = 314.0
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bd5oq")
+icon = ExtResource("6_bd5oq")
+flat = true
+icon_alignment = 1
+
+[node name="Price" type="Node2D" parent="Control/Attack"]
+
+[node name="Coin" type="Sprite2D" parent="Control/Attack/Price"]
+position = Vector2(490, 342)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_0hnpw")
+
+[node name="TextPrice" type="Label" parent="Control/Attack/Price"]
+offset_left = 381.0
+offset_top = 309.0
+offset_right = 421.0
+offset_bottom = 382.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_vma1o")
+theme_override_font_sizes/font_size = 60
+text = "7"
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -129.5
+offset_top = -118.0
+offset_right = 129.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 150
+
+[node name="CloseShop" type="Button" parent="Control/MarginContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("3_vma1o")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vjh1n")
+text = "CLOSE"
+icon = ExtResource("5_vfw75")
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="Control/MaxLife/ItemMaxLife" to="." method="_on_item_max_life_pressed"]
+[connection signal="pressed" from="Control/Attack/ItemAttack" to="." method="_on_item_attack_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/CloseShop" to="." method="_on_close_shop_pressed"]

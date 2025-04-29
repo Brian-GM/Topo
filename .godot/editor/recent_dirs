@@ -1,10 +1,9 @@
-res://Assets/BrianSprites/Bosses/Golem
+res://Assets/BrianSprites/Enemies
 res://Scenes/Levels/Level_1/Scripts
 res://Scenes/Levels/Level_4/Scripts
 res://Scenes/Levels/Level_3/Scripts
 res://Scenes/Levels/Level_2/Scripts
 res://Assets/BrianSprites/Enemies/Miner
-res://Assets/BrianSprites/Enemies
 res://Assets/BrianSprites/Enemies/Bat
 res://Assets/BrianSprites/Enemies/Crab
 res://Scenes/Boses/FinalBoss/Script
@@ -20,5 +19,6 @@ res://Scenes/Characters/Bed/Scripts
 res://Scenes/Characters/Hole/Scripts
 res://Scenes/Characters/Projectile
 res://Scenes/Characters/Swipe
+res://Scenes/Characters/Swipe/Scripts
 D:/CursoEspecializacionVideojuegosRealidadVirtual/PRlA/Sesion17/actividad3/DungeonTheftWindows
 D:/CursoEspecializacionVideojuegosRealidadVirtual/PRlA/Sesion17/actividad3/DungeonTheftWeb

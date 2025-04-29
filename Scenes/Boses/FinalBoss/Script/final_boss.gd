@@ -34,17 +34,15 @@ func _ready():
 	navigation_agent = get_node("NavigationAgent2D")
 	navigation_agent.path_desired_distance = 4.0
 	navigation_agent.target_desired_distance = 4.0
-
+	
 	detect_player = get_node("DetectPlayer")
 	atack_area = get_node("AtackArea")
-
-				
+	
 	collision_shape = get_node("DetectPlayer/CollisionShape2D")
 	collision_shape.shape.set("radius", (get_viewport_rect().size.x / 2))	
 	
 
 func _process(_delta):
-	
 	if player:
 		navigation_agent.target_position = player.global_position
 	else:
@@ -53,16 +51,14 @@ func _process(_delta):
 			for body in bodies:
 				if body.is_in_group("player"):
 					player = body
-					
-	var bodies_2 = atack_area.get_overlapping_bodies()
-	if bodies_2 and bodies_2.size() > 0:
-		for body in bodies_2:
-			if body.is_in_group("player") and !is_atack:
-				atack_melee()
+	
+	if !is_atack:
+		var bodies_2 = atack_area.get_overlapping_bodies()
+		if bodies_2 and bodies_2.size() > 0:
+			for body in bodies_2:
+				if body.is_in_group("player") and !is_atack:
+					atack_melee()
 				
-
-
-						
 
 
 func _physics_process(_delta):
@@ -74,7 +70,6 @@ func _physics_process(_delta):
 	if is_moving:
 		animated_sprite.flip_h = velocity.x < 0
 		atack_area.scale.x = -1 if animated_sprite.flip_h else 1
-
 	
 	if navigation_agent.is_navigation_finished():
 		velocity = Vector2.ZERO
@@ -86,7 +81,6 @@ func _physics_process(_delta):
 	move_and_slide()
 
 
-
 func summon():
 	var background_layer: TileMapLayer = get_tree().current_scene.get_node("Map/Spawn")
 	
@@ -94,19 +88,18 @@ func summon():
 	if used_cells.size() < 3:
 		return
 	
-	
 	used_cells.shuffle()
 	
 	var random_position_spawn_1 = (background_layer.map_to_local(used_cells[0]))
 	var random_position_spawn_2 = (background_layer.map_to_local(used_cells[1]))
 	var random_position_spawn_3 = (background_layer.map_to_local(used_cells[2]))
 	var random_position_spawn_4 = (background_layer.map_to_local(used_cells[3]))
-
+	
 	var random_enemy_1: Node2D
 	var random_enemy_2: Node2D
 	var random_enemy_3: Node2D
 	var random_enemy_4: Node2D
-
+	
 	var random_position_spawn = [random_position_spawn_1, random_position_spawn_2, random_position_spawn_3,random_position_spawn_4]
 	
 	enemies.shuffle()
@@ -129,58 +122,37 @@ func summon():
 	random_enemy_2.position = random_position_spawn[1]
 	random_enemy_3.position = random_position_spawn[2]
 	random_enemy_3.position = random_position_spawn[3]
-
+	
 	get_parent().add_child(random_enemy_1)
 	get_parent().add_child(random_enemy_2)
 	get_parent().add_child(random_enemy_3)
 	get_parent().add_child(random_enemy_4)
 
-	#random_enemy_1.connect("has_die", _on_enemy_die)
-	#random_enemy_2.connect("has_die", _on_enemy_die)
-	#random_enemy_3.connect("has_die", _on_enemy_die)
-	
-	#
-	#if enemies_has_summon == 0:
-		#get_parent().add_child(random_enemy_1)
-		#get_parent().add_child(random_enemy_2)
-		#get_parent().add_child(random_enemy_3)
-	#elif enemies_has_summon == 1:
-		#get_parent().add_child(random_enemy_1)
-		#get_parent().add_child(random_enemy_2)
-	#elif enemies_has_summon == 2:
-		#get_parent().add_child(random_enemy_1)
-	#
-	#enemies_has_summon = 3
-	
-
-
-
 
 func atack_melee():
 	animated_sprite.play("atack1")
-	is_atack = true					
+	is_atack = true
 	player.call_deferred("damage",damage)
 	AudioManager.play_sound("ataque1boss.mp3",0.0,false,0.0,0.3)
-
 
 
 func get_damaged() -> void:
 	health -= GameManager.player_attack
 	if health <= 0:
-		AudioManager.play_sound("muerteboss.mp3",0.0,false,0.0,0.3)
+		AudioManager.stop("GabMetal_Def.mp3", 1.0)
+		AudioManager.play_sound("muerteboss.mp3", 0.0, false, 0.0, 0.3)
+		if AudioManager.audio_stream_players.has("muerteboss.mp3"):
+			await (AudioManager.audio_stream_players["muerteboss.mp3"] as AudioStreamPlayer).finished
 		GameManager.finish_game()
-		
-	
-	
+
+
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if animated_sprite.animation == "atack2":
-		print("Invocacion finalizada")
 		can_moving = true
 		is_atack = false
 		animated_sprite.play("walk")
 		$Atack2_Cooldown.start(15)
 	elif animated_sprite.animation == "atack1":
-		print("Ataque 1 terminado")
 		can_moving = true
 		animated_sprite.play("walk")
 		$Atack1_Cooldown.start(2)
@@ -189,11 +161,12 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 func _on_atack_1_cooldown_timeout() -> void:
 	is_atack = false
 
+
 func _on_atack_2_cooldown_timeout() -> void:
 	if !is_atack:
 		animated_sprite.play("atack2")
 		AudioManager.play_sound("ataque2boss.mp3",0.0,false,0.0,0.3)
-
+	
 		is_atack = true
 		can_moving = false
 		summon()

@@ -4,9 +4,9 @@
 [ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres" id="1_pjlpc"]
 [ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Scenes/Characters/Mole/mole.tscn" id="2_2ikhg"]
 [ext_resource type="PackedScene" uid="uid://dtsjd1j67bm2f" path="res://Scenes/Characters/Hole/hole.tscn" id="3_2ikhg"]
-[ext_resource type="PackedScene" uid="uid://cex6lsu7l7wyo" path="res://Escenas/tienda_objetos.tscn" id="6_4ikip"]
 [ext_resource type="PackedScene" uid="uid://47qc7763yvds" path="res://Scenes/Enemies/Barrel/barrel.tscn" id="6_am72n"]
 [ext_resource type="PackedScene" uid="uid://bp2kx3srj2cyh" path="res://Scenes/Enemies/Murciegalo/Murciegalo.tscn" id="6_lglyl"]
+[ext_resource type="PackedScene" uid="uid://dl8cse8xotg2f" path="res://Scenes/Levels/Store/store.tscn" id="7_am72n"]
 
 [node name="Level2" type="Node2D"]
 script = ExtResource("1_am72n")
@@ -31,8 +31,8 @@ tile_set = ExtResource("1_pjlpc")
 [node name="Agujero1" parent="." instance=ExtResource("3_2ikhg")]
 position = Vector2(2029, 3664)
 
-[node name="Tienda_objetos" parent="." instance=ExtResource("6_4ikip")]
-position = Vector2(100, 282)
+[node name="Tienda_objetos" parent="." instance=ExtResource("7_am72n")]
+position = Vector2(-77, 299)
 scale = Vector2(2, 2)
 
 [node name="Mole" parent="." instance=ExtResource("2_2ikhg")]

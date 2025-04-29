@@ -6,9 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://dtsjd1j67bm2f" path="res://Scenes/Characters/Hole/hole.tscn" id="3_mfsf3"]
 [ext_resource type="PackedScene" uid="uid://bp2kx3srj2cyh" path="res://Scenes/Enemies/Murciegalo/Murciegalo.tscn" id="4_0k8vw"]
 [ext_resource type="PackedScene" uid="uid://47qc7763yvds" path="res://Scenes/Enemies/Barrel/barrel.tscn" id="5_n46md"]
-[ext_resource type="PackedScene" uid="uid://cex6lsu7l7wyo" path="res://Escenas/tienda_objetos.tscn" id="6_n46md"]
 [ext_resource type="PackedScene" uid="uid://25lkrqwxsg3" path="res://Scenes/Enemies/Miner/miner.tscn" id="6_s8l5x"]
 [ext_resource type="PackedScene" uid="uid://c38c2kkgcydkx" path="res://Scenes/Characters/Bed/bed.tscn" id="7_bxe2n"]
+[ext_resource type="PackedScene" uid="uid://dl8cse8xotg2f" path="res://Scenes/Levels/Store/store.tscn" id="9_4ogfy"]
 
 [node name="level_3" type="Node2D"]
 script = ExtResource("1_4ogfy")
@@ -111,10 +111,10 @@ position = Vector2(6404, -1087)
 [node name="Miner3" parent="Enemies" instance=ExtResource("6_s8l5x")]
 position = Vector2(3024, -347)
 
-[node name="Tienda_objetos" parent="." instance=ExtResource("6_n46md")]
-position = Vector2(413, 0)
-scale = Vector2(2, 2)
-
 [node name="Cama" parent="." instance=ExtResource("7_bxe2n")]
 position = Vector2(157, 625)
+scale = Vector2(2, 2)
+
+[node name="Tienda_objetos" parent="." instance=ExtResource("9_4ogfy")]
+position = Vector2(413, 0)
 scale = Vector2(2, 2)

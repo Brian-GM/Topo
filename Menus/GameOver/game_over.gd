@@ -13,6 +13,12 @@ func _ready() -> void:
 	if OS.has_feature("web"):
 		(get_node("Control/CenterContainer/MenuContainer/ButtonsContainer/QuitButton") as Button).visible = false
 	
+	AudioManager.stop("TemaPrincipal.mp3", 0.0)
+	AudioManager.stop("GabMetal_Def.mp3", 0.0)
+	
+	if not AudioManager.audio_stream_players.has("menu.wav"):
+		AudioManager.play_music("menu.wav", 0.0, true, 0.0, 0.3)
+	
 	#if AudioManager.audio_stream_players.has("background_dungeon.mp3"):
 		#AudioManager.stop("background_dungeon.mp3", 2.0)
 	
@@ -51,8 +57,10 @@ func _on_reset_level_pressed() -> void:
 		#animation_player.play("fade_out_reset_level")
 		#await animation_player.animation_finished
 		
-		button_pressed = false
+		
 		AudioManager.play_sound("hover_click.mp3",0.0,false,0.0,0.3)
+		AudioManager.stop("menu.wav", 1.0)
+		button_pressed = false
 		GameManager.reset_actual_level()
 
 

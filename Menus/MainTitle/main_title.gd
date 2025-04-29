@@ -23,7 +23,19 @@ func _enter_tree() -> void:
 
 func _ready() -> void:
 	game_ready_finished = false
-	AudioManager.play_music("menu.wav",0.0,true,0.0,0.3)
+	
+	AudioManager.stop("cancion1topo.wav", 0.0)
+	
+	AudioManager.stop("end_comic.mp3", 0.0)
+	
+	AudioManager.stop("GabMetal_Def.mp3", 0.0)
+	
+	AudioManager.stop("start_comic.mp3", 0.0)
+	
+	AudioManager.stop("TemaPrincipal.mp3", 0.0)
+	
+	if not AudioManager.audio_stream_players.has("menu.wav"):
+		AudioManager.play_music("menu.wav", 0.0, true, 0.0, 0.3)
 
 	#if AudioManager.audio_stream_players.has("background_dungeon.mp3"):
 		#AudioManager.stop("background_dungeon.mp3", 2.0)
@@ -60,7 +72,7 @@ func _ready() -> void:
 # start the game
 func _on_start_game_button_pressed() -> void:
 	if not button_pressed and game_ready_finished:
-		AudioManager.play_sound("hover_click.mp3",0.0,false,0.0,0.3)
+		AudioManager.play_sound("hover_click.mp3", 0.0, false, 0.0, 0.3)
 
 		button_pressed = true
 		GameManager.is_cinematic_active = true
@@ -71,6 +83,7 @@ func _on_start_game_button_pressed() -> void:
 			#AudioManager.stop("main_title.mp3")
 		
 		#AudioManager.play_music("background_dungeon.mp3", 1.0, true, 0.0, 1.0)
+		
 		
 		animation_player.play("fade_out_all")
 		await animation_player.animation_finished
@@ -88,7 +101,7 @@ func _on_options_button_pressed() -> void:
 		#AudioManager.play_sound("confirmation.ogg", 0.0, false, 0.0, 0.5)
 		
 		button_pressed = false
-		AudioManager.play_sound("hover_click.mp3",0.0,false,0.0,0.3)
+		AudioManager.play_sound("hover_click.mp3", 0.0, false, 0.0, 0.3)
 		get_tree().change_scene_to_file("res://Menus/OptionsMenu/options_menu.tscn")
 
 
@@ -98,7 +111,7 @@ func _on_controls_button_pressed() -> void:
 		#AudioManager.play_sound("confirmation.ogg", 0.0, false, 0.0, 0.5)
 		
 		button_pressed = false
-		AudioManager.play_sound("hover_click.mp3",0.0,false,0.0,0.3)
+		AudioManager.play_sound("hover_click.mp3", 0.0, false, 0.0, 0.3)
 		get_tree().change_scene_to_file("res://Menus/Controls/controls.tscn")
 
 

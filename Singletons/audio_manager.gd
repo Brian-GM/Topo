@@ -100,3 +100,13 @@ func stop(player_to_stop: String, fade_out: float = 2.0, player_not_in_dictionar
 		player.stop()
 		remove_child(player)
 		audio_stream_players.erase(player_to_stop)
+	else:
+		if get_children().size() > 0:
+			for child in get_children():
+				if child is AudioStreamPlayer and (child as AudioStreamPlayer).name == player_to_stop:
+					var player: AudioStreamPlayer = (child as AudioStreamPlayer)
+					await player.create_tween().tween_property(player, "volume_db", linear_to_db(0.01), fade_out).from(player.volume_db).finished
+					player.volume_db = linear_to_db(0.0)
+					player.stop()
+					remove_child(player)
+					audio_stream_players.erase(player_to_stop)

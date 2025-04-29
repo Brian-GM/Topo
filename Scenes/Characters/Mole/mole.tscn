@@ -636,4 +636,5 @@ shape = SubResource("RectangleShape2D_vmulf")
 remote_path = NodePath("../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(1, 1)
 position_smoothing_enabled = true

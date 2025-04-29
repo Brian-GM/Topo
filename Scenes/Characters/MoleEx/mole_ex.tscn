@@ -50,7 +50,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 10.0
+"speed": 20.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gtbfk"]
@@ -66,7 +66,7 @@ scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_wn6le")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.488863
+frame_progress = 0.214313
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Topo"]]
 shape = SubResource("CapsuleShape2D_gtbfk")

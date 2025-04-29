@@ -18,6 +18,9 @@ var damage:int = 1
 var atack_area 
 var is_atack:bool = false
 
+var coins: PackedScene = preload("res://Scenes/Characters/Coin/coin.tscn")
+
+
 func _ready():
 	animated_sprite = get_node("AnimatedSprite2D")
 	navigation_agent = get_node("NavigationAgent2D")
@@ -37,19 +40,21 @@ func _ready():
 func _process(_delta):
 	if is_chasing and player:
 		navigation_agent.target_position = player.global_position
-
+	
 	var bodies_2 = atack_area.get_overlapping_bodies()
 	if bodies_2 and bodies_2.size() > 0:
 		for body in bodies_2:
 			if body.is_in_group("player") and !is_atack:
 				atack_melee()
-				
+
+
 func atack_melee():
 	animated_sprite.play("atack")
 	AudioManager.play_sound("cangrejoputaso.mp3",0.0,false,0.0,0.3)
 	player.call_deferred("damage",damage)
-	is_atack = true					
-			
+	is_atack = true
+
+
 func _physics_process(_delta):
 	if GameManager.is_cinematic_active or !can_moving:
 		return
@@ -86,6 +91,9 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 		animated_sprite.play("walk")
 		$Atack_Cooldown.start(2)
 	if animated_sprite.animation == "death":
+		var coin: Area2D = coins.instantiate()
+		coin.position = global_position
+		get_tree().current_scene.add_child(coin)
 		queue_free()
 
 

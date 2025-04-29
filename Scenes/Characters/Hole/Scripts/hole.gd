@@ -6,7 +6,15 @@ var sprite: Sprite2D
 
 func _ready() -> void:
 	sprite = get_node("Sprite2D")
-	sprite.texture = load("res://Assets/BrianSprites/boquete" + str(GameManager.current_level + 1) + ".png")
+	match GameManager.current_level:
+		1:
+			sprite.texture = load("res://Assets/BrianSprites/boquete1.png")
+		2:
+			sprite.texture = load("res://Assets/BrianSprites/boquete2.png")
+		3:
+			sprite.texture = load("res://Assets/BrianSprites/boquete3.png")
+		5:
+			sprite.texture = load("res://Assets/BrianSprites/boquete4.png")
 
 
 func _on_body_entered(body: Node2D) -> void:

@@ -175,6 +175,14 @@ func reset_store() -> void:
 
 # reset level
 func reset_actual_level() -> void:
+	if current_level == 4:
+		current_level = 3
+		reset_store()
+	
+	if current_level == 6:
+		current_level = 5
+		reset_store()
+	
 	is_reset_button_pressed = true
 	#reset_player_stats()
 	hud_visibility(true)
@@ -210,6 +218,7 @@ func finish_game() -> void:
 # game over
 func game_over() -> void:
 	reset_player_stats()
+	reset_store()
 	#GameManager.is_cinematic_active = true
 	#if get_tree().current_scene.get_node_or_null("AnimationPlayer") != null:
 		#if (get_tree().current_scene.get_node("AnimationPlayer") as AnimationPlayer).has_animation("fade_out"):

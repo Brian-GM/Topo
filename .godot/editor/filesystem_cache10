@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1744302948
-export_presets.cfg::TextFile/TextFile::-1::1745330474::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1745965752::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6673454677242824784::1744303166::1745330474::1::::<><><>0<>0<>3a167e93de4bf6d5a2a05afeb1fa2438<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assets/::1745330466
 ::res://Assets/BrianSprites/::1745330466
@@ -88,9 +88,9 @@ a.png::CompressedTexture2D/CompressedTexture2D::4334679434258039569::1745330468:
 aVATAR.png::CompressedTexture2D/CompressedTexture2D::4500101913238634998::1745330468::1745418332::1::::<><><>0<>0<>deaf9ca0958b4e3cc1f9159b3301517b<>res://.godot/imported/aVATAR.png-8b7f6037a47da42215076a1588c47d3b.ctex::
 Corazon full.png::CompressedTexture2D/CompressedTexture2D::2287889949971890298::1745330468::1745418332::1::::<><><>0<>0<>f45638bf8c1091aa83d9781d5bd36b58<>res://.godot/imported/Corazon full.png-be7570e1afe320776bfb43463c0905b8.ctex::
 corazonvacio.png::CompressedTexture2D/CompressedTexture2D::3604739849317754485::1745330468::1745418332::1::::<><><>0<>0<>d852661f37a6dca883a18411ed5df134<>res://.godot/imported/corazonvacio.png-43a7080a12315ba718c8d7b4b8a8d7dd.ctex::
-cursor.png::CompressedTexture2D::5160746163391531768::1745964542::1745964544::1::::<><><>0<>0<>1ecda44b72086d26aac16d66a7a8352e<>res://.godot/imported/cursor.png-019f6b667d2205e4ea8c054cb0bae257.ctex::
+cursor.png::CompressedTexture2D/CompressedTexture2D::5160746163391531768::1745964542::1745964544::1::::<><><>0<>0<>1ecda44b72086d26aac16d66a7a8352e<>res://.godot/imported/cursor.png-019f6b667d2205e4ea8c054cb0bae257.ctex::
 d.png::CompressedTexture2D/CompressedTexture2D::4097825789123559517::1745330468::1745418332::1::::<><><>0<>0<>d60e30f79019b17f2154eb79d1204542<>res://.godot/imported/d.png-d2ec68b2a639555535caef48608b5aae.ctex::
-f.png::CompressedTexture2D::8958640981555184022::1745954778::1745954782::1::::<><><>0<>0<>87096208df82a5762ca31edac30ce1a5<>res://.godot/imported/f.png-36b3ba1477cd39fe64ab73b9be2cb72d.ctex::
+f.png::CompressedTexture2D/CompressedTexture2D::8958640981555184022::1745954778::1745954782::1::::<><><>0<>0<>87096208df82a5762ca31edac30ce1a5<>res://.godot/imported/f.png-36b3ba1477cd39fe64ab73b9be2cb72d.ctex::
 fondoboton.png::CompressedTexture2D/CompressedTexture2D::6358039893850953754::1745330468::1745418332::1::::<><><>0<>0<>7fc7fc172e04d26f2ec3f2719452687d<>res://.godot/imported/fondoboton.png-19c0c47bc8b369da3d9d27ec4a57a487.ctex::
 fondobotonhoveeer.png::CompressedTexture2D/CompressedTexture2D::4307286905168596468::1745330468::1745418332::1::::<><><>0<>0<>a4b5ea8cae5e23da22340f9e020b445e<>res://.godot/imported/fondobotonhoveeer.png-4ea6c1e21d9d17cb10253873a5ed51fd.ctex::
 leftclick.png::CompressedTexture2D/CompressedTexture2D::4516759913963249421::1745330468::1745418332::1::::<><><>0<>0<>5bf0171661762769f1ffd51dd971b0bf<>res://.godot/imported/leftclick.png-ab37bcade6e2f6fac8e635fe6e3cee32.ctex::
@@ -132,10 +132,10 @@ translations.en.translation::OptimizedTranslation::6959807386068911701::17459546
 translations.es.translation::OptimizedTranslation::5612167518401386649::1745954692::0::1::::<><><>0<>0<><>::
 ::res://Assets/Music/::1745935952
 cancion1topo.wav::AudioStreamWAV/AudioStreamWAV::1372335359867706230::1745935952::1745936098::1::::<><><>0<>0<>7f93d42ee4ce952c237a5edca6add8c0<>res://.godot/imported/cancion1topo.wav-c38dac3ff345d6065b80e88fcd3d15d7.sample::
-end_comic.mp3::AudioStreamMP3::3320239640628144642::1745948176::1745952640::1::::<><><>0<>0<>4a40744a9fbafe16c528727845f6cc20<>res://.godot/imported/end_comic.mp3-7ceb31cd366263226612390a9a8e377b.mp3str::
+end_comic.mp3::AudioStreamMP3/AudioStreamMP3::3320239640628144642::1745948176::1745952640::1::::<><><>0<>0<>4a40744a9fbafe16c528727845f6cc20<>res://.godot/imported/end_comic.mp3-7ceb31cd366263226612390a9a8e377b.mp3str::
 GabMetal_Def.mp3::AudioStreamMP3/AudioStreamMP3::1668473802521476079::1745935952::1745936098::1::::<><><>0<>0<>f2c50594c6497734f311d355183ff588<>res://.godot/imported/GabMetal_Def.mp3-ce9c3fefded5ed1b77170a5eba18679d.mp3str::
 menu.wav::AudioStreamWAV/AudioStreamWAV::8042294172076539391::1745935952::1745936098::1::::<><><>0<>0<>0ac78ee9fea625c2a8b423a286130978<>res://.godot/imported/menu.wav-7db7e7f28b60ebf25c31cfa88e3a5bec.sample::
-start_comic.mp3::AudioStreamMP3::1847916195606054600::1745952580::1745952682::1::::<><><>0<>0<>596d4532c0c415d8d4868fc691783362<>res://.godot/imported/start_comic.mp3-37531ca234e2f9a0b3082db7ba79148f.mp3str::
+start_comic.mp3::AudioStreamMP3/AudioStreamMP3::1847916195606054600::1745952580::1745952682::1::::<><><>0<>0<>596d4532c0c415d8d4868fc691783362<>res://.godot/imported/start_comic.mp3-37531ca234e2f9a0b3082db7ba79148f.mp3str::
 TemaPrincipal.mp3::AudioStreamMP3/AudioStreamMP3::7045799831158176819::1745935952::1745936098::1::::<><><>0<>0<>5b87e6a91671a4270c067bd0f46e84bf<>res://.godot/imported/TemaPrincipal.mp3-81fbe4334da05cca23f1d5b4d4e96d98.mp3str::
 ::res://Assets/MyAssets/::1745330470
 Boot_Image_Godot.png::CompressedTexture2D/CompressedTexture2D::4235048216517478056::1745330470::1745418330::1::::<><><>0<>0<>ad059833c85c0dcc796f0275eec3cc5e<>res://.godot/imported/Boot_Image_Godot.png-1d2c498452819686c633b10c5fc0517e.ctex::
@@ -145,21 +145,21 @@ ataque1boss.mp3::AudioStreamMP3/AudioStreamMP3::2184525024996240653::1745935952:
 ataque2boss.mp3::AudioStreamMP3/AudioStreamMP3::3444315493447056771::1745939572::1745939640::1::::<><><>0<>0<>7aa70317548b3488f3adea7d793662e8<>res://.godot/imported/ataque2boss.mp3-289fb6ebb2f92075f09c08f9ddc4cc3d.mp3str::
 cangrejoputaso.mp3::AudioStreamMP3/AudioStreamMP3::5724015350694999574::1745939590::1745939640::1::::<><><>0<>0<>0d86dfa7c32db5fe99bf57bc4d97ab5b<>res://.godot/imported/cangrejoputaso.mp3-7b3ea56825eff8817b11a9ced285b1ee.mp3str::
 casher_register.mp3::AudioStreamMP3/AudioStreamMP3::2004147660432411568::1745947444::1745947466::1::::<><><>0<>0<>5f245b08ffecf0beb24e612b8c8707fb<>res://.godot/imported/casher_register.mp3-59295f1b644a63980880b21f7b508d7e.mp3str::
-crab_death.mp3::AudioStreamMP3::5940257977203549167::1745963428::1745963602::1::::<><><>0<>0<>1cd1bb94049e3f45058bf62191712165<>res://.godot/imported/crab_death.mp3-e0e556fafe1ad24200586fa116b792ac.mp3str::
-crab_walking.mp3::AudioStreamMP3::740027418737990525::1745963412::1745963602::1::::<><><>0<>0<>e544ba439365e7dcd4c9a32422e452b5<>res://.godot/imported/crab_walking.mp3-3f879e199862b0cb13c5cc5be3ce7f55.mp3str::
+crab_death.mp3::AudioStreamMP3/AudioStreamMP3::5940257977203549167::1745963428::1745963602::1::::<><><>0<>0<>1cd1bb94049e3f45058bf62191712165<>res://.godot/imported/crab_death.mp3-e0e556fafe1ad24200586fa116b792ac.mp3str::
+crab_walking.mp3::AudioStreamMP3/AudioStreamMP3::740027418737990525::1745963412::1745963602::1::::<><><>0<>0<>e544ba439365e7dcd4c9a32422e452b5<>res://.godot/imported/crab_walking.mp3-3f879e199862b0cb13c5cc5be3ce7f55.mp3str::
 Efecto de Sonido de TIRAR.mp3::AudioStreamMP3/AudioStreamMP3::8091808196681122797::1745939408::1745939640::1::::<><><>0<>0<>4d8a78f5d33d123a32dd2aa8299aac3e<>res://.godot/imported/Efecto de Sonido de TIRAR.mp3-14b4dccc327b761ec7795195a50c26be.mp3str::
 efecto de sonido PALA CAVANDO [shovel digging  sound effect] (mp3cut.net).mp3::AudioStreamMP3/AudioStreamMP3::3398032493191262653::1745939392::1745939640::1::::<><><>0<>0<>b452c93effda3b72a987bca07b023d76<>res://.godot/imported/efecto de sonido PALA CAVANDO [shovel digging  sound effect] (mp3cut.net).mp3-f60d3d0836a5d79ae3c4523b69b59d2c.mp3str::
 gold.mp3::AudioStreamMP3/AudioStreamMP3::2533916287191221565::1745937388::1745937394::1::::<><><>0<>0<>ad257894a8cca6b77a103e22ecc4e583<>res://.godot/imported/gold.mp3-cbaca3a2c76c90754dd587180b07aa13.mp3str::
-golem_death.mp3::AudioStreamMP3::2851784785141936804::1745951564::1745951576::1::::<><><>0<>0<>0416fa7bcbc4211be421ca55c77deb99<>res://.godot/imported/golem_death.mp3-32dd61291b2ed5e675e308a4d0877b68.mp3str::
+golem_death.mp3::AudioStreamMP3/AudioStreamMP3::2851784785141936804::1745951564::1745951576::1::::<><><>0<>0<>0416fa7bcbc4211be421ca55c77deb99<>res://.godot/imported/golem_death.mp3-32dd61291b2ed5e675e308a4d0877b68.mp3str::
 Health.mp3::AudioStreamMP3/AudioStreamMP3::1956750988928915542::1745939612::1745939640::1::::<><><>0<>0<>72a86b08bd3da92e9b06f1a69a4634a7<>res://.godot/imported/Health.mp3-420b12cf3b4ee149d1178ed51b7c2c31.mp3str::
 hover_click.mp3::AudioStreamMP3/AudioStreamMP3::448210993684557164::1745936560::1745936566::1::::<><><>0<>0<>5e956c131e80b70db10c33d68b2b1d3a<>res://.godot/imported/hover_click.mp3-c05ccb70f7a26de809f2b99700ec78a8.mp3str::
 minero.mp3::AudioStreamMP3/AudioStreamMP3::4080643193401058903::1745942668::1745942730::1::::<><><>0<>0<>d2d4dd5486bb1f98091114e6b2dc09be<>res://.godot/imported/minero.mp3-a2abb78b0ee68a22ea9135992af77ca0.mp3str::
-miner_death.mp3::AudioStreamMP3::3208898913577545183::1745963246::1745963602::1::::<><><>0<>0<>f5e253a20c91f6e0df83417f352d1d32<>res://.godot/imported/miner_death.mp3-74febd00027da791473cb1dc23836443.mp3str::
+miner_death.mp3::AudioStreamMP3/AudioStreamMP3::3208898913577545183::1745963246::1745963602::1::::<><><>0<>0<>f5e253a20c91f6e0df83417f352d1d32<>res://.godot/imported/miner_death.mp3-74febd00027da791473cb1dc23836443.mp3str::
 mole_store_talk.mp3::AudioStreamMP3/AudioStreamMP3::6152225548922269607::1745949068::1745949072::1::::<><><>0<>0<>460cfbb033b1df3ec3f171e097a27793<>res://.godot/imported/mole_store_talk.mp3-528dbe997020897e2fd23a3c6b40f454.mp3str::
 muerteboss.mp3::AudioStreamMP3/AudioStreamMP3::4219775730628654944::1745935952::1745936096::1::::<><><>0<>0<>c161232cf8648cb67ab9324f8d9ef5b8<>res://.godot/imported/muerteboss.mp3-16b291cd134f06e8b7b51c7b0ba51af7.mp3str::
 murciegalo.mp3::AudioStreamMP3/AudioStreamMP3::3473371582168923916::1745938814::1745938820::1::::<><><>0<>0<>c1a51681d82ed744faf65e9ee585b51a<>res://.godot/imported/murciegalo.mp3-55e8e0d93e3d5bbe282de6281fa03ae3.mp3str::
 murciegalo_death.mp3::AudioStreamMP3/AudioStreamMP3::8357212171106931006::1745938146::1745938764::1::::<><><>0<>0<>d9900cc86de49eebf2b862cbce9fc428<>res://.godot/imported/murciegalo_death.mp3-9e5a426d61c1df86f972058ef8f5b9ff.mp3str::
-putaso_piedra.mp3::AudioStreamMP3::5306085946000769019::1745949724::1745950736::1::::<><><>0<>0<>aaa19332dd6eb3d615b95220fc1763cc<>res://.godot/imported/putaso_piedra.mp3-7a054c24007119db14d2ab8ff9d56d6b.mp3str::
+putaso_piedra.mp3::AudioStreamMP3/AudioStreamMP3::5306085946000769019::1745949724::1745950736::1::::<><><>0<>0<>aaa19332dd6eb3d615b95220fc1763cc<>res://.godot/imported/putaso_piedra.mp3-7a054c24007119db14d2ab8ff9d56d6b.mp3str::
 Small Bomb Explosion Sound Effect.mp3::AudioStreamMP3/AudioStreamMP3::4843050012841462805::1745942696::1745942730::1::::<><><>0<>0<>8535af18ec3ee1d6afad313c22d61dec<>res://.godot/imported/Small Bomb Explosion Sound Effect.mp3-6e8302076b77b0c9b6b7c2f6af86ab56.mp3str::
 Sonido de Zarpazo al aire 1 - Efecto de Sonido.mp3::AudioStreamMP3/AudioStreamMP3::1645419384529034282::1745942708::1745942730::1::::<><><>0<>0<>8b0c5c70dd2d8eba4b0278ec881db6a8<>res://.godot/imported/Sonido de Zarpazo al aire 1 - Efecto de Sonido.mp3-94d02d3a9297bd7405a49380bacb19b9.mp3str::
 takedamage.mp3::AudioStreamMP3/AudioStreamMP3::7949619937146232995::1745935952::1745936096::1::::<><><>0<>0<>01d17225d3225e72a26d173028302efd<>res://.godot/imported/takedamage.mp3-b3457c9ff5644e77ad1a79f0edc99cdc.mp3str::
@@ -208,7 +208,7 @@ gold.gd::GDScript::9067711513789799511::1745957304::0::1::::<>Area2D<><>0<>0<><>
 ::res://Scenes/Characters/Hole/::1745330472
 hole.tscn::PackedScene/PackedScene::8530562071053265779::1745947512::0::1::::<><><>0<>0<><>::uid://cm4bgetnn04qk::::res://Scenes/Characters/Hole/Scripts/hole.gd<>uid://cngldcfhduhsc::::res://Assets/BrianSprites/boquete1.png
 ::res://Scenes/Characters/Hole/Scripts/::1745330472
-hole.gd::GDScript/GDScript::5675046117720254102::1745946696::0::1::::<>Area2D<><>0<>0<><>::
+hole.gd::GDScript::5675046117720254102::1745965710::0::1::::<>Area2D<><>0<>0<><>::
 ::res://Scenes/Characters/Mole/::1745330472
 mole.tscn::PackedScene/PackedScene::353393010048654598::1745947512::0::1::::<><><>0<>0<><>::uid://c6361emopt4f8::::res://Scenes/Characters/Mole/Scripts/mole.gd<>uid://du73e11lp0qio::::res://Assets/BrianSprites/Player/Topoidle.png<>uid://dn60m7ebmrwia::::res://Assets/BrianSprites/Player/topopegarmele.png<>uid://cnebbefpwn1ex::::res://Assets/BrianSprites/Player/topoatackdistancia.png<>uid://bdrpv4o48n6ro::::res://Assets/BrianSprites/Player/runmelee.png<>uid://dirb5nkk3jlgx::::res://Assets/BrianSprites/Player/TopoRUN.png<>uid://c2vfuiub8886s::::res://Assets/BrianSprites/Player/rundistancia.png
 ::res://Scenes/Characters/Mole/Scripts/::1745330472
@@ -233,7 +233,7 @@ barrel.gd::GDScript::5381342501298657010::1745961034::0::1::::<>CharacterBody2D<
 ::res://Scenes/Enemies/Cangrejo/::1745624950
 Cangrejo.tscn::PackedScene::7825228718610848602::1745962724::0::1::::<><><>0<>0<><>::uid://lol2c735gu0y::::res://Assets/BrianSprites/Enemies/Crab/crab_atack.png<>uid://bqjgylyn5re48::::res://Scenes/Enemies/Cangrejo/Scripts/cangrejo.gd<>uid://bnid0syhlfaj2::::res://Assets/BrianSprites/Enemies/humo_muerte.png<>uid://datjm3irig6vg::::res://Assets/BrianSprites/Enemies/Crab/crab_walk.png
 ::res://Scenes/Enemies/Cangrejo/Scripts/::1745624950
-cangrejo.gd::GDScript::3528429358162055443::1745963792::0::1::::<>CharacterBody2D<><>0<>0<><>::
+cangrejo.gd::GDScript::3528429358162055443::1745964562::0::1::::<>CharacterBody2D<><>0<>0<><>::
 ::res://Scenes/Enemies/Miner/::1745617584
 miner.tscn::PackedScene::57579905128029448::1745961034::0::1::::<><><>0<>0<><>::uid://b6wg0px432y4y::::res://Scenes/Enemies/Miner/Scripts/miner.gd<>uid://c4b7o6a5ir74p::::res://Assets/BrianSprites/Enemies/Miner/atack.png<>uid://cqfgvy73va0gh::::res://Assets/BrianSprites/Enemies/Miner/walk.png<>uid://bnid0syhlfaj2::::res://Assets/BrianSprites/Enemies/humo_muerte.png
 ::res://Scenes/Enemies/Miner/Scripts/::1745617588
@@ -252,23 +252,23 @@ end_comic.tscn::PackedScene::1211491023727477394::1745953520::0::1::::<><><>0<>0
 ::res://Scenes/Levels/EndComic/Scripts/::1745422406
 end_comic.gd::GDScript::7715249267607486618::1745953074::0::1::::<>Control<><>0<>0<><>::
 ::res://Scenes/Levels/Level_1/::1745330472
-level_1.tscn::PackedScene::3947329873651248238::1745961034::0::1::::<><><>0<>0<><>::uid://bb4c1bstdcmcy::::res://Scenes/Levels/Level_1/Scripts/level_1.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn
+level_1.tscn::PackedScene::3947329873651248238::1745964624::0::1::::<><><>0<>0<><>::uid://bb4c1bstdcmcy::::res://Scenes/Levels/Level_1/Scripts/level_1.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn
 ::res://Scenes/Levels/Level_1/Scripts/::1745594060
 level_1.gd::GDScript/GDScript::2516644428023131436::1745945128::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Scenes/Levels/Level_2/::1745591608
-level_2.tscn::PackedScene::1723153454461391369::1745962722::0::1::::<><><>0<>0<><>::uid://bek3fcvlw0lkd::::res://Scenes/Levels/Level_2/Scripts/level_2.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn<>uid://dl8cse8xotg2f::::res://Scenes/Levels/Store/store.tscn
+level_2.tscn::PackedScene::1723153454461391369::1745964624::0::1::::<><><>0<>0<><>::uid://bek3fcvlw0lkd::::res://Scenes/Levels/Level_2/Scripts/level_2.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn<>uid://dl8cse8xotg2f::::res://Scenes/Levels/Store/store.tscn
 ::res://Scenes/Levels/Level_2/Scripts/::1745935952
 level_2.gd::GDScript::2689528978570591563::1745955386::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Scenes/Levels/Level_3/::1745591608
-level_3.tscn::PackedScene::6544072654577595942::1745962722::0::1::::<><><>0<>0<><>::uid://dp0rbdhlrn2dj::::res://Scenes/Levels/Level_3/Scripts/level_3.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://25lkrqwxsg3::::res://Scenes/Enemies/Miner/miner.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn<>uid://dl8cse8xotg2f::::res://Scenes/Levels/Store/store.tscn
+level_3.tscn::PackedScene::6544072654577595942::1745964624::0::1::::<><><>0<>0<><>::uid://dp0rbdhlrn2dj::::res://Scenes/Levels/Level_3/Scripts/level_3.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://25lkrqwxsg3::::res://Scenes/Enemies/Miner/miner.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn<>uid://dl8cse8xotg2f::::res://Scenes/Levels/Store/store.tscn
 ::res://Scenes/Levels/Level_3/Scripts/::1745935952
 level_3.gd::GDScript::8264738293078949107::1745955386::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Scenes/Levels/Level_4/::1745591608
-level_4.tscn::PackedScene::6533548856581651770::1745961624::0::1::::<><><>0<>0<><>::uid://ce5mmjuaduiyc::::res://Scenes/Levels/Level_6/Scripts/level_6.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://b2ig8357o3g0j::::res://Scenes/Boses/Golem/Golem.tscn
+level_4.tscn::PackedScene::6533548856581651770::1745964626::0::1::::<><><>0<>0<><>::uid://ce5mmjuaduiyc::::res://Scenes/Levels/Level_6/Scripts/level_6.gd<>uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://b2ig8357o3g0j::::res://Scenes/Boses/Golem/Golem.tscn
 ::res://Scenes/Levels/Level_4/Scripts/::1745935952
 level_4.gd::GDScript::5116278611611226018::1745955402::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Scenes/Levels/Level_5/::1745591608
-level_5.tscn::PackedScene::6544072654577595942::1745962896::0::1::::<><><>0<>0<><>::uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://bybq8dclu7nen::::res://Scenes/Levels/Level_5/Scripts/level_5.gd<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn<>uid://dl8cse8xotg2f::::res://Scenes/Levels/Store/store.tscn<>uid://djqumyarg7yle::::res://Scenes/Enemies/Cangrejo/Cangrejo.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn<>uid://25lkrqwxsg3::::res://Scenes/Enemies/Miner/miner.tscn
+level_5.tscn::PackedScene::6544072654577595942::1745965574::0::1::::<><><>0<>0<><>::uid://2pnhcii00de8::::res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres<>uid://bybq8dclu7nen::::res://Scenes/Levels/Level_5/Scripts/level_5.gd<>uid://dtsjd1j67bm2f::::res://Scenes/Characters/Hole/hole.tscn<>uid://fbgli6hp1xva::::res://Scenes/Characters/Mole/mole.tscn<>uid://c38c2kkgcydkx::::res://Scenes/Characters/Bed/bed.tscn<>uid://dl8cse8xotg2f::::res://Scenes/Levels/Store/store.tscn<>uid://djqumyarg7yle::::res://Scenes/Enemies/Cangrejo/Cangrejo.tscn<>uid://47qc7763yvds::::res://Scenes/Enemies/Barrel/barrel.tscn<>uid://bp2kx3srj2cyh::::res://Scenes/Enemies/Murciegalo/Murciegalo.tscn<>uid://25lkrqwxsg3::::res://Scenes/Enemies/Miner/miner.tscn
 ::res://Scenes/Levels/Level_5/Scripts/::1745935952
 level_5.gd::GDScript::4074047873030511593::1745955512::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Scenes/Levels/Level_6/::1745624950

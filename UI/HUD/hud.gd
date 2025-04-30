@@ -103,8 +103,8 @@ func _on_life_change(life: int) -> void:
 
 func _on_coin_change(coins: int) -> void:
 	if coins < 10:
-		coins_label.text = str(coins)
+		coins_label.text = "00" + str(coins)
 	elif coins < 99:
 		coins_label.text = "0" + str(coins)
 	else:
-		coins_label.text = "00" + str(coins)
+		coins_label.text = str(coins)

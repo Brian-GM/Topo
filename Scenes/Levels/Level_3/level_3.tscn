@@ -35,6 +35,15 @@ tile_set = ExtResource("1_cvj7l")
 [node name="Murciegalo2" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(1403, 330)
 
+[node name="Murciegalo12" parent="Enemies" instance=ExtResource("4_0k8vw")]
+position = Vector2(2545, -624)
+
+[node name="Murciegalo13" parent="Enemies" instance=ExtResource("4_0k8vw")]
+position = Vector2(3753, -925)
+
+[node name="Murciegalo14" parent="Enemies" instance=ExtResource("4_0k8vw")]
+position = Vector2(3436, -479)
+
 [node name="Murciegalo3" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(2738, -2299)
 
@@ -59,8 +68,17 @@ position = Vector2(6348, -1719)
 [node name="Murciegalo5" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(8350, -2827)
 
+[node name="Murciegalo15" parent="Enemies" instance=ExtResource("4_0k8vw")]
+position = Vector2(6676, -2779)
+
+[node name="Murciegalo16" parent="Enemies" instance=ExtResource("4_0k8vw")]
+position = Vector2(6604, -2251)
+
 [node name="Murciegalo6" parent="Enemies" instance=ExtResource("4_0k8vw")]
 position = Vector2(4810, -3792)
+
+[node name="Murciegalo17" parent="Enemies" instance=ExtResource("4_0k8vw")]
+position = Vector2(8155, -2174)
 
 [node name="Barrel" parent="Enemies" instance=ExtResource("5_n46md")]
 position = Vector2(2115, 175)

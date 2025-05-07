@@ -8,6 +8,9 @@ func _ready() -> void:
 	
 	if AudioManager.audio_stream_players.has("GabMetal_Def.mp3"):
 		AudioManager.stop("GabMetal_Def.mp3", 0.0)
+		
+	if AudioManager.audio_stream_players.has("Fight_def.mp3"):
+		AudioManager.stop("Fight_def.mp3", 0.0)
 	
 	if AudioManager.audio_stream_players.has("TemaPrincipal.mp3"):
 		AudioManager.stop("TemaPrincipal.mp3", 0.0)

@@ -1,6 +1,6 @@
 extends Area2D
 
-var speed: float = 400.0
+var speed: float = 650.0
 var direction: Vector2 = Vector2.ZERO
 
 var camera: Camera2D

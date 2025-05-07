@@ -84,6 +84,8 @@ func _on_detect_player_body_entered(body: Node2D) -> void:
 
 func _on_detect_attack_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
+		if player == null:
+			player = body
 		if !is_attacking:
 			is_attacking = true
 			can_moving = false

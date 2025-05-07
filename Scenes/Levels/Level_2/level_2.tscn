@@ -48,11 +48,23 @@ position = Vector2(-53, 3080)
 [node name="Murciegalo2" parent="Enemies" instance=ExtResource("6_lglyl")]
 position = Vector2(-1233, 1993)
 
+[node name="Murciegalo7" parent="Enemies" instance=ExtResource("6_lglyl")]
+position = Vector2(-615, 1807)
+
+[node name="Murciegalo8" parent="Enemies" instance=ExtResource("6_lglyl")]
+position = Vector2(-1022, 1234)
+
 [node name="Murciegalo4" parent="Enemies" instance=ExtResource("6_lglyl")]
 position = Vector2(-353, 1196)
 
 [node name="Murciegalo5" parent="Enemies" instance=ExtResource("6_lglyl")]
 position = Vector2(-1345, 3044)
+
+[node name="Murciegalo6" parent="Enemies" instance=ExtResource("6_lglyl")]
+position = Vector2(-1658, 3437)
+
+[node name="Murciegalo9" parent="Enemies" instance=ExtResource("6_lglyl")]
+position = Vector2(-2573, 3223)
 
 [node name="Murciegalo3" parent="Enemies" instance=ExtResource("6_lglyl")]
 position = Vector2(652, 3179)

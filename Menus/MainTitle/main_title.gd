@@ -29,6 +29,7 @@ func _ready() -> void:
 	AudioManager.stop("end_comic.mp3", 0.0)
 	
 	AudioManager.stop("GabMetal_Def.mp3", 0.0)
+	AudioManager.stop("Fight_def.mp3", 0.0)
 	
 	AudioManager.stop("start_comic.mp3", 0.0)
 	

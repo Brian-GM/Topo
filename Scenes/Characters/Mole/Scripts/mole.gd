@@ -114,12 +114,14 @@ func make_swipe(direction: Vector2):
 
 
 func start_cooldown_claw() -> void:
-	await get_tree().create_timer(cooldown_claw).timeout
+	await get_tree().create_timer(GameManager.player_cooldown_claw).timeout
 	can_swipe = true
 
 
 func start_cooldown_shot() -> void:
-	await get_tree().create_timer(cooldown_shot).timeout
+	await get_tree().create_timer(GameManager.player_cooldown_shot).timeout
+	animated_sprite.sprite_frames.set_animation_speed("ataque", 20 + (5 * (10 - (GameManager.player_cooldown_shot * 10))))
+	animated_sprite.sprite_frames.set_animation_speed("ataque_piedra", 20 + (5 * (10 - (GameManager.player_cooldown_shot * 10))))
 	can_shoot = true
 
 

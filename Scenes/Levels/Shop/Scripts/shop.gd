@@ -41,6 +41,7 @@ func _on_item_max_life_pressed() -> void:
 			max_life.disabled = true
 			max_life.visible = false
 			GameManager.coins -= int(max_life_price.text)
+			GameManager.player_cooldown_shot -= 0.1
 
 
 func _on_item_attack_pressed() -> void:

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://c0c5uh68ryjks"]
 
-[ext_resource type="Script" uid="uid://ce5mmjuaduiyc" path="res://Scenes/Levels/Level_6/Scripts/level_6.gd" id="1_5uosw"]
+[ext_resource type="Script" uid="uid://b4q641lsy7r7o" path="res://Scenes/Levels/Level_4/Scripts/level_4.gd" id="1_5uosw"]
 [ext_resource type="TileSet" uid="uid://2pnhcii00de8" path="res://Assets/BrianSprites/Tileset/TilesetPrincipal.tres" id="1_aqb4x"]
 [ext_resource type="PackedScene" uid="uid://fbgli6hp1xva" path="res://Scenes/Characters/Mole/mole.tscn" id="3_egspp"]
 [ext_resource type="PackedScene" uid="uid://b2ig8357o3g0j" path="res://Scenes/Boses/Golem/Golem.tscn" id="4_5uosw"]
@@ -32,8 +32,8 @@ tile_map_data = PackedByteArray("AAD5//n/AQADAAMAAAD6//n/AQANAAUAAAD6//j/AQADAAM
 tile_set = ExtResource("1_aqb4x")
 
 [node name="Mole" parent="." instance=ExtResource("3_egspp")]
-position = Vector2(1019, -476)
+position = Vector2(4.00003, 314)
 
 [node name="Golem" parent="." instance=ExtResource("4_5uosw")]
-position = Vector2(1010, 704)
+position = Vector2(1081, 307)
 scale = Vector2(1.5, 1.5)

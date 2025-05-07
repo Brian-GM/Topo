@@ -15,6 +15,7 @@ func _ready() -> void:
 	
 	AudioManager.stop("TemaPrincipal.mp3", 0.0)
 	AudioManager.stop("GabMetal_Def.mp3", 0.0)
+	AudioManager.stop("Fight_def.mp3", 0.0)
 	
 	if not AudioManager.audio_stream_players.has("menu.wav"):
 		AudioManager.play_music("menu.wav", 0.0, true, 0.0, 0.3)

@@ -32,7 +32,7 @@ var damage_zone_2: Area2D
 
 @onready var atack_2_animation: AnimatedSprite2D = $Atack2
 
-var health: int = 30
+var health: int = 70
 #var health: int = 2
 var damage: int = 1
 
@@ -184,7 +184,7 @@ func get_damaged() -> void:
 		if AudioManager.audio_stream_players.has("golem_death.mp3"):
 			await (AudioManager.audio_stream_players["golem_death.mp3"] as AudioStreamPlayer).finished
 			
-		AudioManager.stop("GabMetal_Def.mp3", 1)
+		AudioManager.stop("Fight_def.mp3", 1)
 		get_tree().change_scene_to_file("res://Scenes/Levels/LoadingScene/loading_scene.tscn")
 
 

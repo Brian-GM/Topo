@@ -58,6 +58,7 @@ radius = 22.0
 height = 84.0
 
 [node name="Topo" type="CharacterBody2D" groups=["Topo"]]
+scale = Vector2(2, 2)
 script = ExtResource("1_u7121")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["Topo"]]
@@ -75,6 +76,7 @@ shape = SubResource("CapsuleShape2D_gtbfk")
 remote_path = NodePath("../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(0, 150)
 zoom = Vector2(1.5, 1.5)
 
 [connection signal="child_entered_tree" from="CollisionShape2D" to="." method="_on_collision_shape_2d_child_entered_tree"]

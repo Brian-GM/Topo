@@ -1,10 +1,11 @@
-D:/CursoEspecializacionVideojuegosRealidadVirtual/PRlA/Sesion21/juegoWindows
-D:/CursoEspecializacionVideojuegosRealidadVirtual/PRlA/Sesion21/juegoWeb
+D:/CursoEspecializacionVideojuegosRealidadVirtual/PRlA/Sesion22/juegoWindows
+D:/CursoEspecializacionVideojuegosRealidadVirtual/PRlA/Sesion22/juegoWeb
+res://Scenes/Levels/Level_4/Scripts
+res://Assets/BrianSprites
 D:/CursoEspecializacionVideojuegosRealidadVirtual/PRlA/Sesion21
 res://Assets/BrianSprites/UI
 res://Assets/BrianSprites/Enemies
 res://Scenes/Levels/Level_1/Scripts
-res://Scenes/Levels/Level_4/Scripts
 res://Scenes/Levels/Level_3/Scripts
 res://Scenes/Levels/Level_2/Scripts
 res://Assets/BrianSprites/Enemies/Miner
@@ -15,11 +16,7 @@ res://Assets/BrianSprites/Bosses/Dead
 res://Scenes/Characters/Gold/Scripts
 res://Scenes/Characters/Gold
 res://Scenes/Characters/MoleEx
-res://Assets/BrianSprites
 res://Scenes/Levels/Level_3
 res://Assets/BrianSprites/Player
 res://Scenes/Characters/Bed/Scripts
 res://Scenes/Characters/Hole/Scripts
-res://Scenes/Characters/Projectile
-res://Scenes/Characters/Swipe
-res://Scenes/Characters/Swipe/Scripts

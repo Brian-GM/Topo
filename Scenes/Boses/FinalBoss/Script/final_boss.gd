@@ -26,7 +26,7 @@ var atack_area:Area2D
 var is_atack: bool = false
 var damage_zone: Area2D
 
-var health: int = 50
+var health: int = 100
 var damage: int = 1
 
 var is_dying: bool = false

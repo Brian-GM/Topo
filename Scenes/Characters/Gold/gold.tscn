@@ -1,9 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://k0p8qdr1o2k5"]
+[gd_scene load_steps=6 format=3 uid="uid://k0p8qdr1o2k5"]
 
 [ext_resource type="Script" uid="uid://d2gp5bx1ltah8" path="res://Scenes/Characters/Gold/Scripts/gold.gd" id="1_42srs"]
+[ext_resource type="Texture2D" uid="uid://coysjq3vt8yd2" path="res://Assets/BrianSprites/tileset.png" id="2_4im55"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s4xkt"]
 size = Vector2(46, 45)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_81ewx"]
+atlas = ExtResource("2_4im55")
+region = Rect2(384, 1024, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r7l75"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_81ewx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Oro" type="Area2D" groups=["Oro"]]
 process_mode = 3
@@ -14,7 +30,14 @@ position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_s4xkt")
 debug_color = Color(2.74345e-06, 0.63429, 0.430745, 0.42)
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2.38419e-07, 1.43051e-06)
+scale = Vector2(0.375, 0.375)
+sprite_frames = SubResource("SpriteFrames_r7l75")
+autoplay = "default"
+
 [node name="bloque_oro" type="ColorRect" parent="."]
+visible = false
 offset_left = -20.0
 offset_top = -20.0
 offset_right = 20.0

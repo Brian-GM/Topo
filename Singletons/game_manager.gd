@@ -24,11 +24,16 @@ var player_life: int = MAX_PLAYER_LIFE:
 
 var player_attack: float = 1.0
 
-var player_velocity: float = 300.0
+var player_velocity: float = 400.0
 
 var player_defense: float = 1.0
 
-var player_cooldown_shot: float = 1.0
+var player_cooldown_shot: float = 1.0:
+	set(new_value):
+		if new_value >= 0.5:
+			player_cooldown_shot = new_value
+		else:
+			player_cooldown_shot = 0.5
 
 var player_cooldown_claw: float = 0.5
 
@@ -123,7 +128,7 @@ func reset_player_stats() -> void:
 	if current_level == 0:
 		MAX_PLAYER_LIFE = 4
 		player_attack = 1.0
-		player_velocity = 300.0
+		player_velocity = 400.0
 		player_defense = 1.0
 		player_cooldown_shot = 1.0
 		player_cooldown_claw = 0.5

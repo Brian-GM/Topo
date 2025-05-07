@@ -18,7 +18,7 @@ func _enter_tree() -> void:
 
 func _ready() -> void:
 	#animation_player.play("fade_in")
-	AudioManager.play_sound("GabMetal_Def.mp3",0.0,false,0.0,0.3)
+	#AudioManager.play_sound("GabMetal_Def.mp3",0.0,false,0.0,0.3)
 	back_button = get_node("CanvasLayer/Control/CenterContainer/MenuContainer/BackButton")
 	back_button.grab_focus()
 	
